@@ -2,7 +2,7 @@
 title: binder 情景分析 - RemoteListenerCallback 为什么可以正常工作？
 date: 2018-04-07 15:49:44
 categories: Android
-tags: [Android Source, binder]
+tags: [Android source, Binder]
 ---
 
 

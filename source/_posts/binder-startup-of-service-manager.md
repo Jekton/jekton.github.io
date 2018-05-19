@@ -2,7 +2,7 @@
 title: binder 情景分析 - service manager (context manager) 的启动
 date: 2018-04-11 19:58:52
 categories: Android
-tags: [Android Source, binder]
+tags: [Android source, Binder]
 ---
 
 service-manager 作为 binder 架构中的名字服务器，系统启动后会有 init 进程启动。在本篇，我们主要讲述 service-manager 在启动后都做了什么。

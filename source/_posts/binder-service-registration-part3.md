@@ -2,7 +2,7 @@
 title: binder 情景分析 - service 的注册（下）
 date: 2018-04-14 08:30:02
 categories: Android
-tags: [Android Source, binder]
+tags: [Android source, Binder]
 ---
 
 

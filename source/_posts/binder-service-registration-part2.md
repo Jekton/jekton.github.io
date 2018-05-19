@@ -2,7 +2,7 @@
 title: binder 情景分析 - service 的注册（中）
 date: 2018-04-13 21:49:29
 categories: Android
-tags: [Android Source, binder]
+tags: [Android source, Binder]
 ---
 
 本篇是 service 注册的第二篇，主要描述应用层、binder驱动对写入数据的处理。

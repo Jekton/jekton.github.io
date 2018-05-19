@@ -2,7 +2,7 @@
 title: binder 情景分析 - service 查询
 date: 2018-04-18 19:30:33
 categories: Android
-tags: [Android Source, binder]
+tags: [Android source, Binder]
 ---
 
 在使用一个服务的时候，客户端并不知道服务的位置，所以需要跟名字服务器查询。在 binder 架构中，扮演名字服务器这个角色的，就是 service manager。

@@ -2,7 +2,7 @@
 title: binder 情景分析 - service 的注册（上）
 date: 2018-04-12 21:19:46
 categories: Android
-tags: [Android Source, binder]
+tags: [Android source, Binder]
 ---
 
 本篇为 service 注册的第一篇，主要讲述一些原理性的东西。service 注册部分只讲到获取 `IServiceManager` 对象。
