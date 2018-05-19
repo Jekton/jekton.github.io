@@ -1,0 +1,82 @@
+footer
+  margin-top 0em
+  background color-footer
+  padding 0 2% 0.5em
+
+#footer
+  width 80%
+  margin 0 auto
+  overflow hidden
+  position relative
+  .line
+    width 5%
+    height 10em
+    margin 0 auto
+    @media mini
+      width 8em
+      float left
+      position relative
+    span
+      display block
+      width 0.5em
+      height 6.25em
+      border-right 0.125em solid color-white
+      margin 0 auto
+      @media mini
+        position absolute
+        left 3em
+        margin 0 0 1.5em
+
+.author
+  width w=(110/16)em
+  height w
+  margin 0 auto
+  background no-repeat url("../"+author-img) left top 
+  background-size w w
+  border-radius (w/2)
+  transition transform 2s ease-out
+  &:hover
+    transform rotateZ(360deg)
+  @media mini
+    position: absolute;
+    top 6em
+    margin 0 0 1.5em
+
+
+.copyright
+  if Font-style == custom
+    font-smoothing()
+    font-family font-custom-family
+    font-size 1.5em
+  else if Font-style == cute 
+    font-smoothing()
+    font-family font-cute-family
+  else if Font-style == cool 
+    font-smoothing()
+    font-family font-cool-family
+    font-size 1.3em
+  else
+    font-family font-default
+    font-size 1em
+  width 100%
+  color color-white
+  text-align center
+  @media mini
+    float left
+  a
+    color color-blue
+    &:hover
+      color color-blue
+      text-decoration underline
+
+.cc-license
+  width 100%
+  float left
+  text-align center
+  .cc-opacity 
+    opacity 0.7
+    border-bottom none
+    &:hover
+      opacity 0.9
+  img
+    display inline-block
