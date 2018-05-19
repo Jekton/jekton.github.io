@@ -1,5 +1,5 @@
 ---
-title: Android log 机制 —— logd 总览
+title: Android log 机制 - logd 总览
 date: 2018-05-11 09:14:18
 categories: Android
 tags: [Android source, logd]

@@ -1,5 +1,5 @@
 ---
-title: "synchronized \_那些事"
+title: "synchronized 那些事"
 date: 2018-03-20 20:19:39
 categories: Java
 tags: [Java, synchronized]
