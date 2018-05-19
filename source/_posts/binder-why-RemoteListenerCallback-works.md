@@ -16,7 +16,7 @@ tags: [Android Source, binder]
 
 <br>
 
-#### `RemoteCallbackList` 的使用场景
+## `RemoteCallbackList` 的使用场景
 
 假设我们有如下这么一个服务：
 ```Java
@@ -31,7 +31,7 @@ interface IService {
 
 <br>
 
-#### `RemoteCallbackList` 生效的关键
+## `RemoteCallbackList` 生效的关键
 
 作为一个好奇心比较重的人，我们还是忍不住要看看 `RemoteCallbackList` 究竟施展了什么魔法，解决了对象不一致的问题。关键的源码整理出来，主要是这些：
 ```Java
@@ -56,7 +56,7 @@ class RemoteCallbackList {
 
 <br>
 
-#### 如何做到每次都返回同一个对象
+## 如何做到每次都返回同一个对象
 
 现在，如果你对照开头那个图，你就会发现，`RemoteCallbackList` 用来当做 key 的那个 `IBinder` 实际上是 `BinderProxy`。这里要注意的是，图中各个数据结构的创建、binder 如何传递数据等问题虽然非常重要，但均不在本篇描述。这里我们仅仅关心 `Binder` 传递到图的左侧的 Server 端时，如何保证每次返回的 `BinderProxy` 都是同一个对象。
 
