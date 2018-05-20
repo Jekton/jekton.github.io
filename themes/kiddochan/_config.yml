@@ -101,7 +101,7 @@ links:
 
 #### Comment
 duoshuo_shortname:    ## e.g. hsihohuang   your duoshuo short name.
-disqus_shortname:     ## e.g. hsihohuang   your disqus short name.
+disqus_shortname: jekton-github-io    ## e.g. hsihohuang   your disqus short name.
 
 #### Share button
 jiathis:
