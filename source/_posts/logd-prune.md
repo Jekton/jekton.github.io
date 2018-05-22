@@ -116,6 +116,7 @@ bool LogBuffer::prune(log_id_t id, unsigned long pruneRows, uid_t caller_uid) {
         LogTimeEntry* entry = (*times);
         if (entry->owned_Locked() && entry->isWatching(id) &&
             (!oldest || (oldest->mStart > entry->mStart) ||
+             // 对于带 timeout 的客户端，我们需要唤醒他们，所以时间相等的情况下，他们更优先
              ((oldest->mStart == entry->mStart) &&
               (entry->mTimeout.tv_sec || entry->mTimeout.tv_nsec)))) {
             oldest = entry;
@@ -164,10 +165,11 @@ bool LogBuffer::prune(log_id_t id, unsigned long pruneRows, uid_t caller_uid) {
             // 如果当前的条目的时间已经超过了 watermark，就不能再继续删除了
             if (oldest && (watermark <= element->getRealTime())) {
                 busy = true;
-                // 下面这两个，等看了 LogReader 再补上。下同
+                // 带 timeout 的客户此时可能正在睡眠，唤醒他
                 if (oldest->mTimeout.tv_sec || oldest->mTimeout.tv_nsec) {
                     oldest->triggerReader_Locked();
                 } else {
+                    // 不带 timeout，让它跳过 pruneRows 条记录
                     oldest->triggerSkip_Locked(id, pruneRows);
                 }
                 break;
@@ -279,6 +281,7 @@ bool LogBuffer::prune(log_id_t id, unsigned long pruneRows, uid_t caller_uid) {
             // 当前的 log 已经超过了 watermark，不应该继续删除 log
             if (oldest && (watermark <= element->getRealTime())) {
                 busy = true;
+                // 和上面一样，唤醒带 timeout 的客户端
                 if (oldest->mTimeout.tv_sec || oldest->mTimeout.tv_nsec) {
                     oldest->triggerReader_Locked();
                 }
@@ -426,7 +429,7 @@ bool LogBuffer::prune(log_id_t id, unsigned long pruneRows, uid_t caller_uid) {
         }
         last.clear();
 
-        一整个循环都没有删除那些写了好多 log 的条目，黑名单也没有启用，就不需要再开始下一次循环了
+        // 一整个循环都没有删除那些写了太多 log 的条目，黑名单也没有启用，就不需要再开始下一次循环了
         if (!kick || !mPrune.worstUidEnabled()) {
             break;  // the following loop will ask bad clients to skip/drop
         }
