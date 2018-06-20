@@ -8,6 +8,8 @@ tags: Glide
 
 作为一个合格的图片加载框架，一般都会有内存缓存和硬盘缓存。在本篇，我们就先来看看 Glide 的硬盘缓存实现。
 
+> Glide 使用版本 4.7.1
+
 ## 接口说明
 
 Glide 的硬盘缓存由接口 `DiskCache` 定义，用户可以根据需要，提供自己实现的 `DiskCache`，或者使用 Glide 内置的实现。
@@ -1177,7 +1179,7 @@ public synchronized void close() throws IOException {
 
 
 ---
-## 2018.06.20 补几个面试遇到的问题。
+## 2018.06.20 补几个面试遇到的问题
 
 ### 日志文件的作用
 
