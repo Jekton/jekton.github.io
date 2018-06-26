@@ -259,7 +259,7 @@ socket.setKeepAlive(true);
 注意，两个小时才会发一次。也就是说，在没有实际数据通信的时候，我把网线拔了，你的应用程序要经过两个小时才会知道。
 
 在说明如果实现长连接前，我们先来理一理我们面临的问题。假定现在有一对已经连接的 socket，在以下情况发生时候，socket 将不再可用：
-1. 某一端关闭是 socket（这不是废话吗）。主动关闭的一方会发送 `FIN`，通知对方要关闭 TCP 连接。在这种情况下，另一端如果去读 socket，将会读到 `EOF`（End of File）。于是我们知道对方关闭了 socket。
+1. 某一端关闭是 socket（这不是废话吗）。主动关闭的一方会发送 `FIN`，通知对方要关闭 TCP 连接。在这种情况下，另一端如果去读 socket，将会读到 `EoF`（End of File）。于是我们知道对方关闭了 socket。
 2. 应用程序奔溃。此时 socket 会由内核关闭，结果跟情况1一样。
 3. 系统奔溃。这时候系统是来不及发送 `FIN` 的，因为它已经跪了。此时对方无法得知这一情况。对方在尝试读取数据时，最后会返回 read time out。如果写数据，则是 host unreachable 之类的错误。
 4. 电缆被挖断、网线被拔。跟情况3差不多，如果没有对 socket 进行读写，两边都不知道发生了事故。跟情况3不同的是，如果我们把网线接回去，socket 依旧可以正常使用。
@@ -341,6 +341,7 @@ public final class LongLiveSocket {
 
     private static final long RETRY_INTERVAL_MILLIS = 3 * 1000;
     private static final long HEART_BEAT_INTERVAL_MILLIS = 5 * 1000;
+    private static final long HEART_BEAT_TIMEOUT_MILLIS = 2 * 1000;
 
     /**
      * 错误回调
@@ -378,6 +379,7 @@ public final class LongLiveSocket {
     private final AtomicReference<Socket> mSocketRef = new AtomicReference<>();
     private final HandlerThread mWriterThread;
     private final Handler mWriterHandler;
+    private final Handler mUIHandler = new Handler(Looper.getMainLooper());
 
     private final Runnable mHeartBeatTask = new Runnable() {
         private byte[] mHeartBeat = new byte[0];
@@ -390,6 +392,7 @@ public final class LongLiveSocket {
                 public void onSuccess() {
                     // 每隔 HEART_BEAT_INTERVAL_MILLIS 发送一次
                     mWriterHandler.postDelayed(mHeartBeatTask, HEART_BEAT_INTERVAL_MILLIS);
+                    mUIHandler.postDelayed(mHeartBeatTimeoutTask, HEART_BEAT_TIMEOUT_MILLIS);
                 }
 
                 @Override
@@ -399,6 +402,11 @@ public final class LongLiveSocket {
                 }
             });
         }
+    };
+
+    private final Runnable mHeartBeatTimeoutTask = () -> {
+        Log.e(TAG, "mHeartBeatTimeoutTask#run: heart beat timeout");
+        closeSocket();
     };
 
 
@@ -477,6 +485,19 @@ public final class LongLiveSocket {
     }
 
     public void close() {
+        if (Looper.getMainLooper() == Looper.myLooper()) {
+            new Thread() {
+                @Override
+                public void run() {
+                    doClose();
+                }
+            }.start();
+        } else {
+            doClose();
+        }
+    }
+
+    private void doClose() {
         mWriterThread.quit();
         // 关闭 socket，从而使得阻塞在 socket 上的线程返回
         closeSocket();
@@ -523,6 +544,7 @@ public final class LongLiveSocket {
                 int nbyte = in.readInt();
                 if (nbyte == 0) {
                     Log.i(TAG, "readResponse: heart beat received");
+                    mUIHandler.removeCallbacks(mHeartBeatTimeoutTask);
                     continue;
                 }
 
@@ -546,7 +568,7 @@ public final class LongLiveSocket {
             while (n > 0) {
                 int readBytes = in.read(buffer, offset, n);
                 if (readBytes < 0) {
-                    // EOF
+                    // EoF
                     break;
                 }
                 n -= readBytes;
@@ -606,9 +628,9 @@ public class EchoClient {
 03:55:25.602 12691-12713/com.example.echo I/LongLiveSocket: readResponse: heart beat received
 ```
 
-最后需要说明的是，如果想节省流量，在有客户发送数据的时候，我们可以省略 heart beat。读者也可能会觉得疑惑，虽然我们发送了heart beat，但什么也没有处理啊？！就 echo 服务器而言，其实不需要处理，因为服务器会把心跳也返回给我们。加心跳目的就是想知道连接是不是正常，既然如此，只要我们对 socket 的读、写正常的，socket 就是活着的，也就不需要特殊处理。相反，如果读、写失败，异常处理部分就会自动重连。
+最后需要说明的是，如果想节省资源，在有客户发送数据的时候可以省略 heart beat。
 
-我们对读出错时候的处理，可能也存在一些争议。读出错后，我们只是关闭了 socket。socket 需要等到下一次写动作发生时，才会重新连接。实际应用中，如果这是一个问题，在读出错后可以直接开始重连。这种情况下，还需要一些额外的同步，避免重复创建 socket。
+我们对读出错时候的处理，可能也存在一些争议。读出错后，我们只是关闭了 socket。socket 需要等到下一次写动作发生时，才会重新连接。实际应用中，如果这是一个问题，在读出错后可以直接开始重连。这种情况下，还需要一些额外的同步，避免重复创建 socket。heart beat timeout 的情况类似。
 
 
 ## 跟 TCP/IP 学协议设计
