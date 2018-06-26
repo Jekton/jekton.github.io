@@ -428,12 +428,12 @@ public final class LongLiveSocket {
 
     private void initSocket() {
         while (true) {
-            synchronized (mLock) {
-                if (mClosed) return;
-            }
+            if (closed()) return;
+
             try {
                 Socket socket = new Socket(mHost, mPort);
                 synchronized (mLock) {
+                    // 在我们创建 socket 的时候，客户可能就调用了 close()
                     if (mClosed) {
                         silentlyClose(socket);
                         return;
@@ -509,11 +509,9 @@ public final class LongLiveSocket {
     private void closeSocketLocked() {
         if (mSocket == null) return;
 
-        Socket socket = mSocketRef.getAndSet(null);
-        if (socket != null) {
-            silentlyClose(socket);
-            mWriterHandler.removeCallbacks(mHeartBeatTask);
-        }
+        silentlyClose(mSocket);
+        mSocket = null;
+        mWriterHandler.removeCallbacks(mHeartBeatTask);
     }
 
     public void close() {
