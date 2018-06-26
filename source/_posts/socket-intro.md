@@ -376,10 +376,13 @@ public final class LongLiveSocket {
     private final DataCallback mDataCallback;
     private final ErrorCallback mErrorCallback;
 
-    private final AtomicReference<Socket> mSocketRef = new AtomicReference<>();
     private final HandlerThread mWriterThread;
     private final Handler mWriterHandler;
     private final Handler mUIHandler = new Handler(Looper.getMainLooper());
+
+    private final Object mLock = new Object();
+    private Socket mSocket;  // guarded by mLock
+    private boolean mClosed; // guarded by mLock
 
     private final Runnable mHeartBeatTask = new Runnable() {
         private byte[] mHeartBeat = new byte[0];
@@ -425,17 +428,26 @@ public final class LongLiveSocket {
 
     private void initSocket() {
         while (true) {
+            synchronized (mLock) {
+                if (mClosed) return;
+            }
             try {
                 Socket socket = new Socket(mHost, mPort);
-                mSocketRef.set(socket);
-                // 每次创建新的 socket，会开一个线程来读数据
-                Thread reader = new Thread(new ReaderTask(socket), "socket-reader");
-                reader.start();
-                mWriterHandler.post(mHeartBeatTask);
+                synchronized (mLock) {
+                    if (mClosed) {
+                        silentlyClose(socket);
+                        return;
+                    }
+                    mSocket = socket;
+                    // 每次创建新的 socket，会开一个线程来读数据
+                    Thread reader = new Thread(new ReaderTask(socket), "socket-reader");
+                    reader.start();
+                    mWriterHandler.post(mHeartBeatTask);
+                }
                 break;
             } catch (IOException e) {
                 Log.e(TAG, "initSocket: ", e);
-                if (!mErrorCallback.onError()) {
+                if (closed() || !mErrorCallback.onError()) {
                     break;
                 }
                 try {
@@ -454,7 +466,7 @@ public final class LongLiveSocket {
 
     public void write(byte[] data, int offset, int len, WritingCallback callback) {
         mWriterHandler.post(() -> {
-            Socket socket = mSocketRef.get();
+            Socket socket = getSocket();
             if (socket == null) {
                 // initSocket 失败而客户说不需要重连，但客户又叫我们给他发送数据
                 throw new IllegalStateException("Socket not initialized");
@@ -469,14 +481,34 @@ public final class LongLiveSocket {
                 Log.e(TAG, "write: ", e);
                 closeSocket();
                 callback.onFail(data, offset, len);
-                if (mErrorCallback.onError()) {
+                if (!closed() && mErrorCallback.onError()) {
                     initSocket();
                 }
             }
         });
     }
 
+    private boolean closed() {
+        synchronized (mLock) {
+            return mClosed;
+        }
+    }
+
+    private Socket getSocket() {
+        synchronized (mLock) {
+            return mSocket;
+        }
+    }
+
     private void closeSocket() {
+        synchronized (mLock) {
+            closeSocketLocked();
+        }
+    }
+
+    private void closeSocketLocked() {
+        if (mSocket == null) return;
+
         Socket socket = mSocketRef.getAndSet(null);
         if (socket != null) {
             silentlyClose(socket);
@@ -498,9 +530,12 @@ public final class LongLiveSocket {
     }
 
     private void doClose() {
+        synchronized (mLock) {
+            mClosed = true;
+            // 关闭 socket，从而使得阻塞在 socket 上的线程返回
+            closeSocketLocked();
+        }
         mWriterThread.quit();
-        // 关闭 socket，从而使得阻塞在 socket 上的线程返回
-        closeSocket();
         // 在重连的时候，有个 sleep
         mWriterThread.interrupt();
     }
