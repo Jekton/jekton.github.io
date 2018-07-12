@@ -12,7 +12,7 @@ tags: Android arch
 
 ## 使用方法简介
 
-这里我并不打算将太多 lifecycle 的用法，不熟悉的同学，可以参考[这里](https://developer.android.google.cn/topic/libraries/architecture/)。
+这里我并不打算讲太多 lifecycle 的用法，不熟悉的同学，可以参考[这里](https://developer.android.google.cn/topic/libraries/architecture/)。
 
 为了使用 lifecycle，首先需要获取到一个 `LifecycleOwner`。
 ```Java
@@ -370,7 +370,7 @@ public class LifecycleRegistry extends Lifecycle {
 }
 ```
 
-`LifecycleRegistry` 本来要做的事其实是很简单的，但由于他需要执行客户的代码，由此引入了很多额外的复杂度。原因是，客户代码并不处于我们的控制执行，他们可能做出任何可以做到的事。例如这里，在回调中又触发状态变化。类似的情况是，在持有锁的时候不调用客户代码，这个也会让实现变得比较复杂。
+`LifecycleRegistry` 本来要做的事其实是很简单的，但由于他需要执行客户的代码，由此引入了很多额外的复杂度。原因是，客户代码并不处在我们的控制之下，他们可能做出任何可以做到的事。例如这里，在回调中又触发状态变化。类似的情况是，在持有锁的时候不调用客户代码，这个也会让实现变得比较复杂。
 
 接下来我们看 `sync()`：
 ```Java
@@ -495,7 +495,7 @@ public class LifecycleRegistry extends Lifecycle {
     // 这段注释应该是这整个类里面最难理解的了吧，至少对于我来说是这样
     // we have to keep it for cases:
     // void onStart() {
-    //     // removeObserver(this)，说明 onStart() 这个方法所属的类是一个 LifecycleObserver
+    //     // removeObserver(this)，说明 this 是一个 LifecycleObserver
     //     // 所以这里说的是，我们在回调里执行了下面两个操作
     //     mRegistry.removeObserver(this);
     //     mRegistry.add(newObserver);
@@ -564,8 +564,6 @@ public class LifecycleRegistry extends Lifecycle {
         GenericLifecycleObserver mLifecycleObserver;
 
         ObserverWithState(LifecycleObserver observer, State initialState) {
-            // 由于篇幅有限，这里的 callback 就不看了。
-            // 简单提一下，在使用 annotion 的时候，对应的 observer 会生成
             mLifecycleObserver = Lifecycling.getCallback(observer);
             mState = initialState;
         }
@@ -580,7 +578,7 @@ public class LifecycleRegistry extends Lifecycle {
 }
 ```
 
-由于篇幅有限，这里的 callback 就不看了。简单提一下，在使用 annotion 的时候，对应的 observer 会生成一个 adapter，这个 adapter 会把对应的 `Lifecycle.Event` 装换为方法调用：
+由于篇幅有限，这里的 `Lifecycling.getCallback` 就不看了。简单提一下，在使用 annotion 的时候，对应的 observer 会生成一个 adapter，这个 adapter 会把对应的 `Lifecycle.Event` 装换为方法调用：
 ```Java
 static class BoundLocationListener implements LifecycleObserver {
     @OnLifecycleEvent(Lifecycle.Event.ON_RESUME)

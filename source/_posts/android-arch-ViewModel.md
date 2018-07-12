@@ -5,10 +5,11 @@ categories: Android
 tags: Android arch
 ---
 
-本篇主要关注 `ViewModel` 的实现而非起用法，关于他的用法，可以参考[这里](https://developer.android.google.cn/topic/libraries/architecture/)。
+本篇主要关注 `ViewModel` 的实现而非其用法，关于他的用法，可以参考[这里](https://developer.android.google.cn/topic/libraries/architecture/)。
 
 `ViewModel` 主要用于在 activity/fragment 被自动销毁时保存一些数据。从实现原理上讲，主要就是利用了 `fragment.setRetainInstance(true)`。如此一来，这个 `fragment` 就能够跨越 `activity` 的生命周期。
 
+> 以下源码使用 1.1.1 版本
 
 ## 总览
 
@@ -41,7 +42,7 @@ public abstract class ViewModel {
     }
 }
 ```
-就这样，他只是定义了一个空方法 `onCleared()`。当对应的 model 实例被销毁时，`onCleared()` 讲会执行。通过让他成为 `abstract class` 并给予 `onCleared` 一个默认实现，让 `ViewModel` 有了 tag interface 的效果。
+就这样，他只是定义了一个空方法 `onCleared()`。当对应的 model 实例被销毁时，`onCleared()` 将会执行。通过让他成为 `abstract class` 并给予 `onCleared` 一个默认实现，让 `ViewModel` 有了 tag interface 的效果。
 
 > 所谓的 tag interface 是指不带任何方法的 `interface`。
 
@@ -203,7 +204,7 @@ public class ViewModelProvider {
     public <T extends ViewModel> T get(@NonNull String key, @NonNull Class<T> modelClass) {
         ViewModel viewModel = mViewModelStore.get(key);
 
-        // 当使用不同的类加载起加载同一个类的时候，这里会是 false
+        // 当使用不同的类加载器加载同一个类的时候，这里会是 false
         if (modelClass.isInstance(viewModel)) {
             //noinspection unchecked
             return (T) viewModel;
