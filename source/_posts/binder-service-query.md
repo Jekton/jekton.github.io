@@ -7,6 +7,8 @@ tags: [Android source, Binder]
 
 在使用一个服务的时候，客户端并不知道服务的位置，所以需要跟名字服务器查询。在 binder 架构中，扮演名字服务器这个角色的，就是 service manager。
 
+<!--more-->
+
 ![rpc-common-structure](rpc-common-structure.png)
 
 

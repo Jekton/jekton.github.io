@@ -3,6 +3,7 @@ title: binder 情景分析 - service 的注册（下）
 date: 2018-04-14 08:30:02
 categories: Android
 tags: [Android source, Binder]
+description: 在本篇，我们从 context manager 对数据读取开始，完成 service 注册这一过程。
 ---
 
 

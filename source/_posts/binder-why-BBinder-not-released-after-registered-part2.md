@@ -3,6 +3,7 @@ title: binder 情景分析 - 为什么注册后的 BBinder 不会被意外释放
 date: 2018-04-17 14:04:48
 categories: Android
 tags: [Android source, Binder]
+description: 接上篇，我们继续讨论 binder 的生命周期管理。
 ---
 
 

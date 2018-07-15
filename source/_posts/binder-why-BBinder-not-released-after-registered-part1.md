@@ -3,6 +3,7 @@ title: binder 情景分析 - 为什么注册后的 BBinder 不会被意外释放
 date: 2018-04-16 22:15:32
 categories: Android
 tags: [Android source, Binder]
+description: 本篇从一个问题入手，讲解 Android 的 sp/wp。
 ---
 
 

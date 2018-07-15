@@ -7,6 +7,8 @@ tags: [Android source, Binder]
 
 本篇是 service 注册的第二篇，主要描述应用层、binder驱动对写入数据的处理。
 
+<!--more-->
+
 ## 向 binder 写入数据
 
 注册服务将调用 `BpServiceManager::addService()`：

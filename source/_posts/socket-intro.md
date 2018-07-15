@@ -3,6 +3,7 @@ title: TCP/IP、Socket 和协议设计
 date: 2018-06-23 09:12:16
 categories: Java
 tags: [Java, Socket]
+description: 本篇我们先简单了解一下 TCP/IP，然后通过实现一个 echo 服务器来学习 Java 的 Socket API。最后我们聊聊偏高级一点点的 socket 长连接和协议设计。
 ---
 
 > 本文由[玉刚说写作平台](http://renyugang.io/post/75)<sup>[1]</sup>提供写作赞助，版权归玉刚说微信公众号所有

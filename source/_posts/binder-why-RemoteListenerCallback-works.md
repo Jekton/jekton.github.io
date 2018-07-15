@@ -3,8 +3,8 @@ title: binder 情景分析 - RemoteListenerCallback 为什么可以正常工作�
 date: 2018-04-07 15:49:44
 categories: Android
 tags: [Android source, Binder]
+description: 一篇小短文，主要讲述 RemoteListenerCallback 的工作原理。
 ---
-
 
 
 为了不迷失在源码中，在开始之前，我们先来看一个图。后面如果对某个对象所处的位置模糊，可以回过头来复习一下。图中的箭头表示客户向服务发起一次请求的数据流向。

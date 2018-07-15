@@ -7,6 +7,7 @@ tags: [Android source, Binder]
 
 本篇为 service 注册的第一篇，主要讲述一些原理性的东西。service 注册部分只讲到获取 `IServiceManager` 对象。
 
+<!--more-->
 
 ## RPC 原理简述
 

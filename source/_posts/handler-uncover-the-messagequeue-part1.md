@@ -7,6 +7,8 @@ tags: [Android source, Handler]
 
 从 Android 2.3 开始，Java、native 层都可以把 Message 放到 Looper 线程处理，但是这两个世界的 Message 是完全不相关的。在本篇，我们先了解 Java 世界的 Message 是如何入队、出队的。
 
+<!--more-->
+
 ## `MessageQueue` 的构造
 
 在[上一篇](/2018/04/23/handler-understand-handler-framework/)我们了解到，`MessageQueue` 实例是在 `Looper` 的构造函数中生成的：

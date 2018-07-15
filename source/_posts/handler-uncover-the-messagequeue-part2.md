@@ -5,6 +5,10 @@ categories: Android
 tags: [Android source, Handler]
 ---
 
+除了 Java 层，`Handler` 框架在 C++ 层也有支持。本篇，我们就来看看 C++ 部分。
+
+<!--more-->
+
 ## Looper<sup>(C++)</sup> 的创建
 
 在[上一篇](/2018/04/24/handler-uncover-the-messagequeue-part1/)中我们已经看到了 Looper 的初始化：

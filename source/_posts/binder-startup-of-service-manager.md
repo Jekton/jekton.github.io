@@ -7,6 +7,7 @@ tags: [Android source, Binder]
 
 service-manager 作为 binder 架构中的名字服务器，系统启动后会有 init 进程启动。在本篇，我们主要讲述 service-manager 在启动后都做了什么。
 
+<!--more-->
 
 ## RPC 的一般架构
 

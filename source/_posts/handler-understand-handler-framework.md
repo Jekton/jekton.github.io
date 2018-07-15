@@ -7,6 +7,8 @@ tags: [Android source, Handler]
 
 本篇我们先从 `HandlerThread` 讲起，然后整体上看看 Handler 框架。
 
+<!--more-->
+
 
 ## 从 `HandlerThread` 谈起
 

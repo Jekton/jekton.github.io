@@ -3,6 +3,7 @@ title: 如何使用 Visual Studio Code 阅读 Android 源码
 date: 2018-05-11 16:16:59
 categories: Android
 tags: [Android source, 杂谈]
+description: 本文主要关注源码的阅读，而不是编译、调试。
 ---
 
 

@@ -3,9 +3,10 @@ title: Glide 源码分析(2) - 内存缓存和数组缓存
 date: 2018-06-20 14:59:29
 categories: Android
 tags: Glide
+description: 在上篇我们了解了 Glide 的硬盘缓存，现在，我们继续看他的内存缓存和数组缓存。
 ---
 
-在[上篇](/2018/06/08/glide-disk-cache/)我们了解了 Glide 的硬盘缓存，现在，我们继续看他的内存缓存和硬盘缓存。
+在[上篇](/2018/06/08/glide-disk-cache/)我们了解了 Glide 的硬盘缓存，现在，我们继续看他的内存缓存和数组缓存。
 
 ## MemoryCache
 
