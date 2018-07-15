@@ -382,3 +382,9 @@ public class HolderFragment extends Fragment implements ViewModelStoreOwner {
 ```
 
 到这里，`ViewModel` 的实现我们就看完了。需要注意的是，`ViewModel` 还支持 `fragment`，这部分跟 `activity ` 是类似的，有兴趣的读者自己看一看就好。
+
+
+<br>
+---
+<br>
+> @大熊：ViewModelStores.of(FragmentActivity)需要区分下Support Library的版本，如果在v27.1.0版本及以上的，FragmentActivity已经实现了ViewModelStoreOwner接口，最终是通过FragmentActivity.onRetainNonConfigurationInstance()完成ViewModelStore的存储的，v27.1.0版本以下才是通过Fragment.setRetainInstance(true)实现。
