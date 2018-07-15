@@ -43,7 +43,8 @@ highlight:
   line_number: true
   auto_detect: false
   tab_replace:
-  
+
+mathjax: true
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
@@ -73,7 +74,15 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: kiddochan
+theme: maupassant
+#RSS订阅
+plugin:
+- hexo-generator-feed
+#Feed Atom
+feed:
+type: atom
+path: atom.xml
+limit: 20
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
