@@ -4,7 +4,7 @@
   <url>
     <loc>https://jekton.github.io/2018/08/26/flutter-first-app/</loc>
     
-    <lastmod>2018-08-26T05:46:27.273Z</lastmod>
+    <lastmod>2018-08-26T05:47:56.064Z</lastmod>
     
   </url>
   
@@ -30,6 +30,13 @@
   </url>
   
   <url>
+    <loc>https://jekton.github.io/categories/index.html</loc>
+    
+    <lastmod>2018-08-18T12:47:22.694Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jekton.github.io/about/index.html</loc>
     
     <lastmod>2018-08-18T12:47:22.694Z</lastmod>
@@ -38,13 +45,6 @@
   
   <url>
     <loc>https://jekton.github.io/google9bbc3a252e502b42.html</loc>
-    
-    <lastmod>2018-08-18T12:47:22.694Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jekton.github.io/categories/index.html</loc>
     
     <lastmod>2018-08-18T12:47:22.694Z</lastmod>
     
@@ -72,13 +72,6 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/05/11/logd-overview/</loc>
-    
-    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jekton.github.io/2018/05/25/logd-reading/</loc>
     
     <lastmod>2018-08-18T12:47:22.692Z</lastmod>
@@ -100,6 +93,20 @@
   </url>
   
   <url>
+    <loc>https://jekton.github.io/2018/05/11/logd-overview/</loc>
+    
+    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jekton.github.io/2018/03/20/java-synchronized-keyword/</loc>
+    
+    <lastmod>2018-08-18T12:47:22.691Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jekton.github.io/2018/07/22/java-translation-jep-193-Variable-Handles/</loc>
     
     <lastmod>2018-08-18T12:47:22.691Z</lastmod>
@@ -108,13 +115,6 @@
   
   <url>
     <loc>https://jekton.github.io/2018/07/25/jdk-FutureTask/</loc>
-    
-    <lastmod>2018-08-18T12:47:22.691Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jekton.github.io/2018/03/20/java-synchronized-keyword/</loc>
     
     <lastmod>2018-08-18T12:47:22.691Z</lastmod>
     
@@ -205,14 +205,14 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/04/18/binder-service-query/</loc>
+    <loc>https://jekton.github.io/2018/04/12/binder-service-registration-part1/</loc>
     
     <lastmod>2018-08-18T12:47:22.678Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/04/12/binder-service-registration-part1/</loc>
+    <loc>https://jekton.github.io/2018/04/18/binder-service-query/</loc>
     
     <lastmod>2018-08-18T12:47:22.678Z</lastmod>
     
@@ -226,14 +226,14 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/06/30/android-arch-ViewModel/</loc>
+    <loc>https://jekton.github.io/2018/07/14/android-arch-LiveData/</loc>
     
     <lastmod>2018-08-18T12:47:22.677Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/07/14/android-arch-LiveData/</loc>
+    <loc>https://jekton.github.io/2018/06/30/android-arch-ViewModel/</loc>
     
     <lastmod>2018-08-18T12:47:22.677Z</lastmod>
     
