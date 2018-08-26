@@ -4,7 +4,7 @@
   <url>
     <loc>https://jekton.github.io/2018/08/26/flutter-first-app/</loc>
     
-    <lastmod>2018-08-26T05:29:22.586Z</lastmod>
+    <lastmod>2018-08-26T05:46:27.273Z</lastmod>
     
   </url>
   
@@ -19,13 +19,6 @@
     <loc>https://jekton.github.io/tags/index.html</loc>
     
     <lastmod>2018-08-18T12:47:22.695Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jekton.github.io/categories/index.html</loc>
-    
-    <lastmod>2018-08-18T12:47:22.694Z</lastmod>
     
   </url>
   
@@ -51,14 +44,21 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/05/17/logd-writing-part2/</loc>
+    <loc>https://jekton.github.io/categories/index.html</loc>
+    
+    <lastmod>2018-08-18T12:47:22.694Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jekton.github.io/2018/06/23/socket-intro/</loc>
     
     <lastmod>2018-08-18T12:47:22.693Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/06/23/socket-intro/</loc>
+    <loc>https://jekton.github.io/2018/05/17/logd-writing-part2/</loc>
     
     <lastmod>2018-08-18T12:47:22.693Z</lastmod>
     
@@ -72,7 +72,7 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/05/17/logd-prune/</loc>
+    <loc>https://jekton.github.io/2018/05/11/logd-overview/</loc>
     
     <lastmod>2018-08-18T12:47:22.692Z</lastmod>
     
@@ -86,14 +86,14 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/05/16/logd-writing-part1/</loc>
+    <loc>https://jekton.github.io/2018/05/17/logd-prune/</loc>
     
     <lastmod>2018-08-18T12:47:22.692Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/05/11/logd-overview/</loc>
+    <loc>https://jekton.github.io/2018/05/16/logd-writing-part1/</loc>
     
     <lastmod>2018-08-18T12:47:22.692Z</lastmod>
     
@@ -128,13 +128,6 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/04/23/handler-understand-handler-framework/</loc>
-    
-    <lastmod>2018-08-18T12:47:22.684Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jekton.github.io/2018/06/20/glide-mem-cache1/</loc>
     
     <lastmod>2018-08-18T12:47:22.684Z</lastmod>
@@ -143,6 +136,13 @@
   
   <url>
     <loc>https://jekton.github.io/2018/04/24/handler-uncover-the-messagequeue-part1/</loc>
+    
+    <lastmod>2018-08-18T12:47:22.684Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jekton.github.io/2018/04/23/handler-understand-handler-framework/</loc>
     
     <lastmod>2018-08-18T12:47:22.684Z</lastmod>
     
@@ -163,14 +163,14 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/04/17/binder-why-BBinder-not-released-after-registered-part2/</loc>
+    <loc>https://jekton.github.io/2018/04/07/binder-why-RemoteListenerCallback-works/</loc>
     
     <lastmod>2018-08-18T12:47:22.682Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/04/07/binder-why-RemoteListenerCallback-works/</loc>
+    <loc>https://jekton.github.io/2018/04/17/binder-why-BBinder-not-released-after-registered-part2/</loc>
     
     <lastmod>2018-08-18T12:47:22.682Z</lastmod>
     
@@ -226,14 +226,14 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/07/14/android-arch-LiveData/</loc>
+    <loc>https://jekton.github.io/2018/06/30/android-arch-ViewModel/</loc>
     
     <lastmod>2018-08-18T12:47:22.677Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/06/30/android-arch-ViewModel/</loc>
+    <loc>https://jekton.github.io/2018/07/14/android-arch-LiveData/</loc>
     
     <lastmod>2018-08-18T12:47:22.677Z</lastmod>
     
