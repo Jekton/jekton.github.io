@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jekton.github.io/2018/08/19/way-to-JVM-1/</loc>
+    
+    <lastmod>2018-08-27T10:21:28.153Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jekton.github.io/2018/08/26/flutter-first-app/</loc>
     
     <lastmod>2018-08-26T05:47:56.064Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>https://jekton.github.io/tags/index.html</loc>
     
     <lastmod>2018-08-18T12:47:22.695Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jekton.github.io/search/index.html</loc>
-    
-    <lastmod>2018-08-18T12:47:22.694Z</lastmod>
     
   </url>
   
@@ -51,6 +51,20 @@
   </url>
   
   <url>
+    <loc>https://jekton.github.io/search/index.html</loc>
+    
+    <lastmod>2018-08-18T12:47:22.694Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jekton.github.io/2018/07/22/openjdk-build/</loc>
+    
+    <lastmod>2018-08-18T12:47:22.693Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jekton.github.io/2018/06/23/socket-intro/</loc>
     
     <lastmod>2018-08-18T12:47:22.693Z</lastmod>
@@ -65,14 +79,7 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/07/22/openjdk-build/</loc>
-    
-    <lastmod>2018-08-18T12:47:22.693Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jekton.github.io/2018/05/25/logd-reading/</loc>
+    <loc>https://jekton.github.io/2018/05/16/logd-writing-part1/</loc>
     
     <lastmod>2018-08-18T12:47:22.692Z</lastmod>
     
@@ -86,16 +93,23 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/05/16/logd-writing-part1/</loc>
+    <loc>https://jekton.github.io/2018/05/11/logd-overview/</loc>
     
     <lastmod>2018-08-18T12:47:22.692Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/05/11/logd-overview/</loc>
+    <loc>https://jekton.github.io/2018/05/25/logd-reading/</loc>
     
     <lastmod>2018-08-18T12:47:22.692Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jekton.github.io/2018/07/25/jdk-FutureTask/</loc>
+    
+    <lastmod>2018-08-18T12:47:22.691Z</lastmod>
     
   </url>
   
@@ -108,13 +122,6 @@
   
   <url>
     <loc>https://jekton.github.io/2018/07/22/java-translation-jep-193-Variable-Handles/</loc>
-    
-    <lastmod>2018-08-18T12:47:22.691Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jekton.github.io/2018/07/25/jdk-FutureTask/</loc>
     
     <lastmod>2018-08-18T12:47:22.691Z</lastmod>
     
@@ -163,13 +170,6 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/04/07/binder-why-RemoteListenerCallback-works/</loc>
-    
-    <lastmod>2018-08-18T12:47:22.682Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jekton.github.io/2018/04/17/binder-why-BBinder-not-released-after-registered-part2/</loc>
     
     <lastmod>2018-08-18T12:47:22.682Z</lastmod>
@@ -177,14 +177,21 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/04/11/binder-startup-of-service-manager/</loc>
+    <loc>https://jekton.github.io/2018/04/07/binder-why-RemoteListenerCallback-works/</loc>
+    
+    <lastmod>2018-08-18T12:47:22.682Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jekton.github.io/2018/04/16/binder-why-BBinder-not-released-after-registered-part1/</loc>
     
     <lastmod>2018-08-18T12:47:22.681Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/04/16/binder-why-BBinder-not-released-after-registered-part1/</loc>
+    <loc>https://jekton.github.io/2018/04/11/binder-startup-of-service-manager/</loc>
     
     <lastmod>2018-08-18T12:47:22.681Z</lastmod>
     
@@ -226,14 +233,14 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/07/14/android-arch-LiveData/</loc>
+    <loc>https://jekton.github.io/2018/06/30/android-arch-ViewModel/</loc>
     
     <lastmod>2018-08-18T12:47:22.677Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/06/30/android-arch-ViewModel/</loc>
+    <loc>https://jekton.github.io/2018/07/14/android-arch-LiveData/</loc>
     
     <lastmod>2018-08-18T12:47:22.677Z</lastmod>
     
