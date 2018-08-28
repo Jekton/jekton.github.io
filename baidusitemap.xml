@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://jekton.github.io/2018/08/26/flutter-ui-basic/</loc>
-    <lastmod>2018-08-28T10:03:14.000Z</lastmod>
+    <lastmod>2018-08-28T10:10:50.521Z</lastmod>
     <data>
         <display>
         <title>Flutter 开发（2）- UI控件和布局</title>
@@ -153,6 +153,28 @@
 
     
   <url>
+    <loc>https://jekton.github.io/2018/05/11/logd-overview/</loc>
+    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
+    <data>
+        <display>
+        <title>Android log 机制 - logd 总览</title>
+        <pubTime>2018-05-11T01:14:18.000Z</pubTime>
+        
+        <tag>Android source</tag>
+         
+        <tag>logd</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://jekton.github.io/2018/05/25/logd-reading/</loc>
     <lastmod>2018-08-18T12:47:22.692Z</lastmod>
     <data>
@@ -203,28 +225,6 @@
         <display>
         <title>Android log 机制 - logd 如何接收 log 数据（上）</title>
         <pubTime>2018-05-16T11:43:29.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-        <tag>logd</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://jekton.github.io/2018/05/11/logd-overview/</loc>
-    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
-    <data>
-        <display>
-        <title>Android log 机制 - logd 总览</title>
-        <pubTime>2018-05-11T01:14:18.000Z</pubTime>
         
         <tag>Android source</tag>
          
@@ -563,12 +563,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/04/12/binder-service-registration-part1/</loc>
+    <loc>https://jekton.github.io/2018/04/18/binder-service-query/</loc>
     <lastmod>2018-08-18T12:47:22.678Z</lastmod>
     <data>
         <display>
-        <title>binder 情景分析 - service 的注册（上）</title>
-        <pubTime>2018-04-12T13:19:46.000Z</pubTime>
+        <title>binder 情景分析 - service 查询</title>
+        <pubTime>2018-04-18T11:30:33.000Z</pubTime>
         
         <tag>Android source</tag>
          
@@ -585,12 +585,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/04/18/binder-service-query/</loc>
+    <loc>https://jekton.github.io/2018/04/12/binder-service-registration-part1/</loc>
     <lastmod>2018-08-18T12:47:22.678Z</lastmod>
     <data>
         <display>
-        <title>binder 情景分析 - service 查询</title>
-        <pubTime>2018-04-18T11:30:33.000Z</pubTime>
+        <title>binder 情景分析 - service 的注册（上）</title>
+        <pubTime>2018-04-12T13:19:46.000Z</pubTime>
         
         <tag>Android source</tag>
          
@@ -627,12 +627,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/06/30/android-arch-ViewModel/</loc>
+    <loc>https://jekton.github.io/2018/07/14/android-arch-LiveData/</loc>
     <lastmod>2018-08-18T12:47:22.677Z</lastmod>
     <data>
         <display>
-        <title>Android arch components 源码分析（1）—— ViewModel</title>
-        <pubTime>2018-06-30T05:26:59.000Z</pubTime>
+        <title>Android arch components 源码分析（3）—— LiveData</title>
+        <pubTime>2018-07-14T07:42:06.000Z</pubTime>
         
         <tag>Android arch</tag>
          
@@ -647,12 +647,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/07/14/android-arch-LiveData/</loc>
+    <loc>https://jekton.github.io/2018/06/30/android-arch-ViewModel/</loc>
     <lastmod>2018-08-18T12:47:22.677Z</lastmod>
     <data>
         <display>
-        <title>Android arch components 源码分析（3）—— LiveData</title>
-        <pubTime>2018-07-14T07:42:06.000Z</pubTime>
+        <title>Android arch components 源码分析（1）—— ViewModel</title>
+        <pubTime>2018-06-30T05:26:59.000Z</pubTime>
         
         <tag>Android arch</tag>
          
