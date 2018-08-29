@@ -158,10 +158,11 @@ class _TitleSection extends StatelessWidget {
 
 这里，我们把这一整个区域的 UI 用一个类 `_TitleSection` 封装起来。下面我们总结一下：
 1. layout 类型的控件分两种：只含一个子元素或包含多个子元素。前者使用参数 `child`，后者则是 `children`。
-2. 为了让控件具有 padding、margin 和 width/height 等，我们可以使用一个 Container 把它包起来。
-3. Row/Column 提供了类似于 `LinearLayout` 的功能。
+2. 把控件按功能分，又可以分为展示内容的控件，如 Text；和用于布局的控件，如 Container。当然，还有其他类型的控件用于提供动画、手势等。
+3. 为了让控件具有 padding、margin 和 width/height 等，我们可以使用一个 Container 把它包起来。
+4. Row/Column 提供了类似于 `LinearLayout` 的功能。
 
-建议读者粗略浏览一下 [https://flutter.io/widgets/](https://flutter.io/widgets/)，大概 Flutter 提供了哪些 widget 和它们对应的功能。以后在开发过程中，有需要的时候再详细查看相关文档。
+建议读者粗略浏览一下 [https://flutter.io/widgets/](https://flutter.io/widgets/)，大概了解 Flutter 提供的 widget 和它们对应的功能。以后在开发过程中，有需要的时候再详细查看相关文档。
 
 
 ## 对齐
@@ -170,6 +171,7 @@ class _TitleSection extends StatelessWidget {
 
 ![](button-section-diagram.png)
 
+实现如下：
 ```dart
 Widget _buildButtonColumn(BuildContext context, IconData icon, String label) {
   final color = Theme.of(context).primaryColor;
@@ -224,7 +226,7 @@ class MyApp extends StatelessWidget {
 ![](column-diagram.png)
 ![](row-diagram.png)
 
-关于 `mainAxisAlignment`，更多的信息可以查看 [https://docs.flutter.io/flutter/rendering/MainAxisAlignment-class.html](https://docs.flutter.io/flutter/rendering/MainAxisAlignment-class.html)。
+`MainAxisAlignment` 的更多的信息，可以查看 [https://docs.flutter.io/flutter/rendering/MainAxisAlignment-class.html](https://docs.flutter.io/flutter/rendering/MainAxisAlignment-class.html)。
 
 
 ## 全部放到一起
