@@ -4,7 +4,7 @@
   <url>
     <loc>https://jekton.github.io/2018/08/29/flutter-ux-basix/</loc>
     
-    <lastmod>2018-08-30T15:49:48.270Z</lastmod>
+    <lastmod>2018-08-30T15:52:02.381Z</lastmod>
     
   </url>
   
@@ -58,13 +58,6 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/categories/index.html</loc>
-    
-    <lastmod>2018-08-18T12:47:22.694Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jekton.github.io/google9bbc3a252e502b42.html</loc>
     
     <lastmod>2018-08-18T12:47:22.694Z</lastmod>
@@ -72,9 +65,9 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/07/22/openjdk-build/</loc>
+    <loc>https://jekton.github.io/categories/index.html</loc>
     
-    <lastmod>2018-08-18T12:47:22.693Z</lastmod>
+    <lastmod>2018-08-18T12:47:22.694Z</lastmod>
     
   </url>
   
@@ -93,14 +86,21 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/05/25/logd-reading/</loc>
+    <loc>https://jekton.github.io/2018/07/22/openjdk-build/</loc>
+    
+    <lastmod>2018-08-18T12:47:22.693Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jekton.github.io/2018/05/17/logd-prune/</loc>
     
     <lastmod>2018-08-18T12:47:22.692Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/05/17/logd-prune/</loc>
+    <loc>https://jekton.github.io/2018/05/25/logd-reading/</loc>
     
     <lastmod>2018-08-18T12:47:22.692Z</lastmod>
     
@@ -121,6 +121,13 @@
   </url>
   
   <url>
+    <loc>https://jekton.github.io/2018/07/25/jdk-FutureTask/</loc>
+    
+    <lastmod>2018-08-18T12:47:22.691Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jekton.github.io/2018/03/20/java-synchronized-keyword/</loc>
     
     <lastmod>2018-08-18T12:47:22.691Z</lastmod>
@@ -135,13 +142,6 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/07/25/jdk-FutureTask/</loc>
-    
-    <lastmod>2018-08-18T12:47:22.691Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jekton.github.io/2018/05/11/how-to-read-android-source-code/</loc>
     
     <lastmod>2018-08-18T12:47:22.685Z</lastmod>
@@ -149,7 +149,7 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/04/23/handler-understand-handler-framework/</loc>
+    <loc>https://jekton.github.io/2018/04/27/handler-uncover-the-messagequeue-part2/</loc>
     
     <lastmod>2018-08-18T12:47:22.684Z</lastmod>
     
@@ -170,7 +170,7 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/04/27/handler-uncover-the-messagequeue-part2/</loc>
+    <loc>https://jekton.github.io/2018/04/23/handler-understand-handler-framework/</loc>
     
     <lastmod>2018-08-18T12:47:22.684Z</lastmod>
     
@@ -226,14 +226,14 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/04/18/binder-service-query/</loc>
+    <loc>https://jekton.github.io/2018/04/12/binder-service-registration-part1/</loc>
     
     <lastmod>2018-08-18T12:47:22.678Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/04/12/binder-service-registration-part1/</loc>
+    <loc>https://jekton.github.io/2018/04/18/binder-service-query/</loc>
     
     <lastmod>2018-08-18T12:47:22.678Z</lastmod>
     
