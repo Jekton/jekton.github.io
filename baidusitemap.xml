@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://jekton.github.io/2018/09/01/flutter-io-basic/</loc>
-    <lastmod>2018-09-02T12:19:19.679Z</lastmod>
+    <lastmod>2018-09-02T12:34:06.306Z</lastmod>
     <data>
         <display>
         <title>Flutter 开发（4）- 文件、存储和网络</title>
@@ -603,12 +603,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/04/18/binder-service-query/</loc>
+    <loc>https://jekton.github.io/2018/04/12/binder-service-registration-part1/</loc>
     <lastmod>2018-08-18T12:47:22.678Z</lastmod>
     <data>
         <display>
-        <title>binder 情景分析 - service 查询</title>
-        <pubTime>2018-04-18T11:30:33.000Z</pubTime>
+        <title>binder 情景分析 - service 的注册（上）</title>
+        <pubTime>2018-04-12T13:19:46.000Z</pubTime>
         
         <tag>Android source</tag>
          
@@ -625,12 +625,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/04/12/binder-service-registration-part1/</loc>
+    <loc>https://jekton.github.io/2018/04/18/binder-service-query/</loc>
     <lastmod>2018-08-18T12:47:22.678Z</lastmod>
     <data>
         <display>
-        <title>binder 情景分析 - service 的注册（上）</title>
-        <pubTime>2018-04-12T13:19:46.000Z</pubTime>
+        <title>binder 情景分析 - service 查询</title>
+        <pubTime>2018-04-18T11:30:33.000Z</pubTime>
         
         <tag>Android source</tag>
          
