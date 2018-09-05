@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>https://jekton.github.io/2018/09/04/dart-tutorial/</loc>
+    <lastmod>2018-09-05T15:05:36.611Z</lastmod>
+    <data>
+        <display>
+        <title>Dart 语言快速入门</title>
+        <pubTime>2018-09-04T01:49:17.000Z</pubTime>
+        
+        <tag>Dart</tag>
+         
+         
+           
+             
+              <breadCrumb title="Dart" url="https://jekton.github.io/categories/Dart/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://jekton.github.io/2018/09/01/flutter-io-basic/</loc>
     <lastmod>2018-09-02T12:34:06.306Z</lastmod>
     <data>
@@ -129,6 +149,28 @@
     
     
   <url>
+    <loc>https://jekton.github.io/2018/06/23/socket-intro/</loc>
+    <lastmod>2018-08-18T12:47:22.693Z</lastmod>
+    <data>
+        <display>
+        <title>TCP/IP、Socket 和协议设计</title>
+        <pubTime>2018-06-23T01:12:16.000Z</pubTime>
+        
+        <tag>Java</tag>
+         
+        <tag>Socket</tag>
+         
+         
+           
+             
+              <breadCrumb title="Java" url="https://jekton.github.io/categories/Java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://jekton.github.io/2018/07/22/openjdk-build/</loc>
     <lastmod>2018-08-18T12:47:22.693Z</lastmod>
     <data>
@@ -164,28 +206,6 @@
            
              
               <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://jekton.github.io/2018/06/23/socket-intro/</loc>
-    <lastmod>2018-08-18T12:47:22.693Z</lastmod>
-    <data>
-        <display>
-        <title>TCP/IP、Socket 和协议设计</title>
-        <pubTime>2018-06-23T01:12:16.000Z</pubTime>
-        
-        <tag>Java</tag>
-         
-        <tag>Socket</tag>
-         
-         
-           
-             
-              <breadCrumb title="Java" url="https://jekton.github.io/categories/Java/"/>
           
         </display>
     </data>
@@ -281,16 +301,14 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/03/20/java-synchronized-keyword/</loc>
+    <loc>https://jekton.github.io/2018/07/22/java-translation-jep-193-Variable-Handles/</loc>
     <lastmod>2018-08-18T12:47:22.691Z</lastmod>
     <data>
         <display>
-        <title>synchronized 那些事</title>
-        <pubTime>2018-03-20T12:19:39.000Z</pubTime>
+        <title>翻译 - JEP 193：Variable Handles</title>
+        <pubTime>2018-07-22T05:10:24.000Z</pubTime>
         
         <tag>Java</tag>
-         
-        <tag>synchronized</tag>
          
          
            
@@ -303,14 +321,16 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/07/22/java-translation-jep-193-Variable-Handles/</loc>
+    <loc>https://jekton.github.io/2018/03/20/java-synchronized-keyword/</loc>
     <lastmod>2018-08-18T12:47:22.691Z</lastmod>
     <data>
         <display>
-        <title>翻译 - JEP 193：Variable Handles</title>
-        <pubTime>2018-07-22T05:10:24.000Z</pubTime>
+        <title>synchronized 那些事</title>
+        <pubTime>2018-03-20T12:19:39.000Z</pubTime>
         
         <tag>Java</tag>
+         
+        <tag>synchronized</tag>
          
          
            
@@ -471,28 +491,6 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/04/07/binder-why-RemoteListenerCallback-works/</loc>
-    <lastmod>2018-08-18T12:47:22.682Z</lastmod>
-    <data>
-        <display>
-        <title>binder 情景分析 - RemoteListenerCallback 为什么可以正常工作？</title>
-        <pubTime>2018-04-07T07:49:44.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-        <tag>Binder</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://jekton.github.io/2018/04/17/binder-why-BBinder-not-released-after-registered-part2/</loc>
     <lastmod>2018-08-18T12:47:22.682Z</lastmod>
     <data>
@@ -515,12 +513,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/04/11/binder-startup-of-service-manager/</loc>
-    <lastmod>2018-08-18T12:47:22.681Z</lastmod>
+    <loc>https://jekton.github.io/2018/04/07/binder-why-RemoteListenerCallback-works/</loc>
+    <lastmod>2018-08-18T12:47:22.682Z</lastmod>
     <data>
         <display>
-        <title>binder 情景分析 - service manager (context manager) 的启动</title>
-        <pubTime>2018-04-11T11:58:52.000Z</pubTime>
+        <title>binder 情景分析 - RemoteListenerCallback 为什么可以正常工作？</title>
+        <pubTime>2018-04-07T07:49:44.000Z</pubTime>
         
         <tag>Android source</tag>
          
@@ -543,6 +541,28 @@
         <display>
         <title>binder 情景分析 - 为什么注册后的 BBinder 不会被意外释放？（上）—— 理解 RefBase、sp、wp</title>
         <pubTime>2018-04-16T14:15:32.000Z</pubTime>
+        
+        <tag>Android source</tag>
+         
+        <tag>Binder</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://jekton.github.io/2018/04/11/binder-startup-of-service-manager/</loc>
+    <lastmod>2018-08-18T12:47:22.681Z</lastmod>
+    <data>
+        <display>
+        <title>binder 情景分析 - service manager (context manager) 的启动</title>
+        <pubTime>2018-04-11T11:58:52.000Z</pubTime>
         
         <tag>Android source</tag>
          
