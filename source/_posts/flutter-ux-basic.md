@@ -3,7 +3,7 @@ title: Flutter 开发（3）- 交互、动画、手势和事件处理
 date: 2018-08-29 09:06:41
 categories: Flutter
 tags: Flutter
-description: 在这一篇文章中，我们将通过实现一个 echo 客户端的前端页面来学习如何在 Flutter 中进行页面的跳转、手势事件处理。至于动画，我们弄一个小圆点，让他沿着正弦曲线运动，同时改变自身的颜色。
+description: 在这一篇文章中，我们首先介绍手势事件的处理和页面跳转的基础知识，然后通过实现一个 echo 客户端的前端页面来加强学习；最后我们再学习内置的动画 Widget 以及如何自定义动画效果。
 ---
 
 > 本文由`玉刚说写作平`台提供写作赞助
@@ -11,14 +11,198 @@ description: 在这一篇文章中，我们将通过实现一个 echo 客户端�
 > 原作者：`水晶虾饺`
 > 版权声明：本文版权归微信公众号`玉刚说`所有，未经许可，不得以任何形式转载
 
-在这一篇文章中，我们将通过实现一个 echo 客户端的前端页面来学习如何在 Flutter 中进行页面的跳转、手势事件处理。至于动画，我们弄一个小圆点，让他沿着正弦曲线运动，同时改变自身的颜色。
+在这一篇文章中，我们首先介绍手势事件的处理和页面跳转的基础知识，然后通过实现一个 echo 客户端的前端页面来加强学习；最后我们再学习内置的动画 Widget 以及如何自定义动画效果。
+
+# 手势处理
+
+## 按钮点击
+
+为了获取按钮的点击事件，只需要设置 `onPressed` 参数就可以了：
+```dart
+class TestWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return RaisedButton(
+      child: Text('click'),
+      onPressed: () => debugPrint('clicked'),
+    );
+  }
+}
+```
+
+## 任意控件的手势事件
+
+跟 button 不同，大多数的控件没有手势事件监听函数可以设置，为了监听这些控件上的手势事件，我们需要使用另一个控件——`GestureDetector`（没错，它也是一个控件）：
+```dart
+class TestWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      child: Text('text'),
+      onTap: () => debugPrint('clicked'),
+    );
+  }
+}
+```
+除了上面代码使用到的 `onTap`，`GestureDetector` 还支持许多其他事件：
+- onTapDown：按下
+- onTap：点击动作
+- onTapUp：抬起
+- onTapCancel：前面触发了 onTapDown，但并没有完成一个 onTap 动作
+- onDoubleTap：双击
+- onLongPress：长按
+- onScaleStart, onScaleUpdate, onScaleEnd：缩放
+- onVerticalDragDown, onVerticalDragStart, onVerticalDragUpdate, onVerticalDragEnd, onVerticalDragCancel, onVerticalDragUpdate：在竖直方向上移动
+- onHorizontalDragDown, onHorizontalDragStart, onHorizontalDragUpdate, onHorizontalDragEnd, onHorizontalDragCancel, onHorizontalDragUpdate：在水平方向上移动
+- onPanDown, onPanStart, onPanUpdate, onPanEnd, onPanCancel：拖曳（水平、竖直方向上移动）
+
+如果同时设置了 onVerticalXXX 和 onHorizontalXXX，在一个手势里，只有一个会触发（如果用户首先在水平方向移动，则整个过程只触发 onHorizontalUpdate；竖直方向的类似）
+
+这里要说明的是，onVerticalXXX/onHorizontalXXX 和 onPanXXX 不能同时设置。如果同时需要水平、竖直方向的移动，使用 onPanXXX。
+
+如果读者希望在用户点击的时候能够有个水波纹效果，可以使用 `InkWell`，它的用法跟 `GestureDetector` 类似，只是少了拖动相关的手势（毕竟，这个水波纹效果只有在点击的时候才有意义）。
 
 
-# 手势处理、获取文本
+## 原始手势事件监听
 
-本节我们来实现一个用户输入的页面。UI 很简单，就是一个文本框和一个按钮。
+`GestureDetector` 在绝大部分时候都能够满足我们的需求，如果真的满足不了，我们还可以使用最原始的 `Listener` 控件。
+```dart
+class TestWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Listener(
+      child: Text('text'),
+      onPointerDown: (event) => print('onPointerDown'),
+      onPointerUp: (event) => print('onPointerUp'),
+      onPointerMove: (event) => print('onPointerMove'),
+      onPointerCancel: (event) => print('onPointerCancel'),
+    );
+  }
+}
+```
 
-为了获取文本，我们可以使用 `TextField` 并给它设置一个 `TextEditingController`。通过这个 `controller`，我们就能够拿到输入框中的文本。由于这里需要响应用户事件，必须使用 `StatefulWidget`：
+
+# 在页面间跳转
+
+Flutter 里所有的东西都是 `widget`，所以，一个页面，也是 `widget`。为了调整到新的页面，我们可以 push 一个 route 到 `Navigator` 管理的栈中。
+```dart
+Navigator.push(
+  context,
+  MaterialPageRoute(builder: (_) => SecondScreen())
+);
+```
+
+需要返回的话，pop 掉就可以了：
+```dart
+Navigator.pop(context);
+```
+
+下面是完整的例子：
+```dart
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter navigation',
+      home: FirstScreen(),
+    );
+  }
+}
+
+class FirstScreen extends StatefulWidget {
+  @override
+  State createState() {
+    return _FirstScreenState();
+  }
+}
+class _FirstScreenState extends State<FirstScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('Navigation deme'),),
+      body: Center(
+        child: RaisedButton(
+          child: Text('First screen'),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => SecondScreen())
+            );
+          }
+        ),
+      ),
+    );
+  }
+}
+
+class SecondScreen extends StatefulWidget {
+  @override
+  State createState() {
+    return _SecondScreenState();
+  }
+}
+class _SecondScreenState extends State<SecondScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('Navigation deme'),),
+      body: Center(
+        child: RaisedButton(
+            child: Text('Second screen'),
+            onPressed: () {
+              Navigator.pop(context);
+            }
+        ),
+      ),
+    );
+  }
+}
+```
+
+除了打开一个页面，Flutter 也支持从页面返回数据：
+```dart
+Navigator.pop(context, 'message from second screen');
+```
+
+由于打开页面是异步的，页面的结果通过一个 `Future` 来返回：
+```dart
+onPressed: () async {
+  // Navigator.push 会返回一个 Future<T>，如果你对这里使用的 await不太熟悉，可以参考
+  // https://www.dartlang.org/guides/language/language-tour#asynchrony-support
+  var msg = await Navigator.push(
+    context,
+    MaterialPageRoute(builder: (_) => SecondScreen())
+  );
+  debugPrint('msg = $msg');
+}
+```
+
+我们还可以在 `MaterialApp` 里设置好每个 route 对应的页面，然后使用 `Navigator.pushNamed(context, routeName)` 来打开它们：
+```dart
+MaterialApp(
+  // 从名字叫做 '/' 的 route 开始（也就是 home）
+  initialRoute: '/',
+  routes: {
+    '/': (context) => HomeScreen(),
+    '/about': (context) => AboutScreen(),
+  },
+);
+```
+
+接下来，我们通过实现一个 echo 客户端的前端页面来综合运用前面所学的知识（逻辑部分我们留到下一篇文章再补充）。
+
+# echo 客户端
+
+## 消息输入页
+
+这一节我们来实现一个用户输入的页面。UI 很简单，就是一个文本框和一个按钮。
+
 ```dart
 class MessageForm extends StatefulWidget {
   @override
@@ -57,7 +241,6 @@ class _MessageFormState extends State<MessageForm> {
                   fontSize: 22.0,
                   color: Colors.black54
                 ),
-                // 获取文本的关键，这里要设置一个 controller
                 controller: editController,
                 // 自动获取焦点。这样在页面打开时就会自动弹出输入法
                 autofocus: true,
@@ -106,12 +289,14 @@ class AddMessageScreen extends StatelessWidget {
   }
 }
 ```
-这里的代码其实没有包含太多的新知识，我们只需要机械地加入一个 `controller` 就可以拿到输入框中的文本了。就按钮而言，这里本应该使用 `RaisedButton` 或 `FlatButton`。为了演示如何监听手势事件，我们这里故意自己用 `Container` 做了一个按钮，然后通过 `InkWell` 监听手势事件。`InkWell` 除了上面展示的几个事件外，还带有一个水波纹效果。如果不需要这个水波纹效果，读者可以使用支持更多手势事件的 G`estureDetector`。
+这里的按钮本应该使用 `RaisedButton` 或 `FlatButton`。为了演示如何监听手势事件，我们这里故意自己用 `Container` 做了一个按钮，然后通过 `InkWell` 监听手势事件。`InkWell` 除了上面展示的几个事件外，还带有一个水波纹效果。如果不需要这个水波纹效果，读者也可以使用 `GestureDetector`。
 
 
-# 在页面间跳转
+## 消息列表页面
 
-我们知道，Flutter 里所有的东西都是 `widget`，所以，一个页面，也是 `widget`。我们的 echo 客户端共有两个页面，一个用于展示所有的消息，另一个页面用户输入消息，后者在上一小节我们已经写好了。下面，我们来实现用于展示消息的页面。
+我们的 echo 客户端共有两个页面，一个用于展示所有的消息，另一个页面用户输入消息，后者在上一小节我们已经写好了。下面，我们来实现用于展示消息的页面。
+
+### 页面间跳转
 
 我们的页面包含一个列表和一个按钮，列表用于展示信息，按钮则用来打开上一节我们所实现的 `AddMessageScreen`。这里我们先添加一个按钮并实现页面间的跳转。
 ```dart
@@ -165,26 +350,11 @@ class MyApp extends StatelessWidget {
 }
 ```
 
-Flutter 引入了 route 的概念。为了打开一个新的页面，我们创建一个 `MaterialPageRoute` 并把它 push 到 `Navigator` 管理的栈中。返回前一个页面时，只需要 pop 这个 route 即可。
 
-我们还可以在 `MaterialApp` 里设置好每个 route 对应的页面，然后使用 `Navigator.pushNamed(context, routeName)` 来打开它们：
-```dart
-MaterialApp(
-  // Start the app with the "/" named route. In our case, the app will start
-  // on the FirstScreen Widget
-  initialRoute: '/',
-  routes: {
-    // When we navigate to the "/" route, build the FirstScreen Widget
-    '/': (context) => HomeScreen(),
-    // When we navigate to the "/second" route, build the SecondScreen Widget
-    '/about': (context) => AboutScreen(),
-  },
-);
-```
+但是，上面代码所提供的功能还不够，我们需要从 `AddMessageScreen` 中返回一个消息。
 
-但是，上面代码所提供的功能还不够，我们需要从 `AddMessageScreen` 中返回一个消息。下面我们就来看看如何获取返回值：
+首先我们对数据建模：
 ```dart
-// 首先我们对数据建模
 class Message {
   final String msg;
   final int timestamp;
@@ -196,25 +366,21 @@ class Message {
     return 'Message{msg: $msg, timestamp: $timestamp}';
   }
 }
+```
 
-
+下面是返回数据和接收数据的代码：
+```dart
 onTap: () {
   debugPrint('send: ${editController.text}');
   final msg = Message(
     editController.text,
     DateTime.now().millisecondsSinceEpoch
   );
-  // 为了返回一个值，我们把它传递给 pop
   Navigator.pop(context, msg);
 },
 
-
 floatingActionButton: FloatingActionButton(
   onPressed: () async {
-    // push 一个新的 route 到 Navigator 管理的栈中，以此来打开一个页面
-    // Navigator.push 会返回一个 Future<T>，如果你对这里使用的 await
-    // 不太熟悉，可以参考
-    // https://www.dartlang.org/guides/language/language-tour#asynchrony-support
     final result = await Navigator.push(
         context,
         MaterialPageRoute(builder: (_) => AddMessageScreen())
@@ -226,7 +392,7 @@ floatingActionButton: FloatingActionButton(
 ```
 
 
-# 把数据展示到 ListView
+### 把数据展示到 ListView
 
 ```dart
 class MessageList extends StatefulWidget {
@@ -281,10 +447,6 @@ class MessageListScreen extends StatelessWidget {
       body: MessageList(key: messageListKey),
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
-          // push 一个新的 route 到 Navigator 管理的栈中，以此来打开一个页面
-          // Navigator.push 会返回一个 Future<T>，如果你对这里使用的 await
-          // 不太熟悉，可以参考
-          // https://www.dartlang.org/guides/language/language-tour#asynchrony-support
           final result = await Navigator.push(
               context,
               MaterialPageRoute(builder: (_) => AddMessageScreen())
@@ -303,7 +465,7 @@ class MessageListScreen extends StatelessWidget {
 ```
 引入一个 `GlobalKey` 的原因在于，`MessageListScreen` 需要把从 `AddMessageScreen` 返回的数据放到 `_MessageListState` 中，而我们无法从 `MessageList` 拿到这个 state。
 
-`GlobalKey` 的是应用全局唯一的 key，把这个 key 设置给 `MessageList`，我们就能够通过这个 key 拿到对应的 `statefulWidget` 的 `state`。
+`GlobalKey` 的是应用全局唯一的 key，把这个 key 设置给 `MessageList` 后，我们就能够通过这个 key 拿到对应的 `statefulWidget` 的 `state`。
 
 现在，整体的效果是这个样子的：
 ![message-list](message-list.gif)
@@ -315,16 +477,148 @@ cd flutter_demo
 git checkout ux-basic
 ```
 
-前面我们说要写一个 echo 程序，到目前为止只是实现了一些 UI，剩余的逻辑我们将在下一篇文章完成。最后，由于没能在我们的例子里找到适合使用动画的地方，下面我们在一个独立的上下文里学习 Flutter 的动画。
-
 
 # 动画
 
-在这一节我们来画一个小圆点，它往复不断地在正弦曲线上运动。
+Flutter 动画的核心是 `Animation<T>`，`Animation` 接受一个时钟信号（`vsync`），转换为 `T` 值输出。它控制着动画的进度和状态，但不参与图像的绘制。最基本的 `Animation` 是 `AnimationController`，它输出 [0, 1] 之间的值。
+
+## 使用内置的 Widget 完成动画
+
+为了使用动画，我们可以用 Flutter 提供的 `AnimatedContainer`、`FadeTransition`、`ScaleTransition` 和 `RotationTransition` 等 Widget 来完成。
+
+下面我们就来演示如何使用 `ScaleTransition`：
+```dart
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'animation',
+      home: Scaffold(
+        appBar: AppBar(title: Text('animation'),),
+        body: AnimWidget(),
+      ),
+    );
+  }
+}
+
+// 动画是有状态的
+class AnimWidget extends StatefulWidget {
+  @override
+  State createState() {
+    return _AnimWidgetState();
+  }
+}
+
+class _AnimWidgetState extends State<AnimWidget>
+    with SingleTickerProviderStateMixin {
+  var controller;
+
+  @override
+  void initState() {
+    super.initState();
+    controller = AnimationController(
+      // 动画的时长
+      duration: Duration(milliseconds: 5000),
+      // 提供 vsync 最简单的方式，就是直接继承 SingleTickerProviderStateMixin
+      vsync: this,
+    );
+    // 调用 forward 方法开始动画
+    controller.forward();
+  }
+  @override
+  Widget build(BuildContext context) {
+    return ScaleTransition(
+      child: FlutterLogo(size: 200.0),
+      scale: controller,
+    );
+  }
+}
+```
+
+`AnimationController` 的输出是线性的。非线性的效果可以使用 `CurveAnimation` 来实现：
+```dart
+class _AnimWidgetState extends State<AnimWidget>
+    with SingleTickerProviderStateMixin {
+
+  AnimationController controller;
+  CurvedAnimation curve;
+
+  @override
+  void initState() {
+    super.initState();
+    controller = AnimationController(
+      // 动画的时长
+      duration: Duration(milliseconds: 5000),
+      // 提供 vsync 最简单的方式，就是直接继承 SingleTickerProviderStateMixin
+      vsync: this,
+    );
+    curve = CurvedAnimation(
+      parent: controller,
+      // 更多的效果，参考 https://docs.flutter.io/flutter/animation/Curves-class.html
+      curve: Curves.easeInOut,
+    );
+    // 调用 forward 方法开始动画
+    controller.forward();
+  }
+  @override
+  Widget build(BuildContext context) {
+    return ScaleTransition(
+      child: FlutterLogo(size: 200.0),
+      // 注意，这里我们把原先的 controller 改为了 curve
+      scale: curve,
+    );
+  }
+}
+```
+
+当然，我们还可以组合不同的动画：
+```dart
+class _AnimWidgetState extends State<AnimWidget>
+    with SingleTickerProviderStateMixin {
+  // ...
+
+  @override
+  Widget build(BuildContext context) {
+    var scaled = ScaleTransition(
+      child: FlutterLogo(size: 200.0),
+      scale: curve,
+    );
+    return FadeTransition(
+      child: scaled,
+      opacity: curve,
+    );
+  }
+}
+```
+
+更多的动画控件，读者可以参考 [https://flutter.io/widgets/animation/](https://flutter.io/widgets/animation/)。
+
+## 自定义动画效果
+
+上一节我们使用 Flutter 内置的 `Widget` 来实现动画。他们虽然能够完成日常开发的大部分需求，但总有一些时候不太适用。这时我们就得自己实现动画效果了。
+
+前面我们说，`AnimationController` 的输出在 [0, 1] 之间，这往往对我们需要实现的动画效果不太方便。为了将数值从 [0, 1] 映射到目标空间，可以使用 `Tween`：
+```dart
+animationValue = Tween(begin: 0.0, end: 200.0).animate(controller)
+    // 每一帧都会触发 listener 回调
+    ..addListener(() {
+      // animationValue.value 随着动画的进行不断地变化。我们利用这个值来实现
+      // 动画效果
+      print('value = ${animationValue.value}');
+    });
+```
+
+下面我们来画一个小圆点，让它往复不断地在正弦曲线上运动。
 
 ![](sin-curve.gif)
 
-下面我们先来实现小圆点沿着曲线运动的效果：
+先来实现小圆点沿着曲线运动的效果：
 ```dart
 import 'dart:async';
 import 'dart:math' as math;
@@ -358,9 +652,6 @@ class _AnimationState extends State<AnimationDemoView>
   }
 
   void _initState() {
-    // 1. 创建一个 Animation<T>，最简单的方式就是直接使用 AnimationController。
-    // Animation 用户控制动画的进度、状态，但它并不关心屏幕上是什么东西在做动画。
-    // AnimationController 输出的值在 0 ~ 1 之间
     controller = AnimationController(
         duration: const Duration(milliseconds: 2000),
         // 注意类定义的 with SingleTickerProviderStateMixin，提供 vsync 最简单的方法
@@ -372,17 +663,12 @@ class _AnimationState extends State<AnimationDemoView>
     final mediaQueryData = MediaQuery.of(context);
     final displayWidth = mediaQueryData.size.width;
     debugPrint('width = $displayWidth');
-    // 2. 我们用 Tween 把 controller 输出的 0 ~ 1 之间的值映射到 [begin, end]
-    // Tween.animate(controller) 返回一个 Animatable<T>，通过这个 Animatable<T> 我们
-    // 可以获取映射过的值
     left = Tween(begin: padding, end: displayWidth - padding).animate(controller)
-      // 每一帧都会回调这里添加的回调函数
       ..addListener(() {
-        // 3. 调用 setState 触发他重新 build 一个 Widget。在 build 方法里，我们根据
-        //    Animatable<T> 的当前值来创建 Widget，达到动画的效果（类似 Android 的属
-        //    性动画）。
+        // 调用 setState 触发他重新 build 一个 Widget。在 build 方法里，我们根据
+        // Animatable<T> 的当前值来创建 Widget，达到动画的效果（类似 Android 的属性动画）。
         setState(() {
-          // nothing have to do
+          // have nothing to do
         });
       })
       // 监听动画状态变化
@@ -399,7 +685,6 @@ class _AnimationState extends State<AnimationDemoView>
           controller.forward();
         }
       });
-    // 4. 开始动画
     controller.forward();
   }
 
@@ -497,4 +782,7 @@ cd flutter_demo
 git checkout sin-curve
 ```
 
-在这个例子中，我们还可以加多一个效果，让小圆点在运动的过程中大小也不断变化，这个就留给读者作为练习。更多的 Flutter 动画知识，可以参考 [https://flutter.io/animations/](https://flutter.io/animations/)。
+在这个例子中，我们还可以加多一些效果，比方说让小圆点在运动的过程中大小也不断变化、使用 `CurveAnimation` 改变它运动的速度，这些就留给读者作为练习吧。
+
+
+
