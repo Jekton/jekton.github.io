@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jekton.github.io/2018/08/26/flutter-ui-basic/</loc>
+    
+    <lastmod>2018-09-09T03:08:29.338Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jekton.github.io/2018/09/06/flutter-package-development/</loc>
+    
+    <lastmod>2018-09-06T03:29:04.051Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jekton.github.io/2018/09/04/dart-tutorial/</loc>
     
-    <lastmod>2018-09-05T15:05:36.611Z</lastmod>
+    <lastmod>2018-09-05T15:06:28.089Z</lastmod>
     
   </url>
   
@@ -19,13 +33,6 @@
     <loc>https://jekton.github.io/2018/08/29/flutter-ux-basic/</loc>
     
     <lastmod>2018-08-31T00:40:43.744Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jekton.github.io/2018/08/26/flutter-ui-basic/</loc>
-    
-    <lastmod>2018-08-30T07:12:21.046Z</lastmod>
     
   </url>
   
@@ -65,13 +72,6 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/about/index.html</loc>
-    
-    <lastmod>2018-08-18T12:47:22.694Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jekton.github.io/search/index.html</loc>
     
     <lastmod>2018-08-18T12:47:22.694Z</lastmod>
@@ -86,14 +86,21 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/06/23/socket-intro/</loc>
+    <loc>https://jekton.github.io/about/index.html</loc>
+    
+    <lastmod>2018-08-18T12:47:22.694Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jekton.github.io/2018/07/22/openjdk-build/</loc>
     
     <lastmod>2018-08-18T12:47:22.693Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/07/22/openjdk-build/</loc>
+    <loc>https://jekton.github.io/2018/06/23/socket-intro/</loc>
     
     <lastmod>2018-08-18T12:47:22.693Z</lastmod>
     
@@ -107,14 +114,14 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/05/25/logd-reading/</loc>
+    <loc>https://jekton.github.io/2018/05/11/logd-overview/</loc>
     
     <lastmod>2018-08-18T12:47:22.692Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/05/17/logd-prune/</loc>
+    <loc>https://jekton.github.io/2018/05/25/logd-reading/</loc>
     
     <lastmod>2018-08-18T12:47:22.692Z</lastmod>
     
@@ -128,21 +135,21 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/05/11/logd-overview/</loc>
+    <loc>https://jekton.github.io/2018/05/17/logd-prune/</loc>
     
     <lastmod>2018-08-18T12:47:22.692Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/07/22/java-translation-jep-193-Variable-Handles/</loc>
+    <loc>https://jekton.github.io/2018/03/20/java-synchronized-keyword/</loc>
     
     <lastmod>2018-08-18T12:47:22.691Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/03/20/java-synchronized-keyword/</loc>
+    <loc>https://jekton.github.io/2018/07/22/java-translation-jep-193-Variable-Handles/</loc>
     
     <lastmod>2018-08-18T12:47:22.691Z</lastmod>
     
@@ -163,13 +170,6 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/06/20/glide-mem-cache1/</loc>
-    
-    <lastmod>2018-08-18T12:47:22.684Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jekton.github.io/2018/04/24/handler-uncover-the-messagequeue-part1/</loc>
     
     <lastmod>2018-08-18T12:47:22.684Z</lastmod>
@@ -178,6 +178,13 @@
   
   <url>
     <loc>https://jekton.github.io/2018/04/23/handler-understand-handler-framework/</loc>
+    
+    <lastmod>2018-08-18T12:47:22.684Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jekton.github.io/2018/06/20/glide-mem-cache1/</loc>
     
     <lastmod>2018-08-18T12:47:22.684Z</lastmod>
     
@@ -261,14 +268,14 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/06/30/android-arch-ViewModel/</loc>
+    <loc>https://jekton.github.io/2018/07/14/android-arch-LiveData/</loc>
     
     <lastmod>2018-08-18T12:47:22.677Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/07/14/android-arch-LiveData/</loc>
+    <loc>https://jekton.github.io/2018/06/30/android-arch-ViewModel/</loc>
     
     <lastmod>2018-08-18T12:47:22.677Z</lastmod>
     

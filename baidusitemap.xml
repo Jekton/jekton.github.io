@@ -4,11 +4,51 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/09/04/dart-tutorial/</loc>
-    <lastmod>2018-09-05T15:05:36.611Z</lastmod>
+    <loc>https://jekton.github.io/2018/08/26/flutter-ui-basic/</loc>
+    <lastmod>2018-09-09T03:08:29.338Z</lastmod>
     <data>
         <display>
-        <title>Dart 语言快速入门</title>
+        <title>Flutter 开发（2）- UI控件和布局</title>
+        <pubTime>2018-08-26T07:33:41.000Z</pubTime>
+        
+        <tag>Flutter</tag>
+         
+         
+           
+             
+              <breadCrumb title="Flutter" url="https://jekton.github.io/categories/Flutter/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://jekton.github.io/2018/09/06/flutter-package-development/</loc>
+    <lastmod>2018-09-06T03:29:04.051Z</lastmod>
+    <data>
+        <display>
+        <title>flutter-package-development</title>
+        <pubTime>2018-09-06T01:34:02.000Z</pubTime>
+        
+        <tag>Flutter</tag>
+         
+         
+           
+             
+              <breadCrumb title="Flutter" url="https://jekton.github.io/categories/Flutter/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://jekton.github.io/2018/09/04/dart-tutorial/</loc>
+    <lastmod>2018-09-05T15:06:28.089Z</lastmod>
+    <data>
+        <display>
+        <title>Dart 语言入门</title>
         <pubTime>2018-09-04T01:49:17.000Z</pubTime>
         
         <tag>Dart</tag>
@@ -50,26 +90,6 @@
         <display>
         <title>Flutter 开发（3）- 交互、动画、手势和事件处理</title>
         <pubTime>2018-08-29T01:06:41.000Z</pubTime>
-        
-        <tag>Flutter</tag>
-         
-         
-           
-             
-              <breadCrumb title="Flutter" url="https://jekton.github.io/categories/Flutter/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://jekton.github.io/2018/08/26/flutter-ui-basic/</loc>
-    <lastmod>2018-08-30T07:12:21.046Z</lastmod>
-    <data>
-        <display>
-        <title>Flutter 开发（2）- UI控件和布局</title>
-        <pubTime>2018-08-26T07:33:41.000Z</pubTime>
         
         <tag>Flutter</tag>
          
@@ -149,6 +169,26 @@
     
     
   <url>
+    <loc>https://jekton.github.io/2018/07/22/openjdk-build/</loc>
+    <lastmod>2018-08-18T12:47:22.693Z</lastmod>
+    <data>
+        <display>
+        <title>个人记录帖 - 编译 OpenJDK 10</title>
+        <pubTime>2018-07-22T01:32:41.000Z</pubTime>
+        
+        <tag>openjdk</tag>
+         
+         
+           
+             
+              <breadCrumb title="JVM" url="https://jekton.github.io/categories/JVM/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://jekton.github.io/2018/06/23/socket-intro/</loc>
     <lastmod>2018-08-18T12:47:22.693Z</lastmod>
     <data>
@@ -171,98 +211,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/07/22/openjdk-build/</loc>
-    <lastmod>2018-08-18T12:47:22.693Z</lastmod>
-    <data>
-        <display>
-        <title>个人记录帖 - 编译 OpenJDK 10</title>
-        <pubTime>2018-07-22T01:32:41.000Z</pubTime>
-        
-        <tag>openjdk</tag>
-         
-         
-           
-             
-              <breadCrumb title="JVM" url="https://jekton.github.io/categories/JVM/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://jekton.github.io/2018/05/17/logd-writing-part2/</loc>
     <lastmod>2018-08-18T12:47:22.693Z</lastmod>
     <data>
         <display>
         <title>Android log 机制 - logd 如何接收 log 数据（下）</title>
         <pubTime>2018-05-17T00:34:22.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-        <tag>logd</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://jekton.github.io/2018/05/25/logd-reading/</loc>
-    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
-    <data>
-        <display>
-        <title>Android log 机制 - 读取 logd 中的 log 数据</title>
-        <pubTime>2018-05-25T05:56:56.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-        <tag>logd</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://jekton.github.io/2018/05/17/logd-prune/</loc>
-    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
-    <data>
-        <display>
-        <title>Android log 机制 - 删除过多的 log</title>
-        <pubTime>2018-05-17T06:09:46.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-        <tag>logd</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://jekton.github.io/2018/05/16/logd-writing-part1/</loc>
-    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
-    <data>
-        <display>
-        <title>Android log 机制 - logd 如何接收 log 数据（上）</title>
-        <pubTime>2018-05-16T11:43:29.000Z</pubTime>
         
         <tag>Android source</tag>
          
@@ -301,19 +255,65 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/07/22/java-translation-jep-193-Variable-Handles/</loc>
-    <lastmod>2018-08-18T12:47:22.691Z</lastmod>
+    <loc>https://jekton.github.io/2018/05/25/logd-reading/</loc>
+    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
     <data>
         <display>
-        <title>翻译 - JEP 193：Variable Handles</title>
-        <pubTime>2018-07-22T05:10:24.000Z</pubTime>
+        <title>Android log 机制 - 读取 logd 中的 log 数据</title>
+        <pubTime>2018-05-25T05:56:56.000Z</pubTime>
         
-        <tag>Java</tag>
+        <tag>Android source</tag>
+         
+        <tag>logd</tag>
          
          
            
              
-              <breadCrumb title="Java" url="https://jekton.github.io/categories/Java/"/>
+              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://jekton.github.io/2018/05/16/logd-writing-part1/</loc>
+    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
+    <data>
+        <display>
+        <title>Android log 机制 - logd 如何接收 log 数据（上）</title>
+        <pubTime>2018-05-16T11:43:29.000Z</pubTime>
+        
+        <tag>Android source</tag>
+         
+        <tag>logd</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://jekton.github.io/2018/05/17/logd-prune/</loc>
+    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
+    <data>
+        <display>
+        <title>Android log 机制 - 删除过多的 log</title>
+        <pubTime>2018-05-17T06:09:46.000Z</pubTime>
+        
+        <tag>Android source</tag>
+         
+        <tag>logd</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
           
         </display>
     </data>
@@ -331,6 +331,26 @@
         <tag>Java</tag>
          
         <tag>synchronized</tag>
+         
+         
+           
+             
+              <breadCrumb title="Java" url="https://jekton.github.io/categories/Java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://jekton.github.io/2018/07/22/java-translation-jep-193-Variable-Handles/</loc>
+    <lastmod>2018-08-18T12:47:22.691Z</lastmod>
+    <data>
+        <display>
+        <title>翻译 - JEP 193：Variable Handles</title>
+        <pubTime>2018-07-22T05:10:24.000Z</pubTime>
+        
+        <tag>Java</tag>
          
          
            
@@ -385,26 +405,6 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/06/20/glide-mem-cache1/</loc>
-    <lastmod>2018-08-18T12:47:22.684Z</lastmod>
-    <data>
-        <display>
-        <title>Glide 源码分析(2) - 内存缓存和数组缓存</title>
-        <pubTime>2018-06-20T06:59:29.000Z</pubTime>
-        
-        <tag>Glide</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://jekton.github.io/2018/04/24/handler-uncover-the-messagequeue-part1/</loc>
     <lastmod>2018-08-18T12:47:22.684Z</lastmod>
     <data>
@@ -437,6 +437,26 @@
         <tag>Android source</tag>
          
         <tag>Handler</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://jekton.github.io/2018/06/20/glide-mem-cache1/</loc>
+    <lastmod>2018-08-18T12:47:22.684Z</lastmod>
+    <data>
+        <display>
+        <title>Glide 源码分析(2) - 内存缓存和数组缓存</title>
+        <pubTime>2018-06-20T06:59:29.000Z</pubTime>
+        
+        <tag>Glide</tag>
          
          
            
@@ -687,12 +707,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/06/30/android-arch-ViewModel/</loc>
+    <loc>https://jekton.github.io/2018/07/14/android-arch-LiveData/</loc>
     <lastmod>2018-08-18T12:47:22.677Z</lastmod>
     <data>
         <display>
-        <title>Android arch components 源码分析（1）—— ViewModel</title>
-        <pubTime>2018-06-30T05:26:59.000Z</pubTime>
+        <title>Android arch components 源码分析（3）—— LiveData</title>
+        <pubTime>2018-07-14T07:42:06.000Z</pubTime>
         
         <tag>Android arch</tag>
          
@@ -707,12 +727,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/07/14/android-arch-LiveData/</loc>
+    <loc>https://jekton.github.io/2018/06/30/android-arch-ViewModel/</loc>
     <lastmod>2018-08-18T12:47:22.677Z</lastmod>
     <data>
         <display>
-        <title>Android arch components 源码分析（3）—— LiveData</title>
-        <pubTime>2018-07-14T07:42:06.000Z</pubTime>
+        <title>Android arch components 源码分析（1）—— ViewModel</title>
+        <pubTime>2018-06-30T05:26:59.000Z</pubTime>
         
         <tag>Android arch</tag>
          
