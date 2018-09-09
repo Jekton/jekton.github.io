@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>https://jekton.github.io/2018/08/29/flutter-ux-basic/</loc>
+    <lastmod>2018-09-09T09:30:17.976Z</lastmod>
+    <data>
+        <display>
+        <title>Flutter 开发（3）- 交互、动画、手势和事件处理</title>
+        <pubTime>2018-08-29T01:06:41.000Z</pubTime>
+        
+        <tag>Flutter</tag>
+         
+         
+           
+             
+              <breadCrumb title="Flutter" url="https://jekton.github.io/categories/Flutter/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://jekton.github.io/2018/08/26/flutter-ui-basic/</loc>
     <lastmod>2018-09-09T03:16:48.321Z</lastmod>
     <data>
@@ -70,26 +90,6 @@
         <display>
         <title>Flutter 开发（4）- 文件、存储和网络</title>
         <pubTime>2018-08-31T23:29:39.000Z</pubTime>
-        
-        <tag>Flutter</tag>
-         
-         
-           
-             
-              <breadCrumb title="Flutter" url="https://jekton.github.io/categories/Flutter/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://jekton.github.io/2018/08/29/flutter-ux-basic/</loc>
-    <lastmod>2018-08-31T00:40:43.744Z</lastmod>
-    <data>
-        <display>
-        <title>Flutter 开发（3）- 交互、动画、手势和事件处理</title>
-        <pubTime>2018-08-29T01:06:41.000Z</pubTime>
         
         <tag>Flutter</tag>
          
@@ -427,12 +427,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/04/27/handler-uncover-the-messagequeue-part2/</loc>
+    <loc>https://jekton.github.io/2018/04/23/handler-understand-handler-framework/</loc>
     <lastmod>2018-08-18T12:47:22.684Z</lastmod>
     <data>
         <display>
-        <title>MessageQueue 实现详解（下）- C++ 世界对 Message 的支持</title>
-        <pubTime>2018-04-27T06:00:34.000Z</pubTime>
+        <title>理解 Handler 框架</title>
+        <pubTime>2018-04-23T11:26:38.000Z</pubTime>
         
         <tag>Android source</tag>
          
@@ -449,12 +449,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/04/23/handler-understand-handler-framework/</loc>
+    <loc>https://jekton.github.io/2018/04/27/handler-uncover-the-messagequeue-part2/</loc>
     <lastmod>2018-08-18T12:47:22.684Z</lastmod>
     <data>
         <display>
-        <title>理解 Handler 框架</title>
-        <pubTime>2018-04-23T11:26:38.000Z</pubTime>
+        <title>MessageQueue 实现详解（下）- C++ 世界对 Message 的支持</title>
+        <pubTime>2018-04-27T06:00:34.000Z</pubTime>
         
         <tag>Android source</tag>
          
