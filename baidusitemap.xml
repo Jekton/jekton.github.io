@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>https://jekton.github.io/2018/09/01/flutter-io-basic/</loc>
+    <lastmod>2018-09-12T01:15:19.058Z</lastmod>
+    <data>
+        <display>
+        <title>Flutter 开发（4）- 文件、存储和网络</title>
+        <pubTime>2018-08-31T23:29:39.000Z</pubTime>
+        
+        <tag>Flutter</tag>
+         
+         
+           
+             
+              <breadCrumb title="Flutter" url="https://jekton.github.io/categories/Flutter/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://jekton.github.io/2018/08/29/flutter-ux-basic/</loc>
     <lastmod>2018-09-09T09:30:17.976Z</lastmod>
     <data>
@@ -44,26 +64,6 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/09/06/flutter-package-development/</loc>
-    <lastmod>2018-09-06T03:29:04.051Z</lastmod>
-    <data>
-        <display>
-        <title>flutter-package-development</title>
-        <pubTime>2018-09-06T01:34:02.000Z</pubTime>
-        
-        <tag>Flutter</tag>
-         
-         
-           
-             
-              <breadCrumb title="Flutter" url="https://jekton.github.io/categories/Flutter/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://jekton.github.io/2018/09/04/dart-tutorial/</loc>
     <lastmod>2018-09-05T15:06:28.089Z</lastmod>
     <data>
@@ -77,26 +77,6 @@
            
              
               <breadCrumb title="Dart" url="https://jekton.github.io/categories/Dart/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://jekton.github.io/2018/09/01/flutter-io-basic/</loc>
-    <lastmod>2018-09-02T12:34:06.306Z</lastmod>
-    <data>
-        <display>
-        <title>Flutter 开发（4）- 文件、存储和网络</title>
-        <pubTime>2018-08-31T23:29:39.000Z</pubTime>
-        
-        <tag>Flutter</tag>
-         
-         
-           
-             
-              <breadCrumb title="Flutter" url="https://jekton.github.io/categories/Flutter/"/>
           
         </display>
     </data>
@@ -169,28 +149,6 @@
     
     
   <url>
-    <loc>https://jekton.github.io/2018/05/17/logd-writing-part2/</loc>
-    <lastmod>2018-08-18T12:47:22.693Z</lastmod>
-    <data>
-        <display>
-        <title>Android log 机制 - logd 如何接收 log 数据（下）</title>
-        <pubTime>2018-05-17T00:34:22.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-        <tag>logd</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://jekton.github.io/2018/07/22/openjdk-build/</loc>
     <lastmod>2018-08-18T12:47:22.693Z</lastmod>
     <data>
@@ -233,34 +191,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/05/17/logd-prune/</loc>
-    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
+    <loc>https://jekton.github.io/2018/05/17/logd-writing-part2/</loc>
+    <lastmod>2018-08-18T12:47:22.693Z</lastmod>
     <data>
         <display>
-        <title>Android log 机制 - 删除过多的 log</title>
-        <pubTime>2018-05-17T06:09:46.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-        <tag>logd</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://jekton.github.io/2018/05/25/logd-reading/</loc>
-    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
-    <data>
-        <display>
-        <title>Android log 机制 - 读取 logd 中的 log 数据</title>
-        <pubTime>2018-05-25T05:56:56.000Z</pubTime>
+        <title>Android log 机制 - logd 如何接收 log 数据（下）</title>
+        <pubTime>2018-05-17T00:34:22.000Z</pubTime>
         
         <tag>Android source</tag>
          
@@ -299,12 +235,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/05/16/logd-writing-part1/</loc>
+    <loc>https://jekton.github.io/2018/05/25/logd-reading/</loc>
     <lastmod>2018-08-18T12:47:22.692Z</lastmod>
     <data>
         <display>
-        <title>Android log 机制 - logd 如何接收 log 数据（上）</title>
-        <pubTime>2018-05-16T11:43:29.000Z</pubTime>
+        <title>Android log 机制 - 读取 logd 中的 log 数据</title>
+        <pubTime>2018-05-25T05:56:56.000Z</pubTime>
         
         <tag>Android source</tag>
          
@@ -321,19 +257,43 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/07/25/jdk-FutureTask/</loc>
-    <lastmod>2018-08-18T12:47:22.691Z</lastmod>
+    <loc>https://jekton.github.io/2018/05/17/logd-prune/</loc>
+    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
     <data>
         <display>
-        <title>JDK 源码分析（1）- FutureTask</title>
-        <pubTime>2018-07-25T05:27:45.000Z</pubTime>
+        <title>Android log 机制 - 删除过多的 log</title>
+        <pubTime>2018-05-17T06:09:46.000Z</pubTime>
         
-        <tag>JDK</tag>
+        <tag>Android source</tag>
+         
+        <tag>logd</tag>
          
          
            
              
-              <breadCrumb title="Java" url="https://jekton.github.io/categories/Java/"/>
+              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://jekton.github.io/2018/05/16/logd-writing-part1/</loc>
+    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
+    <data>
+        <display>
+        <title>Android log 机制 - logd 如何接收 log 数据（上）</title>
+        <pubTime>2018-05-16T11:43:29.000Z</pubTime>
+        
+        <tag>Android source</tag>
+         
+        <tag>logd</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
           
         </display>
     </data>
@@ -383,6 +343,26 @@
 
     
   <url>
+    <loc>https://jekton.github.io/2018/07/25/jdk-FutureTask/</loc>
+    <lastmod>2018-08-18T12:47:22.691Z</lastmod>
+    <data>
+        <display>
+        <title>JDK 源码分析（1）- FutureTask</title>
+        <pubTime>2018-07-25T05:27:45.000Z</pubTime>
+        
+        <tag>JDK</tag>
+         
+         
+           
+             
+              <breadCrumb title="Java" url="https://jekton.github.io/categories/Java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://jekton.github.io/2018/05/11/how-to-read-android-source-code/</loc>
     <lastmod>2018-08-18T12:47:22.685Z</lastmod>
     <data>
@@ -393,50 +373,6 @@
         <tag>Android source</tag>
          
         <tag>杂谈</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://jekton.github.io/2018/04/24/handler-uncover-the-messagequeue-part1/</loc>
-    <lastmod>2018-08-18T12:47:22.684Z</lastmod>
-    <data>
-        <display>
-        <title>MessageQueue 实现详解（上）- Java 世界中的 Message</title>
-        <pubTime>2018-04-24T14:27:21.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-        <tag>Handler</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://jekton.github.io/2018/04/23/handler-understand-handler-framework/</loc>
-    <lastmod>2018-08-18T12:47:22.684Z</lastmod>
-    <data>
-        <display>
-        <title>理解 Handler 框架</title>
-        <pubTime>2018-04-23T11:26:38.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-        <tag>Handler</tag>
          
          
            
@@ -471,6 +407,28 @@
 
     
   <url>
+    <loc>https://jekton.github.io/2018/04/24/handler-uncover-the-messagequeue-part1/</loc>
+    <lastmod>2018-08-18T12:47:22.684Z</lastmod>
+    <data>
+        <display>
+        <title>MessageQueue 实现详解（上）- Java 世界中的 Message</title>
+        <pubTime>2018-04-24T14:27:21.000Z</pubTime>
+        
+        <tag>Android source</tag>
+         
+        <tag>Handler</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://jekton.github.io/2018/06/20/glide-mem-cache1/</loc>
     <lastmod>2018-08-18T12:47:22.684Z</lastmod>
     <data>
@@ -479,6 +437,28 @@
         <pubTime>2018-06-20T06:59:29.000Z</pubTime>
         
         <tag>Glide</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://jekton.github.io/2018/04/23/handler-understand-handler-framework/</loc>
+    <lastmod>2018-08-18T12:47:22.684Z</lastmod>
+    <data>
+        <display>
+        <title>理解 Handler 框架</title>
+        <pubTime>2018-04-23T11:26:38.000Z</pubTime>
+        
+        <tag>Android source</tag>
+         
+        <tag>Handler</tag>
          
          
            
@@ -555,12 +535,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/04/16/binder-why-BBinder-not-released-after-registered-part1/</loc>
+    <loc>https://jekton.github.io/2018/04/11/binder-startup-of-service-manager/</loc>
     <lastmod>2018-08-18T12:47:22.681Z</lastmod>
     <data>
         <display>
-        <title>binder 情景分析 - 为什么注册后的 BBinder 不会被意外释放？（上）—— 理解 RefBase、sp、wp</title>
-        <pubTime>2018-04-16T14:15:32.000Z</pubTime>
+        <title>binder 情景分析 - service manager (context manager) 的启动</title>
+        <pubTime>2018-04-11T11:58:52.000Z</pubTime>
         
         <tag>Android source</tag>
          
@@ -577,12 +557,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/04/11/binder-startup-of-service-manager/</loc>
+    <loc>https://jekton.github.io/2018/04/16/binder-why-BBinder-not-released-after-registered-part1/</loc>
     <lastmod>2018-08-18T12:47:22.681Z</lastmod>
     <data>
         <display>
-        <title>binder 情景分析 - service manager (context manager) 的启动</title>
-        <pubTime>2018-04-11T11:58:52.000Z</pubTime>
+        <title>binder 情景分析 - 为什么注册后的 BBinder 不会被意外释放？（上）—— 理解 RefBase、sp、wp</title>
+        <pubTime>2018-04-16T14:15:32.000Z</pubTime>
         
         <tag>Android source</tag>
          
