@@ -3,7 +3,7 @@ title: Flutter 开发（4）- 文件、存储和网络
 date: 2018-09-01 07:29:39
 categories: Flutter
 tags: Flutter
-description: 我们将在 flutter-ux-basic 一文的基础上，继续开发一个 echo 客户端。由于日常开发中 HTTP 比 socket 更常见，我们的 echo 客户端将会使用 HTTP 协议跟服务端通信。Echo 服务器也会使用 Dart 来实现。
+description: 本篇文章我们先学习 Flutter IO 相关的基础知识，然后在 flutter-ux-basic 一文的基础上，继续开发一个 echo 客户端。由于日常开发中 HTTP 比 socket 更常见，我们的 echo 客户端将会使用 HTTP 协议跟服务端通信。Echo 服务器也会使用 Dart 来实现。
 ---
 
 > 本文由`玉刚说写作平`台提供写作赞助
@@ -11,10 +11,377 @@ description: 我们将在 flutter-ux-basic 一文的基础上，继续开发一�
 > 原作者：`水晶虾饺`
 > 版权声明：本文版权归微信公众号`玉刚说`所有，未经许可，不得以任何形式转载
 
-我们将在[Flutter 开发（3）- 交互、动画、手势和事件处理](2018/08/29/flutter-ux-basic)的基础上，继续开发一个 echo 客户端。由于日常开发中 HTTP 比 socket 更常见，我们的 echo 客户端将会使用 HTTP 协议跟服务端通信。Echo 服务器也会使用 Dart 来实现。
+本篇文章我们先学习 Flutter IO 相关的基础知识，然后在[Flutter 开发（3）- 交互、动画、手势和事件处理](2018/08/29/flutter-ux-basic)的基础上，继续开发一个 echo 客户端。由于日常开发中 HTTP 比 socket 更常见，我们的 echo 客户端将会使用 HTTP 协议跟服务端通信。Echo 服务器也会使用 Dart 来实现。
+
+# 文件
+
+为了执行文件操作，我们可以使用 Dart 的 io 包：
+```dart
+import 'dart:io';
+```
+
+## 创建文件
+
+在 Dart 里，我们通过类 `File` 来执行文件操作：
+```dart
+void foo() async {
+  const filepath = "path to your file";
+  var file = File(filepath);
+  try {
+    bool exists = await file.exists();
+    if (!exists) {
+      await file.create();
+    }
+  } catch (e) {
+    print(e);
+  }
+}
+```
+相对于 CPU，IO 总是很慢的，所以大部分文件操作都返回一个 `Future`，并在出错的时候抛出一个异常。如果你需要，也可以使用同步版本，这些方法都带一个后缀 Sync：
+```dart
+void foo() {
+  const filepath = "path to your file";
+  var file = File(filepath);
+  try {
+    bool exists = file.existsSync();
+    if (!exists) {
+      file.createSync();
+    }
+  } catch (e) {
+    print(e);
+  }
+}
+```
+
+async 方法使得我们可以像写同步方法一样写异步代码，同步版本的 io 方法已经没有太多使用的必要了（Dart 1 不支持 async 函数，所以同步版本的方法的存在是有必要的）。
 
 
-# HTTP 服务端
+## 写文件
+
+写 `String` 时我们可以使用 `writeAsString` 和 `writeAsBytes` 方法：
+
+```dart
+const filepath = "path to your file";
+var file = File(filepath);
+await file.writeAsString('Hello, Dart IO');
+List<int> toBeWritten = [1, 2, 3];
+await file.writeAsBytes(toBeWritten);
+```
+
+如果只是为了写文件，还可以使用 `openWrite` 打开一个 `IOSink`：
+```dart
+void foo() async {
+  const filepath = "path to your file";
+  var file = File(filepath);
+  IOSink sink;
+  try {
+    sink = file.openWrite();
+    // 默认的写文件操作会覆盖原有内容；如果要追究内容，用 append 模式
+    // sink = file.openWrite(mode: FileMode.append);
+
+    // write() 的参数是一个 Object，他会执行 obj.toString() 把转换后
+    // 的 String 写入文件
+    sink.write('Hello, Dart');
+    await sink.flush();
+  } catch (e) {
+    print(e);
+  } finally {
+    sink?.close();
+  }
+}
+```
+
+## 读文件
+
+读写原始的 bytes 也是相当简单的：
+```dart
+var msg = await file.readAsString();
+List<int> content = await file.readAsBytes();
+```
+
+和写文件类似，它还有一个 `openRead` 方法：
+```dart
+// Stream 是 async 包里的类
+import 'dart:async';
+// utf8、LineSplitter 属于 convert 包
+import 'dart:convert';
+import 'dart:io';
+
+void foo() async {
+  const filepath = "path to your file";
+  var file = File(filepath);
+  try {
+    Stream<List<int>> stream = file.openRead();
+    var lines = stream
+        // 把内容用 utf-8 解码
+        .transform(utf8.decoder)
+        // 每次返回一行
+        .transform(LineSplitter());
+    await for (var line in lines) {
+      print(line);
+    }
+  } catch (e) {
+    print(e);
+  }
+}
+```
+
+最后需要注意的是，我们读写 bytes 的时候，使用的对象是 `List<int>`，而一个 `int` 在 Dart 里面有 64 位。Dart 一开始设计就是用于 Web，这部分的效率也就不那么高了。
+
+
+# JSON
+
+JSON 相关的 API 放在了 convert 包里面：
+```dart
+import 'dart:convert';
+```
+
+## 把对象转换为 JSON
+
+假设我们有这样一个对象：
+```dart
+class Point {
+  int x;
+  int y;
+  String description;
+
+  Point(this.x, this.y, this.description);
+}
+```
+
+为了把他转换为 JSON，我们给他定义一个 `toJson` 方法（注意，不能改变他的方法签名）：
+```dart
+class Point {
+  // ...
+
+  // 注意，我们的方法只有一个语句，这个语句定义了一个 map。
+  // 使用这种语法的时候，Dart 会自动把这个 map 当做方法的返回值
+  Map<String, dynamic> toJson() => {
+    'x': x,
+    'y': y,
+    'desc': description
+  };
+}
+```
+接下来我们调用 `json.encode` 方法把对象转换为 JSON：
+```dart
+void main() {
+  var point = Point(2, 12, 'Some point');
+  var pointJson = json.encode(point);
+  print('pointJson = $pointJson');
+
+  // List, Map 都是支持的
+  var points = [point, point];
+  var pointsJson = json.encode(points);
+  print('pointsJson = $pointsJson');
+}
+
+// 执行后打印出：
+// pointJson = {"x":2,"y":12,"desc":"Some point"}
+// pointsJson = [{"x":2,"y":12,"desc":"Some point"},{"x":2,"y":12,"desc":"Some point"}]
+```
+
+## 把 JSON 转换为对象
+
+首先，我们给 `Point` 类再加多一个构造函数：
+```dart
+class Point {
+  // ...
+
+  Point.fromJson(Map<String, dynamic> map)
+      : x = map['x'], y = map['y'], description = map['desc'];
+
+  // 为了方便后面演示，也加入一个 toString
+  @override
+  String toString() {
+    return "Point{x=$x, y=$y, desc=$description}";
+  }
+}
+```
+
+为了解析 JSON 字符串，我们可以用 `json.decode` 方法：
+```Dart
+dynamic obj = json.decode(jsonString);
+```
+返回一个 `dynamic` 的原因在于，Dart 不知道传进去的 JSON 是什么。如果是一个 JSON 对象，返回值将是一个 `Map<String, dynamic>`；如果是 JSON 数组，则会返回 `List<dynamic>`：
+```dart
+void main() {
+  var point = Point(2, 12, 'Some point');
+  var pointJson = json.encode(point);
+  print('pointJson = $pointJson');
+  var points = [point, point];
+  var pointsJson = json.encode(points);
+  print('pointsJson = $pointsJson');
+  print('');
+
+  var decoded = json.decode(pointJson);
+  print('decoded.runtimeType = ${decoded.runtimeType}');
+  var point2 = Point.fromJson(decoded);
+  print('point2 = $point2');
+
+  decoded = json.decode(pointsJson);
+  print('decoded.runtimeType = ${decoded.runtimeType}');
+  var points2 = <Point>[];
+  for (var map in decoded) {
+    points2.add(Point.fromJson(map));
+  }
+  print('points2 = $points2');
+}
+```
+运行结果如下：
+```
+pointJson = {"x":2,"y":12,"desc":"Some point"}
+pointsJson = [{"x":2,"y":12,"desc":"Some point"},{"x":2,"y":12,"desc":"Some point"}]
+
+decoded.runtimeType = _InternalLinkedHashMap<String, dynamic>
+point2 = Point{x=2, y=12, desc=Some point}
+decoded.runtimeType = List<dynamic>
+points2 = [Point{x=2, y=12, desc=Some point}, Point{x=2, y=12, desc=Some point}]
+```
+
+需要说明的是，我们把 `Map<String, dynamic>` 转化为对象时使用时定义了一个构造函数，但这个是任意的，使用静态方法、Dart 工厂方法等都是可行的。之所以限定 `toJson` 方法的原型，是因为 `json.encode` 只支持 Map、List、String、int 等内置类型。当它遇到不认识的类型时，如果没有给它设置参数 toEncodable，就会调用对象的 `toJson` 方法（所以方法的原型不能改变）。
+
+
+# HTTP
+
+为了向服务器发送 HTTP 请求，我们可以使用 io 包里面的 `HttpClient`。但它实在不是那么好用，于是就有人弄出了一个 http 包。为了使用 http 包，需要修改 pubspec.yaml：
+```yaml
+# pubspec.yaml
+dependencies:
+  http: ^0.11.3+17
+```
+
+http 包的使用非常直接，为了发出一个 GET，可以使用 `http.get` 方法；对应的，还有 `post`、`put` 等。
+```dart
+import 'package:http/http.dart' as http;
+
+Future<String> getMessage() async {
+  try {
+    final response = await http.get('http://www.xxx.com/yyy/zzz');
+    if (response.statusCode == 200) {
+      return response.body;
+    }
+  } catch (e) {
+    print('getMessage: $e');
+  }
+  return null;
+}
+```
+
+HTTP POST 的例子我们在下面实现 echo 客户端的时候再看。
+
+
+# 使用 SQLite 数据库
+
+包 sqfite 可以让我们使用 SQLite：
+```yaml
+dependencies:
+  sqflite: any
+```
+
+sqflite 的 API 跟 Android 的那些非常像，下面我们直接用一个例子来演示：
+```dart
+class Todo {
+  static const columnId = 'id';
+  static const columnTitle = 'title';
+  static const columnContent = 'content';
+
+  int id;
+  String title;
+  String content;
+
+  Todo(this.title, this.content, [this.id]);
+
+  Todo.fromMap(Map<String, dynamic> map)
+      : id = map[columnId], title = map[columnTitle], content = map[columnContent];
+
+  Map<String, dynamic> toMap() => {
+    columnTitle: title,
+    columnContent: content,
+  };
+
+  @override
+  String toString() {
+    return 'Todo{id=$id, title=$title, content=$content}';
+  }
+}
+
+void foo() async {
+  const table = 'Todo';
+  // getDatabasesPath() 的 sqflite 提供的函数
+  var path = await getDatabasesPath() + '/demo.db';
+  // 使用 openDatabase 打开数据库
+  var database = await openDatabase(
+      path,
+      version: 1,
+      onCreate: (db, version) async {
+        var sql ='''
+            CREATE TABLE $table ('
+            ${Todo.columnId} INTEGER PRIMARY KEY,'
+            ${Todo.columnTitle} TEXT,'
+            ${Todo.columnContent} TEXT'
+            )
+            ''';
+        // execute 方法可以执行任意的 SQL
+        await db.execute(sql);
+      }
+  );
+  // 为了让每次运行的结果都一样，先把数据清掉
+  await database.delete(table);
+
+  var todo1 = Todo('Flutter', 'Learn Flutter widgets.');
+  var todo2 = Todo('Flutter', 'Learn how to to IO in Flutter.');
+
+  // 插入数据
+  await database.insert(table, todo1.toMap());
+  await database.insert(table, todo2.toMap());
+
+  List<Map> list = await database.query(table);
+  // 重新赋值，这样 todo.id 才不会为 0
+  todo1 = Todo.fromMap(list[0]);
+  todo2 = Todo.fromMap(list[1]);
+  print('query: todo1 = $todo1');
+  print('query: todo2 = $todo2');
+
+  todo1.content += ' Come on!';
+  todo2.content += ' I\'m tired';
+  // 使用事务
+  await database.transaction((txn) async {
+    // 注意，这里面只能用 txn。直接使用 database 将导致死锁
+    await txn.update(table, todo1.toMap(),
+        // where 的参数里，我们可以使用 ? 作为占位符，对应的值按顺序放在 whereArgs
+
+        // 注意，whereArgs 的参数类型是 List，这里不能写成 todo1.id.toString()。
+        // 不然就变成了用 String 和 int 比较，这样一来就匹配不到待更新的那一行了
+        where: '${Todo.columnId} = ?', whereArgs: [todo1.id]);
+    await txn.update(table, todo2.toMap(),
+        where: '${Todo.columnId} = ?', whereArgs: [todo2.id]);
+  });
+
+  list = await database.query(table);
+  for (var map in list) {
+    var todo = Todo.fromMap(map);
+    print('updated: todo = $todo');
+  }
+
+  // 最后，别忘了关闭数据库
+  await database.close();
+}
+```
+运行结果如下：
+```
+query: todo1 = Todo{id=1, title=Flutter, content=Learn Flutter widgets}
+query: todo2 = Todo{id=2, title=Flutter, content=Learn how to to IO in Flutter}
+updated: todo = Todo{id=1, title=Flutter, content=Learn Flutter widgets. Come on!}
+updated: todo = Todo{id=2, title=Flutter, content=Learn how to to IO in Flutter. I'm tired}
+```
+
+有 Android 经验的读者会发现，使用 Dart 编写数据库相关代码的时候舒服很多。如果读者对数据库不太熟悉，可以参考《SQL必知必会》。本篇的主要知识点到这里的就讲完了，作为练习，下面我们就一起来实现 echo 客户端的后端。
+
+
+# echo 客户端
+
+## HTTP 服务端
 
 在开始之前，你可以在 GitHub 上找到上篇文章的代码，我们将在它的基础上进行开发。
 ```shell
@@ -24,7 +391,7 @@ git checkout ux-basic
 ```
 
 
-## 服务端架构
+### 服务端架构
 
 首先我们来看看服务端的架构（说是架构，但其实非常的简单，或者说很简陋）：
 ```dart
@@ -87,10 +454,10 @@ class HttpEchoServer {
 }
 ```
 
-在服务端框架里，我们把支持的所有路径都加到 routes 里面，当收到客户请求的时候，只需要直接从 routes 里取出对应的处理函数，把请求分发给他就可以了。
+在服务端框架里，我们把支持的所有路径都加到 routes 里面，当收到客户请求的时候，只需要直接从 routes 里取出对应的处理函数，把请求分发给他就可以了。如果读者对服务端编程没有太大兴趣或不太了解，这部分可以不用太关注。
 
 
-## 将对象序列化为 JSON
+### 将对象序列化为 JSON
 
 为了把 Message 对象序列化为 JSON，这里我们对 Message 做一些小修改：
 ```dart
@@ -98,9 +465,7 @@ class Message {
   final String msg;
   final int timestamp;
 
-
   Message(this.msg, this.timestamp);
-
   Message.create(String msg)
       : msg = msg, timestamp = DateTime.now().millisecondsSinceEpoch;
 
@@ -156,14 +521,13 @@ class HttpEchoServer {
   }
 }
 ```
-如果读者对服务端编程没有太大兴趣或不太了解，这里重点关注如果把对象序列化为 JSON 就可以了。下面是客户端部分。
 
 
-# HTTP 客户端
+## HTTP 客户端
 
 我们的 echo 服务器使用了 dart:io 包里面 HttpServer 来开发。对应的，我们也可以使用这个包里的 HttpRequest 来执行 HTTP 请求，但这里我们并不打算这么做。第三方库 http 提供了更简单易用的接口。
 
-首先，别忘了把依赖添加到 pubspec 里：
+首先把依赖添加到 pubspec 里：
 ```yaml
 # pubspec.yaml
 dependencies:
@@ -272,9 +636,9 @@ class MessageListScreen extends StatelessWidget {
 大功告成，在做了这么多工作以后，我们的应用现在是真正的 echo 客户端了，虽然看起来跟之前没什么两样。接下来，我们就做一些跟之前不一样的——把历史记录保存下来。
 
 
-# 历史记录存储、恢复
+## 历史记录存储、恢复
 
-## 获取应用的存储路径
+### 获取应用的存储路径
 
 为了获得应用的文件存储路径，我们引入多一个库：
 ```yaml
@@ -305,7 +669,7 @@ class HttpEchoServer {
 }
 ```
 
-## 保存历史记录
+### 保存历史记录
 
 ```dart
 class HttpEchoServer {
@@ -340,7 +704,7 @@ class HttpEchoServer {
 ```
 
 
-## 加载历史记录
+### 加载历史记录
 
 ```dart
 class HttpEchoServer {
@@ -450,7 +814,7 @@ class _MessageListState extends State<MessageList> {
 ```
 
 
-# 生命周期
+## 生命周期
 
 最后需要做的是，在 APP 退出后关闭服务器。这就要求我们能够收到应用生命周期变化的通知。为了达到这个目的，Flutter 为我们提供了 WidgetsBinding 类（虽然没有 Android 的 Lifecycle 那么好用就是啦）。
 ```dart
@@ -490,4 +854,120 @@ class _MessageListState extends State<MessageList> with WidgetsBindingObserver {
 git clone https://github.com/Jekton/flutter_demo.git
 cd flutter_demo
 git checkout io-basic
+```
+
+
+## 使用 SQLite 数据库
+
+前面的实现中我们把 echo 服务器的数据存放在了文件里。这一节我们改一改，把数据存到 SQLite 中。
+
+别忘了添加依赖：
+```yaml
+dependencies:
+  sqflite: any
+```
+
+### 初始化数据库
+
+```dart
+import 'package:sqflite/sqflite.dart';
+
+class HttpEchoServer {
+  // ...
+
+  static const tableName = 'History';
+  // 这部分常量最好是放到 Message 的定义里。为了方便阅读，就暂且放这里吧
+  static const columnId = 'id';
+  static const columnMsg = 'msg';
+  static const columnTimestamp = 'timestamp';
+
+  Database database;
+
+  Future start() async {
+    await _initDatabase();
+
+    // ...
+  }
+
+  Future _initDatabase() async {
+    var path = await getDatabasesPath() + '/history.db';
+    database = await openDatabase(
+      path,
+      version: 1,
+      onCreate: (db, version) async {
+        var sql = '''
+            CREATE TABLE $tableName (
+            $columnId INTEGER PRIMARY KEY,
+            $columnMsg TEXT,
+            $columnTimestamp INTEGER
+            )
+            ''';
+        await db.execute(sql);
+      }
+    );
+  }
+}
+```
+
+### 加载历史记录
+
+加载历史记录的相关代码在 `_loadMessages` 方法中，这里我们修改原有的实现，让它从数据库加载数据：
+```dart
+class HttpEchoServer {
+  // ...
+
+  Future _loadMessages() async {
+    var list = await database.query(
+      tableName,
+      columns: [columnMsg, columnTimestamp],
+      orderBy: columnId,
+    );
+    for (var item in list) {
+      // fromJson 也适用于使用数据库的场景
+      var message = Message.fromJson(item);
+      messages.add(message);
+    }
+  }
+}
+```
+实际上改为使用数据库来存储后，我们并不需要把所有的消息都存放在内存中（也就是这里的 `_loadMessage`是不必要的）。客户请求历史记录时，我们再按需从数据库读取数据即可。为了避免修改到程序的逻辑，这里还是继续保持一份数据在内存中。有兴趣的读者可以对程序作出相应的修改。
+
+
+### 保存记录
+
+记录的保存很简单，一行代码就可以搞定了：
+```dart
+void _echo(HttpRequest request) async {
+  // ...
+
+  _storeMessage(message);
+}
+
+void _storeMessage(Message msg) {
+  database.insert(tableName, msg.toJson());
+}
+```
+
+使用 JSON 的版本，我们每次都需要把所有的数据都保存一遍。对数据库来说，只要把收到的这一条信息存进去即可。读者也应该能够感受到，就我们的需求来说，使用 SQLite 的版本实现起来更简单，也更高效。
+
+
+### 关闭数据库
+
+`close` 方法也要做相应的修改：
+```dart
+void close() async {
+  // ...
+
+  var db = database;
+  database = null;
+  db?.close();
+}
+```
+
+
+这部分代码可以查看 tag echo-db：
+```shell
+git clone https://github.com/Jekton/flutter_demo.git
+cd flutter_demo
+git checkout echo-db
 ```
