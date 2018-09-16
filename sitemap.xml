@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jekton.github.io/2018/09/16/flutter-plugin-dev/</loc>
+    
+    <lastmod>2018-09-16T05:21:37.912Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jekton.github.io/2018/09/01/flutter-io-basic/</loc>
     
-    <lastmod>2018-09-12T01:37:28.668Z</lastmod>
+    <lastmod>2018-09-14T06:12:02.891Z</lastmod>
     
   </url>
   
@@ -58,7 +65,7 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/google9bbc3a252e502b42.html</loc>
+    <loc>https://jekton.github.io/about/index.html</loc>
     
     <lastmod>2018-08-18T12:47:22.694Z</lastmod>
     
@@ -72,14 +79,14 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/search/index.html</loc>
+    <loc>https://jekton.github.io/google9bbc3a252e502b42.html</loc>
     
     <lastmod>2018-08-18T12:47:22.694Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jekton.github.io/about/index.html</loc>
+    <loc>https://jekton.github.io/search/index.html</loc>
     
     <lastmod>2018-08-18T12:47:22.694Z</lastmod>
     
@@ -107,6 +114,13 @@
   </url>
   
   <url>
+    <loc>https://jekton.github.io/2018/05/25/logd-reading/</loc>
+    
+    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jekton.github.io/2018/05/11/logd-overview/</loc>
     
     <lastmod>2018-08-18T12:47:22.692Z</lastmod>
@@ -114,7 +128,7 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/05/25/logd-reading/</loc>
+    <loc>https://jekton.github.io/2018/05/16/logd-writing-part1/</loc>
     
     <lastmod>2018-08-18T12:47:22.692Z</lastmod>
     
@@ -128,9 +142,9 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/05/16/logd-writing-part1/</loc>
+    <loc>https://jekton.github.io/2018/07/25/jdk-FutureTask/</loc>
     
-    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
+    <lastmod>2018-08-18T12:47:22.691Z</lastmod>
     
   </url>
   
@@ -149,13 +163,6 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/07/25/jdk-FutureTask/</loc>
-    
-    <lastmod>2018-08-18T12:47:22.691Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jekton.github.io/2018/05/11/how-to-read-android-source-code/</loc>
     
     <lastmod>2018-08-18T12:47:22.685Z</lastmod>
@@ -163,14 +170,14 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/04/27/handler-uncover-the-messagequeue-part2/</loc>
+    <loc>https://jekton.github.io/2018/06/20/glide-mem-cache1/</loc>
     
     <lastmod>2018-08-18T12:47:22.684Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/06/20/glide-mem-cache1/</loc>
+    <loc>https://jekton.github.io/2018/04/23/handler-understand-handler-framework/</loc>
     
     <lastmod>2018-08-18T12:47:22.684Z</lastmod>
     
@@ -184,7 +191,7 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/04/23/handler-understand-handler-framework/</loc>
+    <loc>https://jekton.github.io/2018/04/27/handler-uncover-the-messagequeue-part2/</loc>
     
     <lastmod>2018-08-18T12:47:22.684Z</lastmod>
     
@@ -261,14 +268,14 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/06/30/android-arch-ViewModel/</loc>
+    <loc>https://jekton.github.io/2018/07/14/android-arch-LiveData/</loc>
     
     <lastmod>2018-08-18T12:47:22.677Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/07/14/android-arch-LiveData/</loc>
+    <loc>https://jekton.github.io/2018/06/30/android-arch-ViewModel/</loc>
     
     <lastmod>2018-08-18T12:47:22.677Z</lastmod>
     
