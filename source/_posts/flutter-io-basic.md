@@ -273,7 +273,7 @@ HTTP POST 的例子我们在下面实现 echo 客户端的时候再看。
 
 # 使用 SQLite 数据库
 
-包 sqfite 可以让我们使用 SQLite：
+包 sqflite 可以让我们使用 SQLite：
 ```yaml
 dependencies:
   sqflite: any
@@ -281,6 +281,8 @@ dependencies:
 
 sqflite 的 API 跟 Android 的那些非常像，下面我们直接用一个例子来演示：
 ```dart
+import 'package:sqflite/sqflite.dart';
+
 class Todo {
   static const columnId = 'id';
   static const columnTitle = 'title';
