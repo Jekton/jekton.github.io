@@ -104,26 +104,6 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/08/19/way-to-JVM-1/</loc>
-    <lastmod>2018-08-27T10:21:28.153Z</lastmod>
-    <data>
-        <display>
-        <title>JVM 之路（1）- cmake 学习</title>
-        <pubTime>2018-08-19T12:39:36.000Z</pubTime>
-        
-        <tag>way to JVM</tag>
-         
-         
-           
-             
-              <breadCrumb title="JVM" url="https://jekton.github.io/categories/JVM/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://jekton.github.io/2018/08/26/flutter-first-app/</loc>
     <lastmod>2018-08-26T05:47:56.064Z</lastmod>
     <data>
@@ -143,47 +123,27 @@
     </url>
 
     
-  <url>
-    <loc>https://jekton.github.io/2018/08/19/way-to-JVM-0/</loc>
-    <lastmod>2018-08-19T12:44:13.204Z</lastmod>
-    <data>
-        <display>
-        <title>JVM 之路（0）- 我将去往何方？</title>
-        <pubTime>2018-08-19T10:01:21.000Z</pubTime>
-        
-        <tag>way to JVM</tag>
-         
-         
-           
-             
-              <breadCrumb title="JVM" url="https://jekton.github.io/categories/JVM/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
     
     
     
     
     
   <url>
-    <loc>https://jekton.github.io/2018/06/23/socket-intro/</loc>
+    <loc>https://jekton.github.io/2018/05/17/logd-writing-part2/</loc>
     <lastmod>2018-08-18T12:47:22.693Z</lastmod>
     <data>
         <display>
-        <title>TCP/IP、Socket 和协议设计</title>
-        <pubTime>2018-06-23T01:12:16.000Z</pubTime>
+        <title>Android log 机制 - logd 如何接收 log 数据（下）</title>
+        <pubTime>2018-05-17T00:34:22.000Z</pubTime>
         
-        <tag>Java</tag>
+        <tag>Android source</tag>
          
-        <tag>Socket</tag>
+        <tag>logd</tag>
          
          
            
              
-              <breadCrumb title="Java" url="https://jekton.github.io/categories/Java/"/>
+              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
           
         </display>
     </data>
@@ -211,21 +171,21 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/05/17/logd-writing-part2/</loc>
+    <loc>https://jekton.github.io/2018/06/23/socket-intro/</loc>
     <lastmod>2018-08-18T12:47:22.693Z</lastmod>
     <data>
         <display>
-        <title>Android log 机制 - logd 如何接收 log 数据（下）</title>
-        <pubTime>2018-05-17T00:34:22.000Z</pubTime>
+        <title>TCP/IP、Socket 和协议设计</title>
+        <pubTime>2018-06-23T01:12:16.000Z</pubTime>
         
-        <tag>Android source</tag>
+        <tag>Java</tag>
          
-        <tag>logd</tag>
+        <tag>Socket</tag>
          
          
            
              
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
+              <breadCrumb title="Java" url="https://jekton.github.io/categories/Java/"/>
           
         </display>
     </data>
@@ -233,12 +193,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/05/25/logd-reading/</loc>
+    <loc>https://jekton.github.io/2018/05/17/logd-prune/</loc>
     <lastmod>2018-08-18T12:47:22.692Z</lastmod>
     <data>
         <display>
-        <title>Android log 机制 - 读取 logd 中的 log 数据</title>
-        <pubTime>2018-05-25T05:56:56.000Z</pubTime>
+        <title>Android log 机制 - 删除过多的 log</title>
+        <pubTime>2018-05-17T06:09:46.000Z</pubTime>
         
         <tag>Android source</tag>
          
@@ -299,12 +259,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/05/17/logd-prune/</loc>
+    <loc>https://jekton.github.io/2018/05/25/logd-reading/</loc>
     <lastmod>2018-08-18T12:47:22.692Z</lastmod>
     <data>
         <display>
-        <title>Android log 机制 - 删除过多的 log</title>
-        <pubTime>2018-05-17T06:09:46.000Z</pubTime>
+        <title>Android log 机制 - 读取 logd 中的 log 数据</title>
+        <pubTime>2018-05-25T05:56:56.000Z</pubTime>
         
         <tag>Android source</tag>
          
@@ -314,6 +274,28 @@
            
              
               <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://jekton.github.io/2018/03/20/java-synchronized-keyword/</loc>
+    <lastmod>2018-08-18T12:47:22.691Z</lastmod>
+    <data>
+        <display>
+        <title>synchronized 那些事</title>
+        <pubTime>2018-03-20T12:19:39.000Z</pubTime>
+        
+        <tag>Java</tag>
+         
+        <tag>synchronized</tag>
+         
+         
+           
+             
+              <breadCrumb title="Java" url="https://jekton.github.io/categories/Java/"/>
           
         </display>
     </data>
@@ -361,28 +343,6 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/03/20/java-synchronized-keyword/</loc>
-    <lastmod>2018-08-18T12:47:22.691Z</lastmod>
-    <data>
-        <display>
-        <title>synchronized 那些事</title>
-        <pubTime>2018-03-20T12:19:39.000Z</pubTime>
-        
-        <tag>Java</tag>
-         
-        <tag>synchronized</tag>
-         
-         
-           
-             
-              <breadCrumb title="Java" url="https://jekton.github.io/categories/Java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://jekton.github.io/2018/05/11/how-to-read-android-source-code/</loc>
     <lastmod>2018-08-18T12:47:22.685Z</lastmod>
     <data>
@@ -405,14 +365,16 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/06/20/glide-mem-cache1/</loc>
+    <loc>https://jekton.github.io/2018/04/24/handler-uncover-the-messagequeue-part1/</loc>
     <lastmod>2018-08-18T12:47:22.684Z</lastmod>
     <data>
         <display>
-        <title>Glide 源码分析(2) - 内存缓存和数组缓存</title>
-        <pubTime>2018-06-20T06:59:29.000Z</pubTime>
+        <title>MessageQueue 实现详解（上）- Java 世界中的 Message</title>
+        <pubTime>2018-04-24T14:27:21.000Z</pubTime>
         
-        <tag>Glide</tag>
+        <tag>Android source</tag>
+         
+        <tag>Handler</tag>
          
          
            
@@ -431,28 +393,6 @@
         <display>
         <title>理解 Handler 框架</title>
         <pubTime>2018-04-23T11:26:38.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-        <tag>Handler</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://jekton.github.io/2018/04/24/handler-uncover-the-messagequeue-part1/</loc>
-    <lastmod>2018-08-18T12:47:22.684Z</lastmod>
-    <data>
-        <display>
-        <title>MessageQueue 实现详解（上）- Java 世界中的 Message</title>
-        <pubTime>2018-04-24T14:27:21.000Z</pubTime>
         
         <tag>Android source</tag>
          
@@ -491,6 +431,26 @@
 
     
   <url>
+    <loc>https://jekton.github.io/2018/06/20/glide-mem-cache1/</loc>
+    <lastmod>2018-08-18T12:47:22.684Z</lastmod>
+    <data>
+        <display>
+        <title>Glide 源码分析(2) - 内存缓存和数组缓存</title>
+        <pubTime>2018-06-20T06:59:29.000Z</pubTime>
+        
+        <tag>Glide</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://jekton.github.io/2018/06/08/glide-disk-cache/</loc>
     <lastmod>2018-08-18T12:47:22.683Z</lastmod>
     <data>
@@ -511,12 +471,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/04/17/binder-why-BBinder-not-released-after-registered-part2/</loc>
+    <loc>https://jekton.github.io/2018/04/07/binder-why-RemoteListenerCallback-works/</loc>
     <lastmod>2018-08-18T12:47:22.682Z</lastmod>
     <data>
         <display>
-        <title>binder 情景分析 - 为什么注册后的 BBinder 不会被意外释放？（下）—— binder 生命周期管理机制概述</title>
-        <pubTime>2018-04-17T06:04:48.000Z</pubTime>
+        <title>binder 情景分析 - RemoteListenerCallback 为什么可以正常工作？</title>
+        <pubTime>2018-04-07T07:49:44.000Z</pubTime>
         
         <tag>Android source</tag>
          
@@ -533,12 +493,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/04/07/binder-why-RemoteListenerCallback-works/</loc>
+    <loc>https://jekton.github.io/2018/04/17/binder-why-BBinder-not-released-after-registered-part2/</loc>
     <lastmod>2018-08-18T12:47:22.682Z</lastmod>
     <data>
         <display>
-        <title>binder 情景分析 - RemoteListenerCallback 为什么可以正常工作？</title>
-        <pubTime>2018-04-07T07:49:44.000Z</pubTime>
+        <title>binder 情景分析 - 为什么注册后的 BBinder 不会被意外释放？（下）—— binder 生命周期管理机制概述</title>
+        <pubTime>2018-04-17T06:04:48.000Z</pubTime>
         
         <tag>Android source</tag>
          
@@ -643,12 +603,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/04/12/binder-service-registration-part1/</loc>
+    <loc>https://jekton.github.io/2018/04/18/binder-service-query/</loc>
     <lastmod>2018-08-18T12:47:22.678Z</lastmod>
     <data>
         <display>
-        <title>binder 情景分析 - service 的注册（上）</title>
-        <pubTime>2018-04-12T13:19:46.000Z</pubTime>
+        <title>binder 情景分析 - service 查询</title>
+        <pubTime>2018-04-18T11:30:33.000Z</pubTime>
         
         <tag>Android source</tag>
          
@@ -665,12 +625,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/04/18/binder-service-query/</loc>
+    <loc>https://jekton.github.io/2018/04/12/binder-service-registration-part1/</loc>
     <lastmod>2018-08-18T12:47:22.678Z</lastmod>
     <data>
         <display>
-        <title>binder 情景分析 - service 查询</title>
-        <pubTime>2018-04-18T11:30:33.000Z</pubTime>
+        <title>binder 情景分析 - service 的注册（上）</title>
+        <pubTime>2018-04-12T13:19:46.000Z</pubTime>
         
         <tag>Android source</tag>
          
@@ -707,12 +667,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/07/14/android-arch-LiveData/</loc>
+    <loc>https://jekton.github.io/2018/06/30/android-arch-ViewModel/</loc>
     <lastmod>2018-08-18T12:47:22.677Z</lastmod>
     <data>
         <display>
-        <title>Android arch components 源码分析（3）—— LiveData</title>
-        <pubTime>2018-07-14T07:42:06.000Z</pubTime>
+        <title>Android arch components 源码分析（1）—— ViewModel</title>
+        <pubTime>2018-06-30T05:26:59.000Z</pubTime>
         
         <tag>Android arch</tag>
          
@@ -727,12 +687,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/06/30/android-arch-ViewModel/</loc>
+    <loc>https://jekton.github.io/2018/07/14/android-arch-LiveData/</loc>
     <lastmod>2018-08-18T12:47:22.677Z</lastmod>
     <data>
         <display>
-        <title>Android arch components 源码分析（1）—— ViewModel</title>
-        <pubTime>2018-06-30T05:26:59.000Z</pubTime>
+        <title>Android arch components 源码分析（3）—— LiveData</title>
+        <pubTime>2018-07-14T07:42:06.000Z</pubTime>
         
         <tag>Android arch</tag>
          
