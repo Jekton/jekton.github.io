@@ -6,7 +6,7 @@ tags: Flutter
 description: 本篇文章我们先学习 Flutter IO 相关的基础知识，然后在 flutter-ux-basic 一文的基础上，继续开发一个 echo 客户端。由于日常开发中 HTTP 比 socket 更常见，我们的 echo 客户端将会使用 HTTP 协议跟服务端通信。Echo 服务器也会使用 Dart 来实现。
 ---
 
-> 本文由`玉刚说写作平`台提供写作赞助
+> 本文由[玉刚说写作平台](http://renyugang.io/post/75)提供写作赞助
 > 赞助金额：200元
 > 原作者：`水晶虾饺`
 > 版权声明：本文版权归微信公众号`玉刚说`所有，未经许可，不得以任何形式转载
