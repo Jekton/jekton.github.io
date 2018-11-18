@@ -4,7 +4,7 @@
   <url>
     <loc>https://jekton.github.io/2018/11/18/note-x86-provisional-kernel-page-table-setup/</loc>
     
-    <lastmod>2018-11-18T07:49:14.904Z</lastmod>
+    <lastmod>2018-11-18T10:36:02.826Z</lastmod>
     
   </url>
   
@@ -72,13 +72,6 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/about/index.html</loc>
-    
-    <lastmod>2018-08-18T12:47:22.694Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jekton.github.io/categories/index.html</loc>
     
     <lastmod>2018-08-18T12:47:22.694Z</lastmod>
@@ -93,9 +86,9 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/05/17/logd-writing-part2/</loc>
+    <loc>https://jekton.github.io/about/index.html</loc>
     
-    <lastmod>2018-08-18T12:47:22.693Z</lastmod>
+    <lastmod>2018-08-18T12:47:22.694Z</lastmod>
     
   </url>
   
@@ -107,9 +100,9 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/05/11/logd-overview/</loc>
+    <loc>https://jekton.github.io/2018/05/17/logd-writing-part2/</loc>
     
-    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
+    <lastmod>2018-08-18T12:47:22.693Z</lastmod>
     
   </url>
   
@@ -121,7 +114,7 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/05/16/logd-writing-part1/</loc>
+    <loc>https://jekton.github.io/2018/05/11/logd-overview/</loc>
     
     <lastmod>2018-08-18T12:47:22.692Z</lastmod>
     
@@ -135,9 +128,9 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/07/22/java-translation-jep-193-Variable-Handles/</loc>
+    <loc>https://jekton.github.io/2018/05/16/logd-writing-part1/</loc>
     
-    <lastmod>2018-08-18T12:47:22.691Z</lastmod>
+    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
     
   </url>
   
@@ -150,6 +143,13 @@
   
   <url>
     <loc>https://jekton.github.io/2018/03/20/java-synchronized-keyword/</loc>
+    
+    <lastmod>2018-08-18T12:47:22.691Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jekton.github.io/2018/07/22/java-translation-jep-193-Variable-Handles/</loc>
     
     <lastmod>2018-08-18T12:47:22.691Z</lastmod>
     
@@ -170,6 +170,13 @@
   </url>
   
   <url>
+    <loc>https://jekton.github.io/2018/04/23/handler-understand-handler-framework/</loc>
+    
+    <lastmod>2018-08-18T12:47:22.684Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jekton.github.io/2018/06/20/glide-mem-cache1/</loc>
     
     <lastmod>2018-08-18T12:47:22.684Z</lastmod>
@@ -178,13 +185,6 @@
   
   <url>
     <loc>https://jekton.github.io/2018/04/27/handler-uncover-the-messagequeue-part2/</loc>
-    
-    <lastmod>2018-08-18T12:47:22.684Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jekton.github.io/2018/04/23/handler-understand-handler-framework/</loc>
     
     <lastmod>2018-08-18T12:47:22.684Z</lastmod>
     
@@ -261,14 +261,14 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/06/30/android-arch-ViewModel/</loc>
+    <loc>https://jekton.github.io/2018/07/14/android-arch-LiveData/</loc>
     
     <lastmod>2018-08-18T12:47:22.677Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/07/14/android-arch-LiveData/</loc>
+    <loc>https://jekton.github.io/2018/06/30/android-arch-ViewModel/</loc>
     
     <lastmod>2018-08-18T12:47:22.677Z</lastmod>
     
