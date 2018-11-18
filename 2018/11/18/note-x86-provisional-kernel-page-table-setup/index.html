@@ -1,0 +1,62 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>《深入理解 LINUX 内核》读书笔记 - 临时内核页表 | Jekton</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/8.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">《深入理解 LINUX 内核》读书笔记 - 临时内核页表</h1><a id="logo" href="/.">Jekton</a><p class="description">Keep on Learning, Keep on Thinking</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">《深入理解 LINUX 内核》读书笔记 - 临时内核页表</h1><div class="post-meta">Nov 18, 2018<span> | </span><span class="category"><a href="/categories/读书笔记/">读书笔记</a></span><script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span></div><a class="disqus-comment-count" data-disqus-identifier="2018/11/18/note-x86-provisional-kernel-page-table-setup/" href="/2018/11/18/note-x86-provisional-kernel-page-table-setup/#disqus_thread"></a><div class="post-content"><p>x86 在启动的时候，CPU 处于实模式；而在保护模式下，为了将线性（内存）地址转换为物理内存地址，我们需要给 CPU 设置页表。本篇文件主要给《深入理解 LINUX 内核》临时内核页表一节（P74）中作者描述不太详细的部分添加更多的解释，并不打算把书中相关的知识点都搬上来，相关知识读者可以参考书中的描述。</p>
+<blockquote>
+<p>本文基于 <code>Linux 2.6.24</code>，x86 平台</p>
+</blockquote>
+<p>在使用分页（paging）的时候，需要构造相应的页表。对于使用一级页表的 x86 系统来说，页目录是必须的。但是这 1024 个页目录项并不需要都指向具体的页表，按需分配就行。看到“分配”这个词，读者就要注意了，它意味着动态内存分配。啊！我们连页表都没有，怎么动态分配内存！！没关系，我们弄个临时页表就可以解决这个鸡蛋和鸡的问题了。</p>
+<p>内核临时页面的设置由 <code>startup_32()</code> 函数完成，这个函数是用汇编语言实现的，位于 <code>arch/x86/kernel/head_32.S</code>。</p>
+<p>我们需要特别留意的是文中提到的，“在这个阶段PAE支持并未激活”。PAE 未激活，意味着此时使用的是一级页表接口，一个页表项 32 bits，DIRECTORY 字段 10 bits，TABLE 字段 10 bits 和 OFFSET 12 bits（参考第 52 页图 2-7）。</p>
+<p>OFFSET 12 bits，所有一个 page 的大小是 <code>2^12 = 4K</code>。TABLE 字段有 10 bits，所以一个页目录项可以指向的页大小为 <code>2^10 * 4K = 4M</code>。我们需要映射 <code>8M</code> 的内存，所以<strong>两个</strong>页目录项就足够了。</p>
+<p>接下来我们需要明白的是，内核映像是加载在物理地址的低端的（P73 图 2-13）。而内核在链接（link）的时候，起始地址却是 <code>0xc000 0000</code>。在实模式，线性地址直接翻译为物理地址；而在保护模式，线性地址需要经过页表的转换后才是物理地址。当我们把线性 <code>0x0000 0000 ~ 0x007f ffff</code> 和 <code>0xc000 0000 ~ 0xc07f ffff</code> 都映射到物理地址 <code>0x0000 0000 ~ 0x007f ffff</code> 时，内核代码就不需要区分当前使用的是线性地址还是物理地址了（直接使用物理地址，经过页表转换后的值是一样的）。</p>
+<p>注意，这里 <code>0x0000 0000 ~ 0x007f ffff</code> 的大小就刚好是 <code>8M</code>。</p>
+<p>确定了需要映射的内存范围后，便可以开始构造页表项。我们设置 <code>swapper_pg_dir</code> 的第 0、1 项的目的很明显（前面我们说了，8M 的内存，共需要 2 个页目录项），它们就对应着线性地址 <code>0x0000 0000 ~ 0x007f ffff</code>。这样一来，第 768、769 项应该就对应着内存 <code>0xc000 0000 ~ 0xc07f ffff</code> 了。这里我们关心都是，768 是怎么出来的？</p>
+<p>我们知道，DIRECTORY 字段有 10 bits，共 <code>2^10 = 1024</code> 个目录项。<code>0xc000 0000</code> 刚好在 4G 内存的 3/4 处。利用这个信息，我们就能够计算 <code>0xc000 0000</code> 对应的页表项为 <code>1024 * (3/4) = 768</code>。另一种更直接的方法是，按照 MMU 转换线性地址时的方法，取 <code>0xc000 0000</code> 的前 10 个位，即得到 <code>0x300</code>。</p>
+<p>在最后，我们来看启用分页的一小段汇编代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">movl $swapper_pg_dir-__PAGE_OFFSET,%eax</span><br><span class="line">movl %eax,%cr3		/* set the page table pointer.. */</span><br><span class="line">movl %cr0,%eax</span><br><span class="line">orl $0x80000000,%eax</span><br><span class="line">movl %eax,%cr0		/* ..and set paging (PG) bit */</span><br></pre></td></tr></table></figure>
+<p><code>swapper_pg_dir</code> 就是我们构造的临时页表，问题在于，为什么需要减去 <code>__PAGE_OFFSET</code>（其实就是 <code>0xc0000000</code>）呢？答案在前面我们其实已经说过了，内核在链接（link）的时候，起始地址是 <code>0xc000 0000</code>。也就是说，从内核的视角来看，他以为自己是从 <code>0xc0000000</code> 开始的。<code>$swapper_pg_dir - __PAGE_OFFSET</code> 后，才是 <code>swapper_pg_dir</code> 真正的内存地址（在执行这一行代码的时候，CPU 还处于实模式，这个模式下，线性地址就是物理地址）。</p>
+<p><br><br></p>
+</div><div class="tags"><a href="/tags/读书笔记/">读书笔记</a><a href="/tags/Linux/">Linux</a></div><div class="post-nav"><a class="next" href="/2018/09/16/flutter-plugin-dev/">Flutter 开发（5）- 插件的使用、开发和发布</a></div><div id="disqus_thread"><div class="btn_click_load"><button class="disqus_click_btn">阅读评论（请确保 Disqus 可以正常加载）</button></div><script type="text/javascript">var disqus_config = function () {
+    this.page.url = 'https://jekton.github.io/2018/11/18/note-x86-provisional-kernel-page-table-setup/';
+    this.page.identifier = '2018/11/18/note-x86-provisional-kernel-page-table-setup/';
+    this.page.title = '《深入理解 LINUX 内核》读书笔记 - 临时内核页表';
+  };</script><script type="text/javascript" id="disqus-lazy-load-script">$.ajax({
+url: 'https://disqus.com/next/config.json',
+timeout: 2500,
+type: 'GET',
+success: function(){
+  var d = document;
+  var s = d.createElement('script');
+  s.src = '//jekton-github-io.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', + new Date());
+  (d.head || d.body).appendChild(s);
+  $('.disqus_click_btn').css('display', 'none');
+},
+error: function() {
+  $('.disqus_click_btn').css('display', 'block');
+}
+});</script><script type="text/javascript" id="disqus-click-load">$('.btn_click_load').click(() => {  //click to load comments
+    (() => { // DON'T EDIT BELOW THIS LINE
+        var d = document;
+        var s = d.createElement('script');
+        s.src = '//jekton-github-io.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', + new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    $('.disqus_click_btn').css('display','none');
+});</script><script type="text/javascript" id="disqus-count-script">$(function() {
+     var xhr = new XMLHttpRequest();
+     xhr.open('GET', '//disqus.com/next/config.json', true);
+     xhr.timeout = 2500;
+     xhr.onreadystatechange = function () {
+       if (xhr.readyState === 4 && xhr.status === 200) {
+         $('.post-meta .post-comments-count').show();
+         var s = document.createElement('script');
+         s.id = 'dsq-count-scr';
+         s.src = 'https://jekton-github-io.disqus.com/count.js';
+         s.async = true;
+         (document.head || document.body).appendChild(s);
+       }
+     };
+     xhr.ontimeout = function () { xhr.abort(); };
+     xhr.send(null);
+   });
+</script></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Android/">Android</a><span class="category-list-count">22</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Dart/">Dart</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Flutter/">Flutter</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/JVM/">JVM</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java/">Java</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/读书笔记/">读书笔记</a><span class="category-list-count">1</span></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/Dart/" style="font-size: 15px;">Dart</a> <a href="/tags/Android-source/" style="font-size: 15px;">Android source</a> <a href="/tags/Java/" style="font-size: 15px;">Java</a> <a href="/tags/synchronized/" style="font-size: 15px;">synchronized</a> <a href="/tags/读书笔记/" style="font-size: 15px;">读书笔记</a> <a href="/tags/Linux/" style="font-size: 15px;">Linux</a> <a href="/tags/openjdk/" style="font-size: 15px;">openjdk</a> <a href="/tags/Android-arch/" style="font-size: 15px;">Android arch</a> <a href="/tags/Binder/" style="font-size: 15px;">Binder</a> <a href="/tags/Flutter/" style="font-size: 15px;">Flutter</a> <a href="/tags/Handler/" style="font-size: 15px;">Handler</a> <a href="/tags/杂谈/" style="font-size: 15px;">杂谈</a> <a href="/tags/logd/" style="font-size: 15px;">logd</a> <a href="/tags/JDK/" style="font-size: 15px;">JDK</a> <a href="/tags/Glide/" style="font-size: 15px;">Glide</a> <a href="/tags/Socket/" style="font-size: 15px;">Socket</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/11/18/note-x86-provisional-kernel-page-table-setup/">《深入理解 LINUX 内核》读书笔记 - 临时内核页表</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/16/flutter-plugin-dev/">Flutter 开发（5）- 插件的使用、开发和发布</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/04/dart-tutorial/">Dart 语言入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/01/flutter-io-basic/">Flutter 开发（4）- 文件、存储和网络</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/08/29/flutter-ux-basic/">Flutter 开发（3）- 交互、动画、手势和事件处理</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/08/26/flutter-ui-basic/">Flutter 开发（2）- UI控件和布局</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/08/26/flutter-first-app/">Flutter 开发（1）- 开发框架、流程、编译打包、调试</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/07/25/jdk-FutureTask/">JDK 源码分析（1）- FutureTask</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/07/22/java-translation-jep-193-Variable-Handles/">翻译 - JEP 193：Variable Handles</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/07/22/openjdk-build/">个人记录帖 - 编译 OpenJDK 10</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-comment-o"> 最近评论</i></div><script type="text/javascript" src="//jekton-github-io.disqus.com/recent_comments_widget.js?num_items=5&amp;hide_avatars=1&amp;avatar_size=32&amp;excerpt_length=20&amp;hide_mods=1"></script></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2018 <a href="/." rel="nofollow">Jekton.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.3.5/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.3.5/jquery.fancybox.min.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
