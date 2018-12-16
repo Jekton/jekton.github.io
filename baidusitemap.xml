@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>https://jekton.github.io/2018/12/15/linux-wait-event/</loc>
+    <lastmod>2018-12-16T09:26:56.481Z</lastmod>
+    <data>
+        <display>
+        <title>Java 程序员眼里的 Linux 内核 —— wait_event 源码分析</title>
+        <pubTime>2018-12-15T08:30:37.000Z</pubTime>
+        
+        <tag>Java</tag>
+         
+        <tag>Linux</tag>
+         
+        <tag>parallel-programming</tag>
+         
+         
+           
+             
+              <breadCrumb title="Linux" url="https://jekton.github.io/categories/Linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://jekton.github.io/2018/11/18/linux-page-table-setup/</loc>
     <lastmod>2018-11-25T03:35:50.450Z</lastmod>
     <data>
@@ -235,56 +259,34 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/05/25/logd-reading/</loc>
-    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
-    <data>
-        <display>
-        <title>Android log 机制 - 读取 logd 中的 log 数据</title>
-        <pubTime>2018-05-25T05:56:56.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-        <tag>logd</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://jekton.github.io/2018/05/11/logd-overview/</loc>
-    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
-    <data>
-        <display>
-        <title>Android log 机制 - logd 总览</title>
-        <pubTime>2018-05-11T01:14:18.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-        <tag>logd</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://jekton.github.io/2018/05/17/logd-prune/</loc>
     <lastmod>2018-08-18T12:47:22.692Z</lastmod>
     <data>
         <display>
         <title>Android log 机制 - 删除过多的 log</title>
         <pubTime>2018-05-17T06:09:46.000Z</pubTime>
+        
+        <tag>Android source</tag>
+         
+        <tag>logd</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://jekton.github.io/2018/05/25/logd-reading/</loc>
+    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
+    <data>
+        <display>
+        <title>Android log 机制 - 读取 logd 中的 log 数据</title>
+        <pubTime>2018-05-25T05:56:56.000Z</pubTime>
         
         <tag>Android source</tag>
          
@@ -323,14 +325,38 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/07/25/jdk-FutureTask/</loc>
+    <loc>https://jekton.github.io/2018/05/11/logd-overview/</loc>
+    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
+    <data>
+        <display>
+        <title>Android log 机制 - logd 总览</title>
+        <pubTime>2018-05-11T01:14:18.000Z</pubTime>
+        
+        <tag>Android source</tag>
+         
+        <tag>logd</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://jekton.github.io/2018/03/20/java-synchronized-keyword/</loc>
     <lastmod>2018-08-18T12:47:22.691Z</lastmod>
     <data>
         <display>
-        <title>JDK 源码分析（1）- FutureTask</title>
-        <pubTime>2018-07-25T05:27:45.000Z</pubTime>
+        <title>synchronized 那些事</title>
+        <pubTime>2018-03-20T12:19:39.000Z</pubTime>
         
-        <tag>JDK</tag>
+        <tag>Java</tag>
+         
+        <tag>synchronized</tag>
          
          
            
@@ -363,16 +389,14 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/03/20/java-synchronized-keyword/</loc>
+    <loc>https://jekton.github.io/2018/07/25/jdk-FutureTask/</loc>
     <lastmod>2018-08-18T12:47:22.691Z</lastmod>
     <data>
         <display>
-        <title>synchronized 那些事</title>
-        <pubTime>2018-03-20T12:19:39.000Z</pubTime>
+        <title>JDK 源码分析（1）- FutureTask</title>
+        <pubTime>2018-07-25T05:27:45.000Z</pubTime>
         
-        <tag>Java</tag>
-         
-        <tag>synchronized</tag>
+        <tag>JDK</tag>
          
          
            
@@ -395,6 +419,28 @@
         <tag>Android source</tag>
          
         <tag>杂谈</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://jekton.github.io/2018/04/23/handler-understand-handler-framework/</loc>
+    <lastmod>2018-08-18T12:47:22.684Z</lastmod>
+    <data>
+        <display>
+        <title>理解 Handler 框架</title>
+        <pubTime>2018-04-23T11:26:38.000Z</pubTime>
+        
+        <tag>Android source</tag>
+         
+        <tag>Handler</tag>
          
          
            
@@ -455,28 +501,6 @@
         <display>
         <title>MessageQueue 实现详解（上）- Java 世界中的 Message</title>
         <pubTime>2018-04-24T14:27:21.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-        <tag>Handler</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://jekton.github.io/2018/04/23/handler-understand-handler-framework/</loc>
-    <lastmod>2018-08-18T12:47:22.684Z</lastmod>
-    <data>
-        <display>
-        <title>理解 Handler 框架</title>
-        <pubTime>2018-04-23T11:26:38.000Z</pubTime>
         
         <tag>Android source</tag>
          
@@ -557,12 +581,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/04/11/binder-startup-of-service-manager/</loc>
+    <loc>https://jekton.github.io/2018/04/16/binder-why-BBinder-not-released-after-registered-part1/</loc>
     <lastmod>2018-08-18T12:47:22.681Z</lastmod>
     <data>
         <display>
-        <title>binder 情景分析 - service manager (context manager) 的启动</title>
-        <pubTime>2018-04-11T11:58:52.000Z</pubTime>
+        <title>binder 情景分析 - 为什么注册后的 BBinder 不会被意外释放？（上）—— 理解 RefBase、sp、wp</title>
+        <pubTime>2018-04-16T14:15:32.000Z</pubTime>
         
         <tag>Android source</tag>
          
@@ -579,12 +603,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/04/16/binder-why-BBinder-not-released-after-registered-part1/</loc>
+    <loc>https://jekton.github.io/2018/04/11/binder-startup-of-service-manager/</loc>
     <lastmod>2018-08-18T12:47:22.681Z</lastmod>
     <data>
         <display>
-        <title>binder 情景分析 - 为什么注册后的 BBinder 不会被意外释放？（上）—— 理解 RefBase、sp、wp</title>
-        <pubTime>2018-04-16T14:15:32.000Z</pubTime>
+        <title>binder 情景分析 - service manager (context manager) 的启动</title>
+        <pubTime>2018-04-11T11:58:52.000Z</pubTime>
         
         <tag>Android source</tag>
          
@@ -689,12 +713,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/07/06/android-arch-lifecycle/</loc>
+    <loc>https://jekton.github.io/2018/07/14/android-arch-LiveData/</loc>
     <lastmod>2018-08-18T12:47:22.677Z</lastmod>
     <data>
         <display>
-        <title>Android arch components 源码分析（2）—— Lifecycle</title>
-        <pubTime>2018-07-06T03:10:47.000Z</pubTime>
+        <title>Android arch components 源码分析（3）—— LiveData</title>
+        <pubTime>2018-07-14T07:42:06.000Z</pubTime>
         
         <tag>Android arch</tag>
          
@@ -729,12 +753,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/07/14/android-arch-LiveData/</loc>
+    <loc>https://jekton.github.io/2018/07/06/android-arch-lifecycle/</loc>
     <lastmod>2018-08-18T12:47:22.677Z</lastmod>
     <data>
         <display>
-        <title>Android arch components 源码分析（3）—— LiveData</title>
-        <pubTime>2018-07-14T07:42:06.000Z</pubTime>
+        <title>Android arch components 源码分析（2）—— Lifecycle</title>
+        <pubTime>2018-07-06T03:10:47.000Z</pubTime>
         
         <tag>Android arch</tag>
          
