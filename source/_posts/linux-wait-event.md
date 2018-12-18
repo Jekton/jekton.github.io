@@ -452,14 +452,14 @@ public void bar() {
 
 有一定开发经验的读者很可能看过类似的代码。虽然我们没有在 `mSomeData` 和 `mSomeOtherData` 的读写上做显式的同步，但只要仔细编写代码，利用一个 `volatile` 变量 `mDataSet`，这段代码也可以是线程安全的。
 
-为了避免引入内存屏障这个比较复杂的概念（并且提供更好的移植性），Java 使用一个 happen-before 来描述相关的概念。关于 `volatile` 有这么一条描述：
+为了避免引入内存屏障这个比较复杂的概念（并且提供更好的移植性），Java 使用一个 happens-before 来描述相关的概念。关于 `volatile` 有这么一条描述：
 
 > A write to a `volatile` field happens-before every subsequent read of that field.
 
 另外，对于同一个线程，有：
 > If x and y are actions of the same thread and x comes before y in program order, then x happen before y.
 
-同时，happen-before 具有传递性（x -> y, y -> z, x -> z），所以就有了下面这个结论：
+同时，happens-before 具有传递性（x -> y, y -> z, x -> z），所以就有了下面这个结论：
 
 对 `mSomeData, mSomeOtherData` 的写操作在 `mDataSet = true` 之前；`mDataSet = true` 在随后另一个线程对他的读操作之前；所以 `mSomeData, mSomeOtherData` 的写操作在随后对 `mDataSet` 的读操作之前。
 
