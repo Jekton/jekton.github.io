@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://jekton.github.io/2018/12/15/linux-wait-event/</loc>
-    <lastmod>2018-12-18T12:12:25.227Z</lastmod>
+    <lastmod>2018-12-21T01:07:29.633Z</lastmod>
     <data>
         <display>
         <title>Java 程序员眼里的 Linux 内核 —— wait_event 源码分析</title>
@@ -281,28 +281,6 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/05/16/logd-writing-part1/</loc>
-    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
-    <data>
-        <display>
-        <title>Android log 机制 - logd 如何接收 log 数据（上）</title>
-        <pubTime>2018-05-16T11:43:29.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-        <tag>logd</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://jekton.github.io/2018/05/17/logd-prune/</loc>
     <lastmod>2018-08-18T12:47:22.692Z</lastmod>
     <data>
@@ -340,6 +318,48 @@
            
              
               <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://jekton.github.io/2018/05/16/logd-writing-part1/</loc>
+    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
+    <data>
+        <display>
+        <title>Android log 机制 - logd 如何接收 log 数据（上）</title>
+        <pubTime>2018-05-16T11:43:29.000Z</pubTime>
+        
+        <tag>Android source</tag>
+         
+        <tag>logd</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://jekton.github.io/2018/07/25/jdk-FutureTask/</loc>
+    <lastmod>2018-08-18T12:47:22.691Z</lastmod>
+    <data>
+        <display>
+        <title>JDK 源码分析（1）- FutureTask</title>
+        <pubTime>2018-07-25T05:27:45.000Z</pubTime>
+        
+        <tag>JDK</tag>
+         
+         
+           
+             
+              <breadCrumb title="Java" url="https://jekton.github.io/categories/Java/"/>
           
         </display>
     </data>
@@ -389,26 +409,6 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/07/25/jdk-FutureTask/</loc>
-    <lastmod>2018-08-18T12:47:22.691Z</lastmod>
-    <data>
-        <display>
-        <title>JDK 源码分析（1）- FutureTask</title>
-        <pubTime>2018-07-25T05:27:45.000Z</pubTime>
-        
-        <tag>JDK</tag>
-         
-         
-           
-             
-              <breadCrumb title="Java" url="https://jekton.github.io/categories/Java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://jekton.github.io/2018/05/11/how-to-read-android-source-code/</loc>
     <lastmod>2018-08-18T12:47:22.685Z</lastmod>
     <data>
@@ -431,12 +431,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/04/23/handler-understand-handler-framework/</loc>
+    <loc>https://jekton.github.io/2018/04/24/handler-uncover-the-messagequeue-part1/</loc>
     <lastmod>2018-08-18T12:47:22.684Z</lastmod>
     <data>
         <display>
-        <title>理解 Handler 框架</title>
-        <pubTime>2018-04-23T11:26:38.000Z</pubTime>
+        <title>MessageQueue 实现详解（上）- Java 世界中的 Message</title>
+        <pubTime>2018-04-24T14:27:21.000Z</pubTime>
         
         <tag>Android source</tag>
          
@@ -475,12 +475,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/04/24/handler-uncover-the-messagequeue-part1/</loc>
+    <loc>https://jekton.github.io/2018/04/23/handler-understand-handler-framework/</loc>
     <lastmod>2018-08-18T12:47:22.684Z</lastmod>
     <data>
         <display>
-        <title>MessageQueue 实现详解（上）- Java 世界中的 Message</title>
-        <pubTime>2018-04-24T14:27:21.000Z</pubTime>
+        <title>理解 Handler 框架</title>
+        <pubTime>2018-04-23T11:26:38.000Z</pubTime>
         
         <tag>Android source</tag>
          
@@ -537,12 +537,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/04/17/binder-why-BBinder-not-released-after-registered-part2/</loc>
+    <loc>https://jekton.github.io/2018/04/07/binder-why-RemoteListenerCallback-works/</loc>
     <lastmod>2018-08-18T12:47:22.682Z</lastmod>
     <data>
         <display>
-        <title>binder 情景分析 - 为什么注册后的 BBinder 不会被意外释放？（下）—— binder 生命周期管理机制概述</title>
-        <pubTime>2018-04-17T06:04:48.000Z</pubTime>
+        <title>binder 情景分析 - RemoteListenerCallback 为什么可以正常工作？</title>
+        <pubTime>2018-04-07T07:49:44.000Z</pubTime>
         
         <tag>Android source</tag>
          
@@ -559,12 +559,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/04/07/binder-why-RemoteListenerCallback-works/</loc>
+    <loc>https://jekton.github.io/2018/04/17/binder-why-BBinder-not-released-after-registered-part2/</loc>
     <lastmod>2018-08-18T12:47:22.682Z</lastmod>
     <data>
         <display>
-        <title>binder 情景分析 - RemoteListenerCallback 为什么可以正常工作？</title>
-        <pubTime>2018-04-07T07:49:44.000Z</pubTime>
+        <title>binder 情景分析 - 为什么注册后的 BBinder 不会被意外释放？（下）—— binder 生命周期管理机制概述</title>
+        <pubTime>2018-04-17T06:04:48.000Z</pubTime>
         
         <tag>Android source</tag>
          
