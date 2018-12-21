@@ -250,7 +250,7 @@ thread1 在把自己加入等待队列后，schedule 前，thread2 就更改了�
 public static SomeClass getInstance() {
     if (sInstance == null) {
         synchronized (SomeClass.class) {
-            if (sInstance != null) {
+            if (sInstance == null) {
                 sInstance = new SomeClass();
             }
         }
