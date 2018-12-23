@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Jekton</title>
   
-  <subtitle>Keep on Learning, Keep on Thinking</subtitle>
+  <subtitle>Learning for fun</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jekton.github.io/"/>
