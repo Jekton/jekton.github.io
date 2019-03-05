@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>https://jekton.github.io/2018/06/23/socket-intro/</loc>
+    <lastmod>2019-03-05T11:34:16.727Z</lastmod>
+    <data>
+        <display>
+        <title>TCP/IP、Socket 和协议设计</title>
+        <pubTime>2018-06-23T01:12:16.000Z</pubTime>
+        
+        <tag>Java</tag>
+         
+        <tag>Socket</tag>
+         
+         
+           
+             
+              <breadCrumb title="Java" url="https://jekton.github.io/categories/Java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://jekton.github.io/2018/12/15/linux-wait-event/</loc>
     <lastmod>2018-12-21T01:07:29.633Z</lastmod>
     <data>
@@ -63,28 +85,6 @@
            
              
               <breadCrumb title="读书笔记" url="https://jekton.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://jekton.github.io/2018/06/23/socket-intro/</loc>
-    <lastmod>2018-09-18T12:17:44.256Z</lastmod>
-    <data>
-        <display>
-        <title>TCP/IP、Socket 和协议设计</title>
-        <pubTime>2018-06-23T01:12:16.000Z</pubTime>
-        
-        <tag>Java</tag>
-         
-        <tag>Socket</tag>
-         
-         
-           
-             
-              <breadCrumb title="Java" url="https://jekton.github.io/categories/Java/"/>
           
         </display>
     </data>
@@ -217,26 +217,6 @@
     
     
   <url>
-    <loc>https://jekton.github.io/2018/07/22/openjdk-build/</loc>
-    <lastmod>2018-08-18T12:47:22.693Z</lastmod>
-    <data>
-        <display>
-        <title>个人记录帖 - 编译 OpenJDK 10</title>
-        <pubTime>2018-07-22T01:32:41.000Z</pubTime>
-        
-        <tag>openjdk</tag>
-         
-         
-           
-             
-              <breadCrumb title="JVM" url="https://jekton.github.io/categories/JVM/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://jekton.github.io/2018/05/17/logd-writing-part2/</loc>
     <lastmod>2018-08-18T12:47:22.693Z</lastmod>
     <data>
@@ -259,12 +239,32 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/05/16/logd-writing-part1/</loc>
+    <loc>https://jekton.github.io/2018/07/22/openjdk-build/</loc>
+    <lastmod>2018-08-18T12:47:22.693Z</lastmod>
+    <data>
+        <display>
+        <title>个人记录帖 - 编译 OpenJDK 10</title>
+        <pubTime>2018-07-22T01:32:41.000Z</pubTime>
+        
+        <tag>openjdk</tag>
+         
+         
+           
+             
+              <breadCrumb title="JVM" url="https://jekton.github.io/categories/JVM/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://jekton.github.io/2018/05/25/logd-reading/</loc>
     <lastmod>2018-08-18T12:47:22.692Z</lastmod>
     <data>
         <display>
-        <title>Android log 机制 - logd 如何接收 log 数据（上）</title>
-        <pubTime>2018-05-16T11:43:29.000Z</pubTime>
+        <title>Android log 机制 - 读取 logd 中的 log 数据</title>
+        <pubTime>2018-05-25T05:56:56.000Z</pubTime>
         
         <tag>Android source</tag>
          
@@ -303,6 +303,28 @@
 
     
   <url>
+    <loc>https://jekton.github.io/2018/05/16/logd-writing-part1/</loc>
+    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
+    <data>
+        <display>
+        <title>Android log 机制 - logd 如何接收 log 数据（上）</title>
+        <pubTime>2018-05-16T11:43:29.000Z</pubTime>
+        
+        <tag>Android source</tag>
+         
+        <tag>logd</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://jekton.github.io/2018/05/11/logd-overview/</loc>
     <lastmod>2018-08-18T12:47:22.692Z</lastmod>
     <data>
@@ -325,21 +347,19 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/05/25/logd-reading/</loc>
-    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
+    <loc>https://jekton.github.io/2018/07/25/jdk-FutureTask/</loc>
+    <lastmod>2018-08-18T12:47:22.691Z</lastmod>
     <data>
         <display>
-        <title>Android log 机制 - 读取 logd 中的 log 数据</title>
-        <pubTime>2018-05-25T05:56:56.000Z</pubTime>
+        <title>JDK 源码分析（1）- FutureTask</title>
+        <pubTime>2018-07-25T05:27:45.000Z</pubTime>
         
-        <tag>Android source</tag>
-         
-        <tag>logd</tag>
+        <tag>JDK</tag>
          
          
            
              
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
+              <breadCrumb title="Java" url="https://jekton.github.io/categories/Java/"/>
           
         </display>
     </data>
@@ -357,26 +377,6 @@
         <tag>Java</tag>
          
         <tag>synchronized</tag>
-         
-         
-           
-             
-              <breadCrumb title="Java" url="https://jekton.github.io/categories/Java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://jekton.github.io/2018/07/25/jdk-FutureTask/</loc>
-    <lastmod>2018-08-18T12:47:22.691Z</lastmod>
-    <data>
-        <display>
-        <title>JDK 源码分析（1）- FutureTask</title>
-        <pubTime>2018-07-25T05:27:45.000Z</pubTime>
-        
-        <tag>JDK</tag>
          
          
            
@@ -453,12 +453,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/04/23/handler-understand-handler-framework/</loc>
+    <loc>https://jekton.github.io/2018/04/27/handler-uncover-the-messagequeue-part2/</loc>
     <lastmod>2018-08-18T12:47:22.684Z</lastmod>
     <data>
         <display>
-        <title>理解 Handler 框架</title>
-        <pubTime>2018-04-23T11:26:38.000Z</pubTime>
+        <title>MessageQueue 实现详解（下）- C++ 世界对 Message 的支持</title>
+        <pubTime>2018-04-27T06:00:34.000Z</pubTime>
         
         <tag>Android source</tag>
          
@@ -475,12 +475,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/04/27/handler-uncover-the-messagequeue-part2/</loc>
+    <loc>https://jekton.github.io/2018/04/23/handler-understand-handler-framework/</loc>
     <lastmod>2018-08-18T12:47:22.684Z</lastmod>
     <data>
         <display>
-        <title>MessageQueue 实现详解（下）- C++ 世界对 Message 的支持</title>
-        <pubTime>2018-04-27T06:00:34.000Z</pubTime>
+        <title>理解 Handler 框架</title>
+        <pubTime>2018-04-23T11:26:38.000Z</pubTime>
         
         <tag>Android source</tag>
          
@@ -669,12 +669,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/04/12/binder-service-registration-part1/</loc>
+    <loc>https://jekton.github.io/2018/04/18/binder-service-query/</loc>
     <lastmod>2018-08-18T12:47:22.678Z</lastmod>
     <data>
         <display>
-        <title>binder 情景分析 - service 的注册（上）</title>
-        <pubTime>2018-04-12T13:19:46.000Z</pubTime>
+        <title>binder 情景分析 - service 查询</title>
+        <pubTime>2018-04-18T11:30:33.000Z</pubTime>
         
         <tag>Android source</tag>
          
@@ -691,12 +691,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/04/18/binder-service-query/</loc>
+    <loc>https://jekton.github.io/2018/04/12/binder-service-registration-part1/</loc>
     <lastmod>2018-08-18T12:47:22.678Z</lastmod>
     <data>
         <display>
-        <title>binder 情景分析 - service 查询</title>
-        <pubTime>2018-04-18T11:30:33.000Z</pubTime>
+        <title>binder 情景分析 - service 的注册（上）</title>
+        <pubTime>2018-04-12T13:19:46.000Z</pubTime>
         
         <tag>Android source</tag>
          
@@ -733,12 +733,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/07/14/android-arch-LiveData/</loc>
+    <loc>https://jekton.github.io/2018/06/30/android-arch-ViewModel/</loc>
     <lastmod>2018-08-18T12:47:22.677Z</lastmod>
     <data>
         <display>
-        <title>Android arch components 源码分析（3）—— LiveData</title>
-        <pubTime>2018-07-14T07:42:06.000Z</pubTime>
+        <title>Android arch components 源码分析（1）—— ViewModel</title>
+        <pubTime>2018-06-30T05:26:59.000Z</pubTime>
         
         <tag>Android arch</tag>
          
@@ -753,12 +753,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/06/30/android-arch-ViewModel/</loc>
+    <loc>https://jekton.github.io/2018/07/14/android-arch-LiveData/</loc>
     <lastmod>2018-08-18T12:47:22.677Z</lastmod>
     <data>
         <display>
-        <title>Android arch components 源码分析（1）—— ViewModel</title>
-        <pubTime>2018-06-30T05:26:59.000Z</pubTime>
+        <title>Android arch components 源码分析（3）—— LiveData</title>
+        <pubTime>2018-07-14T07:42:06.000Z</pubTime>
         
         <tag>Android arch</tag>
          

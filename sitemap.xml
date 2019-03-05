@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jekton.github.io/2018/06/23/socket-intro/</loc>
+    
+    <lastmod>2019-03-05T11:34:16.727Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jekton.github.io/2018/12/15/linux-wait-event/</loc>
     
     <lastmod>2018-12-21T01:07:29.633Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>https://jekton.github.io/2018/11/18/note-x86-provisional-kernel-page-table-setup/</loc>
     
     <lastmod>2018-11-18T10:36:02.826Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jekton.github.io/2018/06/23/socket-intro/</loc>
-    
-    <lastmod>2018-09-18T12:17:44.256Z</lastmod>
     
   </url>
   
@@ -107,13 +107,6 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/07/22/openjdk-build/</loc>
-    
-    <lastmod>2018-08-18T12:47:22.693Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jekton.github.io/2018/05/17/logd-writing-part2/</loc>
     
     <lastmod>2018-08-18T12:47:22.693Z</lastmod>
@@ -121,7 +114,14 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/05/16/logd-writing-part1/</loc>
+    <loc>https://jekton.github.io/2018/07/22/openjdk-build/</loc>
+    
+    <lastmod>2018-08-18T12:47:22.693Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jekton.github.io/2018/05/25/logd-reading/</loc>
     
     <lastmod>2018-08-18T12:47:22.692Z</lastmod>
     
@@ -135,6 +135,13 @@
   </url>
   
   <url>
+    <loc>https://jekton.github.io/2018/05/16/logd-writing-part1/</loc>
+    
+    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jekton.github.io/2018/05/11/logd-overview/</loc>
     
     <lastmod>2018-08-18T12:47:22.692Z</lastmod>
@@ -142,21 +149,14 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/05/25/logd-reading/</loc>
-    
-    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jekton.github.io/2018/03/20/java-synchronized-keyword/</loc>
+    <loc>https://jekton.github.io/2018/07/25/jdk-FutureTask/</loc>
     
     <lastmod>2018-08-18T12:47:22.691Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/07/25/jdk-FutureTask/</loc>
+    <loc>https://jekton.github.io/2018/03/20/java-synchronized-keyword/</loc>
     
     <lastmod>2018-08-18T12:47:22.691Z</lastmod>
     
@@ -184,14 +184,14 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/04/23/handler-understand-handler-framework/</loc>
+    <loc>https://jekton.github.io/2018/04/27/handler-uncover-the-messagequeue-part2/</loc>
     
     <lastmod>2018-08-18T12:47:22.684Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/04/27/handler-uncover-the-messagequeue-part2/</loc>
+    <loc>https://jekton.github.io/2018/04/23/handler-understand-handler-framework/</loc>
     
     <lastmod>2018-08-18T12:47:22.684Z</lastmod>
     
@@ -254,14 +254,14 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/04/12/binder-service-registration-part1/</loc>
+    <loc>https://jekton.github.io/2018/04/18/binder-service-query/</loc>
     
     <lastmod>2018-08-18T12:47:22.678Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/04/18/binder-service-query/</loc>
+    <loc>https://jekton.github.io/2018/04/12/binder-service-registration-part1/</loc>
     
     <lastmod>2018-08-18T12:47:22.678Z</lastmod>
     
@@ -275,14 +275,14 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/07/14/android-arch-LiveData/</loc>
+    <loc>https://jekton.github.io/2018/06/30/android-arch-ViewModel/</loc>
     
     <lastmod>2018-08-18T12:47:22.677Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/06/30/android-arch-ViewModel/</loc>
+    <loc>https://jekton.github.io/2018/07/14/android-arch-LiveData/</loc>
     
     <lastmod>2018-08-18T12:47:22.677Z</lastmod>
     
