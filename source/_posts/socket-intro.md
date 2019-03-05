@@ -750,3 +750,12 @@ TCP 发送数据的时候，消息一样可能丢失。TCP 发送数据后，如
 [1] [http://renyugang.io/post/75](http://renyugang.io/post/75)
 [2] [https://jekton.github.io](https://jekton.github.io/)
 [3] [https://github.com/Jekton/Echo](https://github.com/Jekton/Echo)
+
+
+
+----
+2019.5.5
+
+前段时间经 @老A 同学反馈，修复了 Echo 程序一个竞争条件导致的心跳超时问题，见 commit `1cd262`。今天自己在某个项目上实际使用的时候，非常惭愧，又发现了一个超时相关的 bug（参见 commit `27923b`）。为了不给文章中的代码增加过多的复杂度（加上想悄悄偷个懒），就不更新文中的代码了。
+
+尽管有 bug，但长连接的实现思路是没有问题的。如果读者在实际工作中需要用到，或者自己实现，或者参考我的代码，一定要参考 GitHub 仓库中最新的代码，而不是直接 copy 文章里的。
