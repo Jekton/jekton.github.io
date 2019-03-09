@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>https://jekton.github.io/2019/03/06/android9-light-sp/</loc>
+    <lastmod>2019-03-09T04:21:26.504Z</lastmod>
+    <data>
+        <display>
+        <title>Android P 源码分析 1 - 轻量级智能指针的实现</title>
+        <pubTime>2019-03-06T11:23:28.000Z</pubTime>
+        
+        <tag>Android source</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://jekton.github.io/2018/06/23/socket-intro/</loc>
     <lastmod>2019-03-05T11:34:16.727Z</lastmod>
     <data>
@@ -217,6 +237,26 @@
     
     
   <url>
+    <loc>https://jekton.github.io/2018/07/22/openjdk-build/</loc>
+    <lastmod>2018-08-18T12:47:22.693Z</lastmod>
+    <data>
+        <display>
+        <title>个人记录帖 - 编译 OpenJDK 10</title>
+        <pubTime>2018-07-22T01:32:41.000Z</pubTime>
+        
+        <tag>openjdk</tag>
+         
+         
+           
+             
+              <breadCrumb title="JVM" url="https://jekton.github.io/categories/JVM/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://jekton.github.io/2018/05/17/logd-writing-part2/</loc>
     <lastmod>2018-08-18T12:47:22.693Z</lastmod>
     <data>
@@ -239,19 +279,21 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/07/22/openjdk-build/</loc>
-    <lastmod>2018-08-18T12:47:22.693Z</lastmod>
+    <loc>https://jekton.github.io/2018/05/11/logd-overview/</loc>
+    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
     <data>
         <display>
-        <title>个人记录帖 - 编译 OpenJDK 10</title>
-        <pubTime>2018-07-22T01:32:41.000Z</pubTime>
+        <title>Android log 机制 - logd 总览</title>
+        <pubTime>2018-05-11T01:14:18.000Z</pubTime>
         
-        <tag>openjdk</tag>
+        <tag>Android source</tag>
+         
+        <tag>logd</tag>
          
          
            
              
-              <breadCrumb title="JVM" url="https://jekton.github.io/categories/JVM/"/>
+              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
           
         </display>
     </data>
@@ -325,36 +367,14 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/05/11/logd-overview/</loc>
-    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
-    <data>
-        <display>
-        <title>Android log 机制 - logd 总览</title>
-        <pubTime>2018-05-11T01:14:18.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-        <tag>logd</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://jekton.github.io/2018/07/25/jdk-FutureTask/</loc>
+    <loc>https://jekton.github.io/2018/07/22/java-translation-jep-193-Variable-Handles/</loc>
     <lastmod>2018-08-18T12:47:22.691Z</lastmod>
     <data>
         <display>
-        <title>JDK 源码分析（1）- FutureTask</title>
-        <pubTime>2018-07-25T05:27:45.000Z</pubTime>
+        <title>翻译 - JEP 193：Variable Handles</title>
+        <pubTime>2018-07-22T05:10:24.000Z</pubTime>
         
-        <tag>JDK</tag>
+        <tag>Java</tag>
          
          
            
@@ -389,14 +409,14 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/07/22/java-translation-jep-193-Variable-Handles/</loc>
+    <loc>https://jekton.github.io/2018/07/25/jdk-FutureTask/</loc>
     <lastmod>2018-08-18T12:47:22.691Z</lastmod>
     <data>
         <display>
-        <title>翻译 - JEP 193：Variable Handles</title>
-        <pubTime>2018-07-22T05:10:24.000Z</pubTime>
+        <title>JDK 源码分析（1）- FutureTask</title>
+        <pubTime>2018-07-25T05:27:45.000Z</pubTime>
         
-        <tag>Java</tag>
+        <tag>JDK</tag>
          
          
            
@@ -431,28 +451,6 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/04/24/handler-uncover-the-messagequeue-part1/</loc>
-    <lastmod>2018-08-18T12:47:22.684Z</lastmod>
-    <data>
-        <display>
-        <title>MessageQueue 实现详解（上）- Java 世界中的 Message</title>
-        <pubTime>2018-04-24T14:27:21.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-        <tag>Handler</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://jekton.github.io/2018/04/27/handler-uncover-the-messagequeue-part2/</loc>
     <lastmod>2018-08-18T12:47:22.684Z</lastmod>
     <data>
@@ -475,12 +473,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/04/23/handler-understand-handler-framework/</loc>
+    <loc>https://jekton.github.io/2018/04/24/handler-uncover-the-messagequeue-part1/</loc>
     <lastmod>2018-08-18T12:47:22.684Z</lastmod>
     <data>
         <display>
-        <title>理解 Handler 框架</title>
-        <pubTime>2018-04-23T11:26:38.000Z</pubTime>
+        <title>MessageQueue 实现详解（上）- Java 世界中的 Message</title>
+        <pubTime>2018-04-24T14:27:21.000Z</pubTime>
         
         <tag>Android source</tag>
          
@@ -505,6 +503,28 @@
         <pubTime>2018-06-20T06:59:29.000Z</pubTime>
         
         <tag>Glide</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://jekton.github.io/2018/04/23/handler-understand-handler-framework/</loc>
+    <lastmod>2018-08-18T12:47:22.684Z</lastmod>
+    <data>
+        <display>
+        <title>理解 Handler 框架</title>
+        <pubTime>2018-04-23T11:26:38.000Z</pubTime>
+        
+        <tag>Android source</tag>
+         
+        <tag>Handler</tag>
          
          
            
@@ -669,12 +689,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/04/18/binder-service-query/</loc>
+    <loc>https://jekton.github.io/2018/04/12/binder-service-registration-part1/</loc>
     <lastmod>2018-08-18T12:47:22.678Z</lastmod>
     <data>
         <display>
-        <title>binder 情景分析 - service 查询</title>
-        <pubTime>2018-04-18T11:30:33.000Z</pubTime>
+        <title>binder 情景分析 - service 的注册（上）</title>
+        <pubTime>2018-04-12T13:19:46.000Z</pubTime>
         
         <tag>Android source</tag>
          
@@ -691,12 +711,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/04/12/binder-service-registration-part1/</loc>
+    <loc>https://jekton.github.io/2018/04/18/binder-service-query/</loc>
     <lastmod>2018-08-18T12:47:22.678Z</lastmod>
     <data>
         <display>
-        <title>binder 情景分析 - service 的注册（上）</title>
-        <pubTime>2018-04-12T13:19:46.000Z</pubTime>
+        <title>binder 情景分析 - service 查询</title>
+        <pubTime>2018-04-18T11:30:33.000Z</pubTime>
         
         <tag>Android source</tag>
          
