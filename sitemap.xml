@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jekton.github.io/2019/03/12/android9-sp-wp/</loc>
+    
+    <lastmod>2019-03-12T01:52:00.764Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jekton.github.io/2019/03/06/android9-light-sp/</loc>
     
-    <lastmod>2019-03-09T04:21:26.504Z</lastmod>
+    <lastmod>2019-03-09T13:09:44.076Z</lastmod>
     
   </url>
   
@@ -86,7 +93,7 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/google9bbc3a252e502b42.html</loc>
+    <loc>https://jekton.github.io/about/index.html</loc>
     
     <lastmod>2018-08-18T12:47:22.694Z</lastmod>
     
@@ -100,23 +107,16 @@
   </url>
   
   <url>
+    <loc>https://jekton.github.io/google9bbc3a252e502b42.html</loc>
+    
+    <lastmod>2018-08-18T12:47:22.694Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jekton.github.io/search/index.html</loc>
     
     <lastmod>2018-08-18T12:47:22.694Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jekton.github.io/about/index.html</loc>
-    
-    <lastmod>2018-08-18T12:47:22.694Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jekton.github.io/2018/07/22/openjdk-build/</loc>
-    
-    <lastmod>2018-08-18T12:47:22.693Z</lastmod>
     
   </url>
   
@@ -128,14 +128,21 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/05/11/logd-overview/</loc>
+    <loc>https://jekton.github.io/2018/07/22/openjdk-build/</loc>
+    
+    <lastmod>2018-08-18T12:47:22.693Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jekton.github.io/2018/05/25/logd-reading/</loc>
     
     <lastmod>2018-08-18T12:47:22.692Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/05/25/logd-reading/</loc>
+    <loc>https://jekton.github.io/2018/05/11/logd-overview/</loc>
     
     <lastmod>2018-08-18T12:47:22.692Z</lastmod>
     
@@ -198,14 +205,14 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/06/20/glide-mem-cache1/</loc>
+    <loc>https://jekton.github.io/2018/04/23/handler-understand-handler-framework/</loc>
     
     <lastmod>2018-08-18T12:47:22.684Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/04/23/handler-understand-handler-framework/</loc>
+    <loc>https://jekton.github.io/2018/06/20/glide-mem-cache1/</loc>
     
     <lastmod>2018-08-18T12:47:22.684Z</lastmod>
     
@@ -219,14 +226,14 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/04/07/binder-why-RemoteListenerCallback-works/</loc>
+    <loc>https://jekton.github.io/2018/04/17/binder-why-BBinder-not-released-after-registered-part2/</loc>
     
     <lastmod>2018-08-18T12:47:22.682Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/04/17/binder-why-BBinder-not-released-after-registered-part2/</loc>
+    <loc>https://jekton.github.io/2018/04/07/binder-why-RemoteListenerCallback-works/</loc>
     
     <lastmod>2018-08-18T12:47:22.682Z</lastmod>
     
