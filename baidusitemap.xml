@@ -4,8 +4,30 @@
 
     
   <url>
+    <loc>https://jekton.github.io/2018/05/11/how-to-read-android-source-code/</loc>
+    <lastmod>2019-03-18T01:36:18.958Z</lastmod>
+    <data>
+        <display>
+        <title>如何使用 Visual Studio Code 阅读 Android 源码</title>
+        <pubTime>2018-05-11T08:16:59.000Z</pubTime>
+        
+        <tag>Android source</tag>
+         
+        <tag>杂谈</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://jekton.github.io/2019/03/12/android9-sp-wp/</loc>
-    <lastmod>2019-03-12T01:52:00.764Z</lastmod>
+    <lastmod>2019-03-12T01:55:41.240Z</lastmod>
     <data>
         <display>
         <title>Android P 源码分析 2 - 强弱指针的实现</title>
@@ -257,6 +279,26 @@
     
     
   <url>
+    <loc>https://jekton.github.io/2018/07/22/openjdk-build/</loc>
+    <lastmod>2018-08-18T12:47:22.693Z</lastmod>
+    <data>
+        <display>
+        <title>个人记录帖 - 编译 OpenJDK 10</title>
+        <pubTime>2018-07-22T01:32:41.000Z</pubTime>
+        
+        <tag>openjdk</tag>
+         
+         
+           
+             
+              <breadCrumb title="JVM" url="https://jekton.github.io/categories/JVM/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://jekton.github.io/2018/05/17/logd-writing-part2/</loc>
     <lastmod>2018-08-18T12:47:22.693Z</lastmod>
     <data>
@@ -272,26 +314,6 @@
            
              
               <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://jekton.github.io/2018/07/22/openjdk-build/</loc>
-    <lastmod>2018-08-18T12:47:22.693Z</lastmod>
-    <data>
-        <display>
-        <title>个人记录帖 - 编译 OpenJDK 10</title>
-        <pubTime>2018-07-22T01:32:41.000Z</pubTime>
-        
-        <tag>openjdk</tag>
-         
-         
-           
-             
-              <breadCrumb title="JVM" url="https://jekton.github.io/categories/JVM/"/>
           
         </display>
     </data>
@@ -387,14 +409,16 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/07/22/java-translation-jep-193-Variable-Handles/</loc>
+    <loc>https://jekton.github.io/2018/03/20/java-synchronized-keyword/</loc>
     <lastmod>2018-08-18T12:47:22.691Z</lastmod>
     <data>
         <display>
-        <title>翻译 - JEP 193：Variable Handles</title>
-        <pubTime>2018-07-22T05:10:24.000Z</pubTime>
+        <title>synchronized 那些事</title>
+        <pubTime>2018-03-20T12:19:39.000Z</pubTime>
         
         <tag>Java</tag>
+         
+        <tag>synchronized</tag>
          
          
            
@@ -407,16 +431,14 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/03/20/java-synchronized-keyword/</loc>
+    <loc>https://jekton.github.io/2018/07/22/java-translation-jep-193-Variable-Handles/</loc>
     <lastmod>2018-08-18T12:47:22.691Z</lastmod>
     <data>
         <display>
-        <title>synchronized 那些事</title>
-        <pubTime>2018-03-20T12:19:39.000Z</pubTime>
+        <title>翻译 - JEP 193：Variable Handles</title>
+        <pubTime>2018-07-22T05:10:24.000Z</pubTime>
         
         <tag>Java</tag>
-         
-        <tag>synchronized</tag>
          
          
            
@@ -449,16 +471,36 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/05/11/how-to-read-android-source-code/</loc>
-    <lastmod>2018-08-18T12:47:22.685Z</lastmod>
+    <loc>https://jekton.github.io/2018/04/24/handler-uncover-the-messagequeue-part1/</loc>
+    <lastmod>2018-08-18T12:47:22.684Z</lastmod>
     <data>
         <display>
-        <title>如何使用 Visual Studio Code 阅读 Android 源码</title>
-        <pubTime>2018-05-11T08:16:59.000Z</pubTime>
+        <title>MessageQueue 实现详解（上）- Java 世界中的 Message</title>
+        <pubTime>2018-04-24T14:27:21.000Z</pubTime>
         
         <tag>Android source</tag>
          
-        <tag>杂谈</tag>
+        <tag>Handler</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://jekton.github.io/2018/06/20/glide-mem-cache1/</loc>
+    <lastmod>2018-08-18T12:47:22.684Z</lastmod>
+    <data>
+        <display>
+        <title>Glide 源码分析(2) - 内存缓存和数组缓存</title>
+        <pubTime>2018-06-20T06:59:29.000Z</pubTime>
+        
+        <tag>Glide</tag>
          
          
            
@@ -493,28 +535,6 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/04/24/handler-uncover-the-messagequeue-part1/</loc>
-    <lastmod>2018-08-18T12:47:22.684Z</lastmod>
-    <data>
-        <display>
-        <title>MessageQueue 实现详解（上）- Java 世界中的 Message</title>
-        <pubTime>2018-04-24T14:27:21.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-        <tag>Handler</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://jekton.github.io/2018/04/23/handler-understand-handler-framework/</loc>
     <lastmod>2018-08-18T12:47:22.684Z</lastmod>
     <data>
@@ -525,26 +545,6 @@
         <tag>Android source</tag>
          
         <tag>Handler</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://jekton.github.io/2018/06/20/glide-mem-cache1/</loc>
-    <lastmod>2018-08-18T12:47:22.684Z</lastmod>
-    <data>
-        <display>
-        <title>Glide 源码分析(2) - 内存缓存和数组缓存</title>
-        <pubTime>2018-06-20T06:59:29.000Z</pubTime>
-        
-        <tag>Glide</tag>
          
          
            
