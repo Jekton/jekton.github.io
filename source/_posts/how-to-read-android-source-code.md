@@ -88,7 +88,7 @@ Android 源码中主要是 C/C++、Java 代码，为此，我们至少需要安�
 #### 系统编程
 - 《Linux系统编程》
 - 《UNIX环境高级程序设计》（俗称 APUE）
-- 《UNIX 网络编程》（俗称 UNE）
+- 《UNIX 网络编程》（俗称 UNP）
 
 #### Linux 内核
 - 《Linux内核设计与实现》
