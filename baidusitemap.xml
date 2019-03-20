@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>https://jekton.github.io/2019/03/19/android9-logd-init/</loc>
+    <lastmod>2019-03-20T12:23:26.622Z</lastmod>
+    <data>
+        <display>
+        <title>Android P 源码分析 4 - logd 的初始化</title>
+        <pubTime>2019-03-19T11:45:44.000Z</pubTime>
+        
+        <tag>Android source</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://jekton.github.io/2019/03/19/android9-sp/</loc>
     <lastmod>2019-03-19T02:14:55.836Z</lastmod>
     <data>
@@ -363,6 +383,28 @@
 
     
   <url>
+    <loc>https://jekton.github.io/2018/05/11/logd-overview/</loc>
+    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
+    <data>
+        <display>
+        <title>Android log 机制 - logd 总览</title>
+        <pubTime>2018-05-11T01:14:18.000Z</pubTime>
+        
+        <tag>Android source</tag>
+         
+        <tag>logd</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://jekton.github.io/2018/05/17/logd-prune/</loc>
     <lastmod>2018-08-18T12:47:22.692Z</lastmod>
     <data>
@@ -407,21 +449,21 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/05/11/logd-overview/</loc>
-    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
+    <loc>https://jekton.github.io/2018/03/20/java-synchronized-keyword/</loc>
+    <lastmod>2018-08-18T12:47:22.691Z</lastmod>
     <data>
         <display>
-        <title>Android log 机制 - logd 总览</title>
-        <pubTime>2018-05-11T01:14:18.000Z</pubTime>
+        <title>synchronized 那些事</title>
+        <pubTime>2018-03-20T12:19:39.000Z</pubTime>
         
-        <tag>Android source</tag>
+        <tag>Java</tag>
          
-        <tag>logd</tag>
+        <tag>synchronized</tag>
          
          
            
              
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
+              <breadCrumb title="Java" url="https://jekton.github.io/categories/Java/"/>
           
         </display>
     </data>
@@ -469,21 +511,19 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/03/20/java-synchronized-keyword/</loc>
-    <lastmod>2018-08-18T12:47:22.691Z</lastmod>
+    <loc>https://jekton.github.io/2018/06/20/glide-mem-cache1/</loc>
+    <lastmod>2018-08-18T12:47:22.684Z</lastmod>
     <data>
         <display>
-        <title>synchronized 那些事</title>
-        <pubTime>2018-03-20T12:19:39.000Z</pubTime>
+        <title>Glide 源码分析(2) - 内存缓存和数组缓存</title>
+        <pubTime>2018-06-20T06:59:29.000Z</pubTime>
         
-        <tag>Java</tag>
-         
-        <tag>synchronized</tag>
+        <tag>Glide</tag>
          
          
            
              
-              <breadCrumb title="Java" url="https://jekton.github.io/categories/Java/"/>
+              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
           
         </display>
     </data>
@@ -523,26 +563,6 @@
         <tag>Android source</tag>
          
         <tag>Handler</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://jekton.github.io/2018/06/20/glide-mem-cache1/</loc>
-    <lastmod>2018-08-18T12:47:22.684Z</lastmod>
-    <data>
-        <display>
-        <title>Glide 源码分析(2) - 内存缓存和数组缓存</title>
-        <pubTime>2018-06-20T06:59:29.000Z</pubTime>
-        
-        <tag>Glide</tag>
          
          
            
@@ -641,12 +661,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/04/16/binder-why-BBinder-not-released-after-registered-part1/</loc>
+    <loc>https://jekton.github.io/2018/04/11/binder-startup-of-service-manager/</loc>
     <lastmod>2018-08-18T12:47:22.681Z</lastmod>
     <data>
         <display>
-        <title>binder 情景分析 - 为什么注册后的 BBinder 不会被意外释放？（上）—— 理解 RefBase、sp、wp</title>
-        <pubTime>2018-04-16T14:15:32.000Z</pubTime>
+        <title>binder 情景分析 - service manager (context manager) 的启动</title>
+        <pubTime>2018-04-11T11:58:52.000Z</pubTime>
         
         <tag>Android source</tag>
          
@@ -663,12 +683,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/04/11/binder-startup-of-service-manager/</loc>
+    <loc>https://jekton.github.io/2018/04/16/binder-why-BBinder-not-released-after-registered-part1/</loc>
     <lastmod>2018-08-18T12:47:22.681Z</lastmod>
     <data>
         <display>
-        <title>binder 情景分析 - service manager (context manager) 的启动</title>
-        <pubTime>2018-04-11T11:58:52.000Z</pubTime>
+        <title>binder 情景分析 - 为什么注册后的 BBinder 不会被意外释放？（上）—— 理解 RefBase、sp、wp</title>
+        <pubTime>2018-04-16T14:15:32.000Z</pubTime>
         
         <tag>Android source</tag>
          
@@ -773,12 +793,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/06/30/android-arch-ViewModel/</loc>
+    <loc>https://jekton.github.io/2018/07/14/android-arch-LiveData/</loc>
     <lastmod>2018-08-18T12:47:22.677Z</lastmod>
     <data>
         <display>
-        <title>Android arch components 源码分析（1）—— ViewModel</title>
-        <pubTime>2018-06-30T05:26:59.000Z</pubTime>
+        <title>Android arch components 源码分析（3）—— LiveData</title>
+        <pubTime>2018-07-14T07:42:06.000Z</pubTime>
         
         <tag>Android arch</tag>
          
@@ -793,12 +813,12 @@
 
     
   <url>
-    <loc>https://jekton.github.io/2018/07/14/android-arch-LiveData/</loc>
+    <loc>https://jekton.github.io/2018/06/30/android-arch-ViewModel/</loc>
     <lastmod>2018-08-18T12:47:22.677Z</lastmod>
     <data>
         <display>
-        <title>Android arch components 源码分析（3）—— LiveData</title>
-        <pubTime>2018-07-14T07:42:06.000Z</pubTime>
+        <title>Android arch components 源码分析（1）—— ViewModel</title>
+        <pubTime>2018-06-30T05:26:59.000Z</pubTime>
         
         <tag>Android arch</tag>
          

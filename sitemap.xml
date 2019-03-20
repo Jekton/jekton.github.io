@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jekton.github.io/2019/03/19/android9-logd-init/</loc>
+    
+    <lastmod>2019-03-20T12:23:26.622Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jekton.github.io/2019/03/19/android9-sp/</loc>
     
     <lastmod>2019-03-19T02:14:55.836Z</lastmod>
@@ -107,14 +114,14 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/google9bbc3a252e502b42.html</loc>
+    <loc>https://jekton.github.io/categories/index.html</loc>
     
     <lastmod>2018-08-18T12:47:22.694Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jekton.github.io/categories/index.html</loc>
+    <loc>https://jekton.github.io/google9bbc3a252e502b42.html</loc>
     
     <lastmod>2018-08-18T12:47:22.694Z</lastmod>
     
@@ -156,6 +163,13 @@
   </url>
   
   <url>
+    <loc>https://jekton.github.io/2018/05/11/logd-overview/</loc>
+    
+    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jekton.github.io/2018/05/17/logd-prune/</loc>
     
     <lastmod>2018-08-18T12:47:22.692Z</lastmod>
@@ -170,9 +184,9 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/05/11/logd-overview/</loc>
+    <loc>https://jekton.github.io/2018/03/20/java-synchronized-keyword/</loc>
     
-    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
+    <lastmod>2018-08-18T12:47:22.691Z</lastmod>
     
   </url>
   
@@ -191,9 +205,9 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/03/20/java-synchronized-keyword/</loc>
+    <loc>https://jekton.github.io/2018/06/20/glide-mem-cache1/</loc>
     
-    <lastmod>2018-08-18T12:47:22.691Z</lastmod>
+    <lastmod>2018-08-18T12:47:22.684Z</lastmod>
     
   </url>
   
@@ -206,13 +220,6 @@
   
   <url>
     <loc>https://jekton.github.io/2018/04/24/handler-uncover-the-messagequeue-part1/</loc>
-    
-    <lastmod>2018-08-18T12:47:22.684Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jekton.github.io/2018/06/20/glide-mem-cache1/</loc>
     
     <lastmod>2018-08-18T12:47:22.684Z</lastmod>
     
@@ -247,14 +254,14 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/04/16/binder-why-BBinder-not-released-after-registered-part1/</loc>
+    <loc>https://jekton.github.io/2018/04/11/binder-startup-of-service-manager/</loc>
     
     <lastmod>2018-08-18T12:47:22.681Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/04/11/binder-startup-of-service-manager/</loc>
+    <loc>https://jekton.github.io/2018/04/16/binder-why-BBinder-not-released-after-registered-part1/</loc>
     
     <lastmod>2018-08-18T12:47:22.681Z</lastmod>
     
@@ -289,14 +296,14 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/06/30/android-arch-ViewModel/</loc>
+    <loc>https://jekton.github.io/2018/07/14/android-arch-LiveData/</loc>
     
     <lastmod>2018-08-18T12:47:22.677Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/07/14/android-arch-LiveData/</loc>
+    <loc>https://jekton.github.io/2018/06/30/android-arch-ViewModel/</loc>
     
     <lastmod>2018-08-18T12:47:22.677Z</lastmod>
     
