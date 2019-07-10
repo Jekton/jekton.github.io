@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jekton.github.io/2019/07/08/android-scrollview-impl/</loc>
+    
+    <lastmod>2019-07-10T11:40:09.289Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jekton.github.io/categories/index.html</loc>
+    
+    <lastmod>2019-07-09T08:09:32.098Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jekton.github.io/tags/index.html</loc>
+    
+    <lastmod>2019-07-09T07:17:18.911Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jekton.github.io/2019/05/26/java-multi-singleton/</loc>
     
     <lastmod>2019-05-26T13:09:31.762Z</lastmod>
@@ -128,21 +149,7 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/tags/index.html</loc>
-    
-    <lastmod>2018-08-18T12:47:22.695Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jekton.github.io/google9bbc3a252e502b42.html</loc>
-    
-    <lastmod>2018-08-18T12:47:22.694Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jekton.github.io/about/index.html</loc>
     
     <lastmod>2018-08-18T12:47:22.694Z</lastmod>
     
@@ -156,7 +163,7 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/categories/index.html</loc>
+    <loc>https://jekton.github.io/about/index.html</loc>
     
     <lastmod>2018-08-18T12:47:22.694Z</lastmod>
     
@@ -184,14 +191,14 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/05/17/logd-prune/</loc>
+    <loc>https://jekton.github.io/2018/05/25/logd-reading/</loc>
     
     <lastmod>2018-08-18T12:47:22.692Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/05/25/logd-reading/</loc>
+    <loc>https://jekton.github.io/2018/05/17/logd-prune/</loc>
     
     <lastmod>2018-08-18T12:47:22.692Z</lastmod>
     
@@ -212,13 +219,6 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/07/25/jdk-FutureTask/</loc>
-    
-    <lastmod>2018-08-18T12:47:22.691Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jekton.github.io/2018/03/20/java-synchronized-keyword/</loc>
     
     <lastmod>2018-08-18T12:47:22.691Z</lastmod>
@@ -226,9 +226,9 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/06/20/glide-mem-cache1/</loc>
+    <loc>https://jekton.github.io/2018/07/25/jdk-FutureTask/</loc>
     
-    <lastmod>2018-08-18T12:47:22.684Z</lastmod>
+    <lastmod>2018-08-18T12:47:22.691Z</lastmod>
     
   </url>
   
@@ -248,6 +248,13 @@
   
   <url>
     <loc>https://jekton.github.io/2018/04/27/handler-uncover-the-messagequeue-part2/</loc>
+    
+    <lastmod>2018-08-18T12:47:22.684Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jekton.github.io/2018/06/20/glide-mem-cache1/</loc>
     
     <lastmod>2018-08-18T12:47:22.684Z</lastmod>
     

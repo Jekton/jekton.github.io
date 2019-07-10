@@ -1,914 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-
-    
   <url>
+    <loc>https://jekton.github.io/2019/07/08/android-scrollview-impl/</loc>
+    <lastmod>2019-07-10</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2019/05/26/java-multi-singleton/</loc>
-    <lastmod>2019-05-26T13:09:31.762Z</lastmod>
-    <data>
-        <display>
-        <title>如何使用 Java 和 double-check 实现支持多实例的单例</title>
-        <pubTime>2019-05-26T12:13:52.000Z</pubTime>
-        
-        <tag>parallel-programming</tag>
-         
-         
-           
-             
-              <breadCrumb title="Java" url="https://jekton.github.io/categories/Java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2019-05-26</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2019/04/06/native-crash-catching/</loc>
-    <lastmod>2019-04-06T03:39:15.712Z</lastmod>
-    <data>
-        <display>
-        <title>Android native 崩溃信息捕获实践</title>
-        <pubTime>2019-04-06T01:35:52.000Z</pubTime>
-        
-        <tag>native-crash</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2019-04-06</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2019/03/21/android9-lmk-lmkd/</loc>
-    <lastmod>2019-03-23T03:39:25.644Z</lastmod>
-    <data>
-        <display>
-        <title>Android P 源码分析 5 - Low memory killer 之 lmkd 守护进程</title>
-        <pubTime>2019-03-21T11:28:58.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2019-03-23</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2019/03/20/android9-logd-init/</loc>
-    <lastmod>2019-03-20T12:25:21.225Z</lastmod>
-    <data>
-        <display>
-        <title>Android P 源码分析 4 - logd 的初始化</title>
-        <pubTime>2019-03-20T11:45:44.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2019-03-20</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2019/03/19/android9-sp/</loc>
-    <lastmod>2019-03-19T02:14:55.836Z</lastmod>
-    <data>
-        <display>
-        <title>Android P 源码分析 3 - SharedPreferences 源码分析</title>
-        <pubTime>2019-03-19T11:30:50.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2019-03-19</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2019/03/12/android9-sp-wp/</loc>
-    <lastmod>2019-03-18T11:38:29.179Z</lastmod>
-    <data>
-        <display>
-        <title>Android P 源码分析 2 - 强弱指针的实现</title>
-        <pubTime>2019-03-12T01:01:01.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2019-03-18</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2018/05/11/how-to-read-android-source-code/</loc>
-    <lastmod>2019-03-18T01:36:18.958Z</lastmod>
-    <data>
-        <display>
-        <title>如何使用 Visual Studio Code 阅读 Android 源码</title>
-        <pubTime>2018-05-11T08:16:59.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-        <tag>杂谈</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2019-03-18</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2019/03/06/android9-light-sp/</loc>
-    <lastmod>2019-03-09T13:09:44.076Z</lastmod>
-    <data>
-        <display>
-        <title>Android P 源码分析 1 - 轻量级智能指针的实现</title>
-        <pubTime>2019-03-06T11:23:28.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2019-03-09</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2018/06/23/socket-intro/</loc>
-    <lastmod>2019-03-05T11:34:16.727Z</lastmod>
-    <data>
-        <display>
-        <title>TCP/IP、Socket 和协议设计</title>
-        <pubTime>2018-06-23T01:12:16.000Z</pubTime>
-        
-        <tag>Java</tag>
-         
-        <tag>Socket</tag>
-         
-         
-           
-             
-              <breadCrumb title="Java" url="https://jekton.github.io/categories/Java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2019-03-05</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2018/12/15/linux-wait-event/</loc>
-    <lastmod>2018-12-21T01:07:29.633Z</lastmod>
-    <data>
-        <display>
-        <title>Java 程序员眼里的 Linux 内核 —— wait_event 源码分析</title>
-        <pubTime>2018-12-15T08:30:37.000Z</pubTime>
-        
-        <tag>parallel-programming</tag>
-         
-        <tag>Java</tag>
-         
-        <tag>Linux</tag>
-         
-         
-           
-             
-              <breadCrumb title="Linux" url="https://jekton.github.io/categories/Linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-12-21</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2018/11/18/linux-page-table-setup/</loc>
-    <lastmod>2018-11-25T03:35:50.450Z</lastmod>
-    <data>
-        <display>
-        <title>Linux 内核页表的创建</title>
-        <pubTime>2018-11-18T10:49:38.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-         
-           
-             
-              <breadCrumb title="Linux" url="https://jekton.github.io/categories/Linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-11-25</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2018/11/18/note-x86-provisional-kernel-page-table-setup/</loc>
-    <lastmod>2018-11-18T10:36:02.826Z</lastmod>
-    <data>
-        <display>
-        <title>《深入理解 LINUX 内核》读书笔记 - 临时内核页表</title>
-        <pubTime>2018-11-18T04:04:22.000Z</pubTime>
-        
-        <tag>读书笔记</tag>
-         
-        <tag>Linux</tag>
-         
-         
-           
-             
-              <breadCrumb title="读书笔记" url="https://jekton.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-11-18</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2018/08/29/flutter-ux-basic/</loc>
-    <lastmod>2018-09-18T12:17:25.137Z</lastmod>
-    <data>
-        <display>
-        <title>Flutter 开发（3）- 交互、动画、手势和事件处理</title>
-        <pubTime>2018-08-29T01:06:41.000Z</pubTime>
-        
-        <tag>Flutter</tag>
-         
-         
-           
-             
-              <breadCrumb title="Flutter" url="https://jekton.github.io/categories/Flutter/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-09-18</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2018/08/26/flutter-ui-basic/</loc>
-    <lastmod>2018-09-18T12:17:18.177Z</lastmod>
-    <data>
-        <display>
-        <title>Flutter 开发（2）- UI控件和布局</title>
-        <pubTime>2018-08-26T07:33:41.000Z</pubTime>
-        
-        <tag>Flutter</tag>
-         
-         
-           
-             
-              <breadCrumb title="Flutter" url="https://jekton.github.io/categories/Flutter/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-09-18</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2018/09/16/flutter-plugin-dev/</loc>
-    <lastmod>2018-09-18T12:17:10.098Z</lastmod>
-    <data>
-        <display>
-        <title>Flutter 开发（5）- 插件的使用、开发和发布</title>
-        <pubTime>2018-09-16T01:34:02.000Z</pubTime>
-        
-        <tag>Flutter</tag>
-         
-         
-           
-             
-              <breadCrumb title="Flutter" url="https://jekton.github.io/categories/Flutter/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-09-18</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2018/09/01/flutter-io-basic/</loc>
-    <lastmod>2018-09-18T12:16:58.613Z</lastmod>
-    <data>
-        <display>
-        <title>Flutter 开发（4）- 文件、存储和网络</title>
-        <pubTime>2018-08-31T23:29:39.000Z</pubTime>
-        
-        <tag>Flutter</tag>
-         
-         
-           
-             
-              <breadCrumb title="Flutter" url="https://jekton.github.io/categories/Flutter/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-09-18</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2018/08/26/flutter-first-app/</loc>
-    <lastmod>2018-09-18T12:16:48.243Z</lastmod>
-    <data>
-        <display>
-        <title>Flutter 开发（1）- 开发框架、流程、编译打包、调试</title>
-        <pubTime>2018-08-26T01:41:42.000Z</pubTime>
-        
-        <tag>Flutter</tag>
-         
-         
-           
-             
-              <breadCrumb title="Flutter" url="https://jekton.github.io/categories/Flutter/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-09-18</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2018/09/04/dart-tutorial/</loc>
-    <lastmod>2018-09-18T12:15:54.839Z</lastmod>
-    <data>
-        <display>
-        <title>Dart 语言入门</title>
-        <pubTime>2018-09-04T01:49:17.000Z</pubTime>
-        
-        <tag>Dart</tag>
-         
-         
-           
-             
-              <breadCrumb title="Dart" url="https://jekton.github.io/categories/Dart/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-    
-    
-    
-    
-  <url>
+    <lastmod>2018-09-18</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2018/07/22/openjdk-build/</loc>
-    <lastmod>2018-08-18T12:47:22.693Z</lastmod>
-    <data>
-        <display>
-        <title>个人记录帖 - 编译 OpenJDK 10</title>
-        <pubTime>2018-07-22T01:32:41.000Z</pubTime>
-        
-        <tag>openjdk</tag>
-         
-         
-           
-             
-              <breadCrumb title="JVM" url="https://jekton.github.io/categories/JVM/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-18</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2018/05/17/logd-writing-part2/</loc>
-    <lastmod>2018-08-18T12:47:22.693Z</lastmod>
-    <data>
-        <display>
-        <title>Android log 机制 - logd 如何接收 log 数据（下）</title>
-        <pubTime>2018-05-17T00:34:22.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-        <tag>logd</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-18</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2018/05/16/logd-writing-part1/</loc>
-    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
-    <data>
-        <display>
-        <title>Android log 机制 - logd 如何接收 log 数据（上）</title>
-        <pubTime>2018-05-16T11:43:29.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-        <tag>logd</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://jekton.github.io/2018/05/17/logd-prune/</loc>
-    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
-    <data>
-        <display>
-        <title>Android log 机制 - 删除过多的 log</title>
-        <pubTime>2018-05-17T06:09:46.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-        <tag>logd</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-18</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2018/05/25/logd-reading/</loc>
-    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
-    <data>
-        <display>
-        <title>Android log 机制 - 读取 logd 中的 log 数据</title>
-        <pubTime>2018-05-25T05:56:56.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-        <tag>logd</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-18</lastmod>
+  </url>  <url>
+    <loc>https://jekton.github.io/2018/05/17/logd-prune/</loc>
+    <lastmod>2018-08-18</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2018/05/11/logd-overview/</loc>
-    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
-    <data>
-        <display>
-        <title>Android log 机制 - logd 总览</title>
-        <pubTime>2018-05-11T01:14:18.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-        <tag>logd</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-18</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2018/07/22/java-translation-jep-193-Variable-Handles/</loc>
-    <lastmod>2018-08-18T12:47:22.691Z</lastmod>
-    <data>
-        <display>
-        <title>翻译 - JEP 193：Variable Handles</title>
-        <pubTime>2018-07-22T05:10:24.000Z</pubTime>
-        
-        <tag>Java</tag>
-         
-         
-           
-             
-              <breadCrumb title="Java" url="https://jekton.github.io/categories/Java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://jekton.github.io/2018/07/25/jdk-FutureTask/</loc>
-    <lastmod>2018-08-18T12:47:22.691Z</lastmod>
-    <data>
-        <display>
-        <title>JDK 源码分析（1）- FutureTask</title>
-        <pubTime>2018-07-25T05:27:45.000Z</pubTime>
-        
-        <tag>JDK</tag>
-         
-         
-           
-             
-              <breadCrumb title="Java" url="https://jekton.github.io/categories/Java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-18</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2018/03/20/java-synchronized-keyword/</loc>
-    <lastmod>2018-08-18T12:47:22.691Z</lastmod>
-    <data>
-        <display>
-        <title>synchronized 那些事</title>
-        <pubTime>2018-03-20T12:19:39.000Z</pubTime>
-        
-        <tag>Java</tag>
-         
-        <tag>synchronized</tag>
-         
-         
-           
-             
-              <breadCrumb title="Java" url="https://jekton.github.io/categories/Java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://jekton.github.io/2018/06/20/glide-mem-cache1/</loc>
-    <lastmod>2018-08-18T12:47:22.684Z</lastmod>
-    <data>
-        <display>
-        <title>Glide 源码分析(2) - 内存缓存和数组缓存</title>
-        <pubTime>2018-06-20T06:59:29.000Z</pubTime>
-        
-        <tag>Glide</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-18</lastmod>
+  </url>  <url>
+    <loc>https://jekton.github.io/2018/07/25/jdk-FutureTask/</loc>
+    <lastmod>2018-08-18</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2018/04/23/handler-understand-handler-framework/</loc>
-    <lastmod>2018-08-18T12:47:22.684Z</lastmod>
-    <data>
-        <display>
-        <title>理解 Handler 框架</title>
-        <pubTime>2018-04-23T11:26:38.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-        <tag>Handler</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-18</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2018/04/24/handler-uncover-the-messagequeue-part1/</loc>
-    <lastmod>2018-08-18T12:47:22.684Z</lastmod>
-    <data>
-        <display>
-        <title>MessageQueue 实现详解（上）- Java 世界中的 Message</title>
-        <pubTime>2018-04-24T14:27:21.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-        <tag>Handler</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-18</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2018/04/27/handler-uncover-the-messagequeue-part2/</loc>
-    <lastmod>2018-08-18T12:47:22.684Z</lastmod>
-    <data>
-        <display>
-        <title>MessageQueue 实现详解（下）- C++ 世界对 Message 的支持</title>
-        <pubTime>2018-04-27T06:00:34.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-        <tag>Handler</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-18</lastmod>
+  </url>  <url>
+    <loc>https://jekton.github.io/2018/06/20/glide-mem-cache1/</loc>
+    <lastmod>2018-08-18</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2018/06/08/glide-disk-cache/</loc>
-    <lastmod>2018-08-18T12:47:22.683Z</lastmod>
-    <data>
-        <display>
-        <title>Glide 源码分析(1) - DiskCache 详解</title>
-        <pubTime>2018-06-08T10:32:03.000Z</pubTime>
-        
-        <tag>Glide</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-18</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2018/04/17/binder-why-BBinder-not-released-after-registered-part2/</loc>
-    <lastmod>2018-08-18T12:47:22.682Z</lastmod>
-    <data>
-        <display>
-        <title>binder 情景分析 - 为什么注册后的 BBinder 不会被意外释放？（下）—— binder 生命周期管理机制概述</title>
-        <pubTime>2018-04-17T06:04:48.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-        <tag>Binder</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-18</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2018/04/07/binder-why-RemoteListenerCallback-works/</loc>
-    <lastmod>2018-08-18T12:47:22.682Z</lastmod>
-    <data>
-        <display>
-        <title>binder 情景分析 - RemoteListenerCallback 为什么可以正常工作？</title>
-        <pubTime>2018-04-07T07:49:44.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-        <tag>Binder</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-18</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2018/04/16/binder-why-BBinder-not-released-after-registered-part1/</loc>
-    <lastmod>2018-08-18T12:47:22.681Z</lastmod>
-    <data>
-        <display>
-        <title>binder 情景分析 - 为什么注册后的 BBinder 不会被意外释放？（上）—— 理解 RefBase、sp、wp</title>
-        <pubTime>2018-04-16T14:15:32.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-        <tag>Binder</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-18</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2018/04/11/binder-startup-of-service-manager/</loc>
-    <lastmod>2018-08-18T12:47:22.681Z</lastmod>
-    <data>
-        <display>
-        <title>binder 情景分析 - service manager (context manager) 的启动</title>
-        <pubTime>2018-04-11T11:58:52.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-        <tag>Binder</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-18</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2018/04/14/binder-service-registration-part3/</loc>
-    <lastmod>2018-08-18T12:47:22.680Z</lastmod>
-    <data>
-        <display>
-        <title>binder 情景分析 - service 的注册（下）</title>
-        <pubTime>2018-04-14T00:30:02.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-        <tag>Binder</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-18</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2018/04/13/binder-service-registration-part2/</loc>
-    <lastmod>2018-08-18T12:47:22.679Z</lastmod>
-    <data>
-        <display>
-        <title>binder 情景分析 - service 的注册（中）</title>
-        <pubTime>2018-04-13T13:49:29.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-        <tag>Binder</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-18</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2018/04/12/binder-service-registration-part1/</loc>
-    <lastmod>2018-08-18T12:47:22.678Z</lastmod>
-    <data>
-        <display>
-        <title>binder 情景分析 - service 的注册（上）</title>
-        <pubTime>2018-04-12T13:19:46.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-        <tag>Binder</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-18</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2018/04/18/binder-service-query/</loc>
-    <lastmod>2018-08-18T12:47:22.678Z</lastmod>
-    <data>
-        <display>
-        <title>binder 情景分析 - service 查询</title>
-        <pubTime>2018-04-18T11:30:33.000Z</pubTime>
-        
-        <tag>Android source</tag>
-         
-        <tag>Binder</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-18</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2018/06/30/android-arch-ViewModel/</loc>
-    <lastmod>2018-08-18T12:47:22.677Z</lastmod>
-    <data>
-        <display>
-        <title>Android arch components 源码分析（1）—— ViewModel</title>
-        <pubTime>2018-06-30T05:26:59.000Z</pubTime>
-        
-        <tag>Android arch</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-18</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2018/07/14/android-arch-LiveData/</loc>
-    <lastmod>2018-08-18T12:47:22.677Z</lastmod>
-    <data>
-        <display>
-        <title>Android arch components 源码分析（3）—— LiveData</title>
-        <pubTime>2018-07-14T07:42:06.000Z</pubTime>
-        
-        <tag>Android arch</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-18</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2018/07/06/android-arch-lifecycle/</loc>
-    <lastmod>2018-08-18T12:47:22.677Z</lastmod>
-    <data>
-        <display>
-        <title>Android arch components 源码分析（2）—— Lifecycle</title>
-        <pubTime>2018-07-06T03:10:47.000Z</pubTime>
-        
-        <tag>Android arch</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="https://jekton.github.io/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
+    <lastmod>2018-08-18</lastmod>
+  </url>
 </urlset>
