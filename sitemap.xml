@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jekton.github.io/2020/01/21/android-jetpack-ProcessLifecycleOwner/</loc>
+    
+    <lastmod>2020-01-21T00:16:37.705Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jekton.github.io/2019/10/28/android-fragment-pitfall/</loc>
     
     <lastmod>2019-10-28T13:25:56.289Z</lastmod>
@@ -177,13 +184,6 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/07/22/openjdk-build/</loc>
-    
-    <lastmod>2018-08-18T12:47:22.693Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jekton.github.io/2018/05/17/logd-writing-part2/</loc>
     
     <lastmod>2018-08-18T12:47:22.693Z</lastmod>
@@ -191,21 +191,14 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/05/11/logd-overview/</loc>
+    <loc>https://jekton.github.io/2018/07/22/openjdk-build/</loc>
     
-    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
+    <lastmod>2018-08-18T12:47:22.693Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jekton.github.io/2018/05/16/logd-writing-part1/</loc>
-    
-    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jekton.github.io/2018/05/25/logd-reading/</loc>
     
     <lastmod>2018-08-18T12:47:22.692Z</lastmod>
     
@@ -219,14 +212,28 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/07/22/java-translation-jep-193-Variable-Handles/</loc>
+    <loc>https://jekton.github.io/2018/05/25/logd-reading/</loc>
+    
+    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jekton.github.io/2018/05/11/logd-overview/</loc>
+    
+    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jekton.github.io/2018/07/25/jdk-FutureTask/</loc>
     
     <lastmod>2018-08-18T12:47:22.691Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/07/25/jdk-FutureTask/</loc>
+    <loc>https://jekton.github.io/2018/07/22/java-translation-jep-193-Variable-Handles/</loc>
     
     <lastmod>2018-08-18T12:47:22.691Z</lastmod>
     
@@ -240,14 +247,14 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/04/24/handler-uncover-the-messagequeue-part1/</loc>
+    <loc>https://jekton.github.io/2018/04/23/handler-understand-handler-framework/</loc>
     
     <lastmod>2018-08-18T12:47:22.684Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/04/23/handler-understand-handler-framework/</loc>
+    <loc>https://jekton.github.io/2018/04/24/handler-uncover-the-messagequeue-part1/</loc>
     
     <lastmod>2018-08-18T12:47:22.684Z</lastmod>
     
@@ -289,14 +296,14 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/04/16/binder-why-BBinder-not-released-after-registered-part1/</loc>
+    <loc>https://jekton.github.io/2018/04/11/binder-startup-of-service-manager/</loc>
     
     <lastmod>2018-08-18T12:47:22.681Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/04/11/binder-startup-of-service-manager/</loc>
+    <loc>https://jekton.github.io/2018/04/16/binder-why-BBinder-not-released-after-registered-part1/</loc>
     
     <lastmod>2018-08-18T12:47:22.681Z</lastmod>
     
