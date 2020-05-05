@@ -76,6 +76,9 @@
     <loc>https://jekton.github.io/2018/05/17/logd-writing-part2/</loc>
     <lastmod>2018-08-18</lastmod>
   </url>  <url>
+    <loc>https://jekton.github.io/2018/05/11/logd-overview/</loc>
+    <lastmod>2018-08-18</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2018/05/17/logd-prune/</loc>
     <lastmod>2018-08-18</lastmod>
   </url>  <url>
@@ -85,28 +88,25 @@
     <loc>https://jekton.github.io/2018/05/25/logd-reading/</loc>
     <lastmod>2018-08-18</lastmod>
   </url>  <url>
-    <loc>https://jekton.github.io/2018/05/11/logd-overview/</loc>
+    <loc>https://jekton.github.io/2018/07/25/jdk-FutureTask/</loc>
     <lastmod>2018-08-18</lastmod>
   </url>  <url>
     <loc>https://jekton.github.io/2018/07/22/java-translation-jep-193-Variable-Handles/</loc>
     <lastmod>2018-08-18</lastmod>
   </url>  <url>
-    <loc>https://jekton.github.io/2018/07/25/jdk-FutureTask/</loc>
-    <lastmod>2018-08-18</lastmod>
-  </url>  <url>
     <loc>https://jekton.github.io/2018/03/20/java-synchronized-keyword/</loc>
-    <lastmod>2018-08-18</lastmod>
-  </url>  <url>
-    <loc>https://jekton.github.io/2018/04/27/handler-uncover-the-messagequeue-part2/</loc>
-    <lastmod>2018-08-18</lastmod>
-  </url>  <url>
-    <loc>https://jekton.github.io/2018/06/20/glide-mem-cache1/</loc>
     <lastmod>2018-08-18</lastmod>
   </url>  <url>
     <loc>https://jekton.github.io/2018/04/24/handler-uncover-the-messagequeue-part1/</loc>
     <lastmod>2018-08-18</lastmod>
   </url>  <url>
+    <loc>https://jekton.github.io/2018/06/20/glide-mem-cache1/</loc>
+    <lastmod>2018-08-18</lastmod>
+  </url>  <url>
     <loc>https://jekton.github.io/2018/04/23/handler-understand-handler-framework/</loc>
+    <lastmod>2018-08-18</lastmod>
+  </url>  <url>
+    <loc>https://jekton.github.io/2018/04/27/handler-uncover-the-messagequeue-part2/</loc>
     <lastmod>2018-08-18</lastmod>
   </url>  <url>
     <loc>https://jekton.github.io/2018/06/08/glide-disk-cache/</loc>
@@ -118,10 +118,10 @@
     <loc>https://jekton.github.io/2018/04/07/binder-why-RemoteListenerCallback-works/</loc>
     <lastmod>2018-08-18</lastmod>
   </url>  <url>
-    <loc>https://jekton.github.io/2018/04/16/binder-why-BBinder-not-released-after-registered-part1/</loc>
+    <loc>https://jekton.github.io/2018/04/11/binder-startup-of-service-manager/</loc>
     <lastmod>2018-08-18</lastmod>
   </url>  <url>
-    <loc>https://jekton.github.io/2018/04/11/binder-startup-of-service-manager/</loc>
+    <loc>https://jekton.github.io/2018/04/16/binder-why-BBinder-not-released-after-registered-part1/</loc>
     <lastmod>2018-08-18</lastmod>
   </url>  <url>
     <loc>https://jekton.github.io/2018/04/14/binder-service-registration-part3/</loc>
@@ -130,19 +130,19 @@
     <loc>https://jekton.github.io/2018/04/13/binder-service-registration-part2/</loc>
     <lastmod>2018-08-18</lastmod>
   </url>  <url>
-    <loc>https://jekton.github.io/2018/04/12/binder-service-registration-part1/</loc>
-    <lastmod>2018-08-18</lastmod>
-  </url>  <url>
     <loc>https://jekton.github.io/2018/04/18/binder-service-query/</loc>
     <lastmod>2018-08-18</lastmod>
   </url>  <url>
-    <loc>https://jekton.github.io/2018/07/14/android-arch-LiveData/</loc>
+    <loc>https://jekton.github.io/2018/04/12/binder-service-registration-part1/</loc>
     <lastmod>2018-08-18</lastmod>
   </url>  <url>
     <loc>https://jekton.github.io/2018/07/06/android-arch-lifecycle/</loc>
     <lastmod>2018-08-18</lastmod>
   </url>  <url>
     <loc>https://jekton.github.io/2018/06/30/android-arch-ViewModel/</loc>
+    <lastmod>2018-08-18</lastmod>
+  </url>  <url>
+    <loc>https://jekton.github.io/2018/07/14/android-arch-LiveData/</loc>
     <lastmod>2018-08-18</lastmod>
   </url>
 </urlset>
