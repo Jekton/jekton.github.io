@@ -16,13 +16,6 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2020/01/21/android-jetpack-ProcessLifecycleOwner/</loc>
-    
-    <lastmod>2020-01-21T00:23:09.684Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jekton.github.io/2019/10/28/android-fragment-pitfall/</loc>
     
     <lastmod>2019-10-28T13:25:56.289Z</lastmod>
@@ -177,14 +170,14 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/about/index.html</loc>
+    <loc>https://jekton.github.io/google9bbc3a252e502b42.html</loc>
     
     <lastmod>2018-08-18T12:47:22.694Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jekton.github.io/google9bbc3a252e502b42.html</loc>
+    <loc>https://jekton.github.io/about/index.html</loc>
     
     <lastmod>2018-08-18T12:47:22.694Z</lastmod>
     
@@ -219,6 +212,13 @@
   </url>
   
   <url>
+    <loc>https://jekton.github.io/2018/05/25/logd-reading/</loc>
+    
+    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jekton.github.io/2018/05/17/logd-prune/</loc>
     
     <lastmod>2018-08-18T12:47:22.692Z</lastmod>
@@ -233,21 +233,7 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/05/25/logd-reading/</loc>
-    
-    <lastmod>2018-08-18T12:47:22.692Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jekton.github.io/2018/07/25/jdk-FutureTask/</loc>
-    
-    <lastmod>2018-08-18T12:47:22.691Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jekton.github.io/2018/07/22/java-translation-jep-193-Variable-Handles/</loc>
     
     <lastmod>2018-08-18T12:47:22.691Z</lastmod>
     
@@ -261,14 +247,21 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/04/24/handler-uncover-the-messagequeue-part1/</loc>
+    <loc>https://jekton.github.io/2018/07/22/java-translation-jep-193-Variable-Handles/</loc>
+    
+    <lastmod>2018-08-18T12:47:22.691Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jekton.github.io/2018/04/27/handler-uncover-the-messagequeue-part2/</loc>
     
     <lastmod>2018-08-18T12:47:22.684Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/06/20/glide-mem-cache1/</loc>
+    <loc>https://jekton.github.io/2018/04/24/handler-uncover-the-messagequeue-part1/</loc>
     
     <lastmod>2018-08-18T12:47:22.684Z</lastmod>
     
@@ -282,7 +275,7 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/04/27/handler-uncover-the-messagequeue-part2/</loc>
+    <loc>https://jekton.github.io/2018/06/20/glide-mem-cache1/</loc>
     
     <lastmod>2018-08-18T12:47:22.684Z</lastmod>
     
@@ -352,7 +345,7 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/07/06/android-arch-lifecycle/</loc>
+    <loc>https://jekton.github.io/2018/07/14/android-arch-LiveData/</loc>
     
     <lastmod>2018-08-18T12:47:22.677Z</lastmod>
     
@@ -366,7 +359,7 @@
   </url>
   
   <url>
-    <loc>https://jekton.github.io/2018/07/14/android-arch-LiveData/</loc>
+    <loc>https://jekton.github.io/2018/07/06/android-arch-lifecycle/</loc>
     
     <lastmod>2018-08-18T12:47:22.677Z</lastmod>
     
